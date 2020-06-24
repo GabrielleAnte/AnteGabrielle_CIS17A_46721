@@ -5,7 +5,7 @@
  */
 
 /* 
- * File:   Gaddis_9thEd_Chapter3_Prob12_DisplaydivSales.cpp
+ * File:   Gaddis_9thEd_Chap3_Prob12_CelsiusToFahrenheit.cpp
  * Author: Gabrielle
  *
  * Created on June 23, 2020, 1:27 PM
@@ -17,18 +17,19 @@
 using namespace std;
 
 /*
- *  Write a cout statement so the variable divSales is displayed in a field of 8
- *  spaces, in fixed-point notation, with a precision of 2 decimal places. 
- *  The decimal point should always be displayed. 
+ *  Write a program that converts Celsius temperatures to Fahrenheit temperatures.
  */
 int main(int argc, char** argv) {
 
-    float divSales = 1.20034567;
+    double celsius = 0, fahrenheit = 0;
   
+    cout << "Enter a temperature in Celsius:    ";
+    cin >> celsius;
+
+    fahrenheit = ((9 * celsius)/5) + 32;
     
-    cout << fixed << setprecision(2);
-    cout << setw(8)<< divSales;
-    
+    cout << fahrenheit << " degrees Fahrenheit";
+
     return 0;
 }
 
