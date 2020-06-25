@@ -34,10 +34,10 @@ int main(int argc, char** argv) {
         days = 29;
     }
     // if year is divisible by 4 but not 100
-    else if (month == 2 && year % 4 == 0) {
+    else if (month == 2 && year % 100 != 0 && year % 4 == 0) {
         days = 29;
     }
-    // if year is divisible by 4 but not 100
+    // if year is not divisible by 4 or is divisible by 100
     else if (month == 2) {
         days = 28;
     }

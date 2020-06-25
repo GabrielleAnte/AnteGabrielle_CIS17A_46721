@@ -24,10 +24,10 @@ using namespace std;
  * equivalents.
  */
 
-double celsius(double fahrenheit);
+float celsius(float fahrenheit);
 
 int main(int argc, char** argv) {
-    double celsius_temp = 0;
+    float celsius_temp = 0;
 
     cout << fixed << setprecision(2);
     cout << setw(5) << "F" << setw(8) << "C" << endl;
@@ -39,8 +39,8 @@ int main(int argc, char** argv) {
     return 0;
 }
 
-double celsius(double fahrenheit) {
-    double celsius = 0;
+float celsius(float fahrenheit) {
+    float celsius = 0;
 
     celsius = 5 * (fahrenheit - 32) / 9;
 

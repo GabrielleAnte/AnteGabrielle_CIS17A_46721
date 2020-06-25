@@ -21,8 +21,9 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    double celsius = 0, fahrenheit = 0;
+    float celsius = 0, fahrenheit = 0;
   
+    cout << fixed << setprecision(2);
     cout << "Enter a temperature in Celsius:    ";
     cin >> celsius;
 

@@ -25,9 +25,9 @@ using namespace std;
  */
 int main(int argc, char** argv) {
 
-    const double YEN_PER_DOLLAR = 106.49;
-    const double EUROS_PER_DOLLAR = 0.88;
-    double yens = 0, euros = 0, dollars = 0;
+    const float YEN_PER_DOLLAR = 106.49;
+    const float EUROS_PER_DOLLAR = 0.88;
+    float yens = 0, euros = 0, dollars = 0;
     
     cout << fixed << setprecision(2);
     cout << "Enter an amount in dollars:    ";

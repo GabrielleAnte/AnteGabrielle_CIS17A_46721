@@ -26,26 +26,18 @@ int main(int argc, char** argv) {
     int population = 0, newPopulation = 0, days = 0;
     float increase = 0;
 
-    cout << "Enter the starting number of organisms:    ";
-    cin >> population;
-    while (population < 2){
-        cout << "Invalid. Enter the starting number of organisms:    ";
+    do {
+        cout << "Enter the starting number of organisms:    ";
         cin >> population;
-    }
-    cout << "Enter the average daily population increase (%):    ";
-    cin >> increase;
-    while (increase < 0) {
-        cout << "Invalid. Enter the average daily population increase"
-                "(%):    ";
+    } while (population < 2);
+    do{
+        cout << "Enter the average daily population increase (%):    ";
         cin >> increase;
-    }
-    cout << "Enter the number of days they will multiply:    ";
-    cin >> days;
-    while (days < 1) {
-        cout << "Invalid. Enter the number of days they will multiply:"
-                "   ";
+    } while (increase < 0);
+    do {
+        cout << "Enter the number of days they will multiply:    ";
         cin >> days;
-    }
+    } while (days < 1);
     for (int i = 0; i < days; i++) {
         newPopulation = population * increase / 100;
         cout << "Day " << i + 1 << ":   ";
