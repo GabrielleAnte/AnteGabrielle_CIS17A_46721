@@ -17,7 +17,10 @@
 using namespace std;
 
 /*
- * 
+ * Modify the program that you wrote for programming challenge 4 (weather
+ * statistics) so it defines an enumerated data type with enumerators for
+ * months(JANUARY, FEBRUARY, so on). The program should use the enumerated
+ * type to step through the elements of the array.
  */
 
 //User Libraries
