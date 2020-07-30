@@ -1,0 +1,51 @@
+\hypertarget{class_gme_brd}{}\doxysection{Gme\+Brd Class Reference}
+\label{class_gme_brd}\index{GmeBrd@{GmeBrd}}
+
+
+Inheritance diagram for Gme\+Brd\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gme_brd_a9654654686735311aef97d49d37911bd}\label{class_gme_brd_a9654654686735311aef97d49d37911bd}} 
+{\bfseries Gme\+Brd} (int r, int cl, int m)
+\item 
+\mbox{\Hypertarget{class_gme_brd_a88556cfcca500806e96f998fee5a84e1}\label{class_gme_brd_a88556cfcca500806e96f998fee5a84e1}} 
+int {\bfseries get\+Row} () const
+\item 
+\mbox{\Hypertarget{class_gme_brd_a278e6bf2a51f6ff7fa5b81fcbbb33471}\label{class_gme_brd_a278e6bf2a51f6ff7fa5b81fcbbb33471}} 
+int {\bfseries get\+Col} () const
+\item 
+\mbox{\Hypertarget{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}\label{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}} 
+int {\bfseries get\+Mine} () const
+\item 
+\mbox{\Hypertarget{class_gme_brd_a279ed4807b7864824f79a6e7dce87d6f}\label{class_gme_brd_a279ed4807b7864824f79a6e7dce87d6f}} 
+void {\bfseries set\+Row} (int a)
+\item 
+\mbox{\Hypertarget{class_gme_brd_ac9b58f005fbf43fef04596ebace1082e}\label{class_gme_brd_ac9b58f005fbf43fef04596ebace1082e}} 
+void {\bfseries set\+Col} (int a)
+\item 
+\mbox{\Hypertarget{class_gme_brd_a08d5eda4c06a310c868668994c5d47b2}\label{class_gme_brd_a08d5eda4c06a310c868668994c5d47b2}} 
+void {\bfseries set\+Mine} (int a)
+\item 
+\mbox{\Hypertarget{class_gme_brd_a5b068f96bc311c6d2e7b1f7e2d5fe4e0}\label{class_gme_brd_a5b068f96bc311c6d2e7b1f7e2d5fe4e0}} 
+virtual void {\bfseries dsp\+Brd} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}\label{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}} 
+static int {\bfseries row}
+\item 
+\mbox{\Hypertarget{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}\label{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}} 
+static int {\bfseries col}
+\item 
+\mbox{\Hypertarget{class_gme_brd_a380ced78a97eb23602ed3868eacff11c}\label{class_gme_brd_a380ced78a97eb23602ed3868eacff11c}} 
+static int {\bfseries mine}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Gme\+Brd.\+h\item 
+In\+Brd.\+cpp\end{DoxyCompactItemize}
