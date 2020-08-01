@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__in_brd_8h_source">
+<title>InBrd.h</title>
+<programlisting>00001 <emphasis role="comment">/*</emphasis>
+00002 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+00003 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+00004 <emphasis role="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+00005 <emphasis role="comment">&#32;*/</emphasis>
+00006 
+00007 <emphasis role="comment">/*&#32;</emphasis>
+00008 <emphasis role="comment">&#32;*&#32;File:&#32;&#32;&#32;InBrd.h</emphasis>
+00009 <emphasis role="comment">&#32;*&#32;Author:&#32;Gabrielle</emphasis>
+00010 <emphasis role="comment">&#32;*</emphasis>
+00011 <emphasis role="comment">&#32;*&#32;Created&#32;on&#32;July&#32;26,&#32;2020,&#32;3:19&#32;AM</emphasis>
+00012 <emphasis role="comment">&#32;*/</emphasis>
+00013 
+00014 <emphasis role="preprocessor">#ifndef&#32;INBRD_H</emphasis>
+00015 <emphasis role="preprocessor">#define&#32;INBRD_H</emphasis>
+00016 
+00017 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+00018 <emphasis role="preprocessor">#include&#32;&lt;iomanip&gt;</emphasis>
+00019 <emphasis role="preprocessor">#include&#32;&lt;cstdlib&gt;</emphasis>
+00020 <emphasis role="preprocessor">#include&#32;&lt;ctime&gt;</emphasis>
+00021 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__gme_brd_8h">GmeBrd.h</link>&quot;</emphasis>
+00022 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__in_brd_8h">InBrd.h</link>&quot;</emphasis>
+00023 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__out_brd_8h">OutBrd.h</link>&quot;</emphasis>
+00024 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+00025 
+<anchor xml:id="__in_brd_8h_source_1l00026"/><link linkend="_class_in_brd">00026</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_in_brd">InBrd</link>:<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_gme_brd">GmeBrd</link>
+00027 {
+00028 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__in_brd_8h_source_1l00029"/><link linkend="_class_in_brd_1a462e1ba31741109b6a86cb369eb21377">00029</link> &#32;&#32;&#32;<link linkend="_class_cell">Cell</link>&#32;**<link linkend="_class_in_brd_1a462e1ba31741109b6a86cb369eb21377">c</link>;
+00030 <emphasis role="keyword">protected</emphasis>:
+00031 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__in_brd_8h_source_1l00032"/><link linkend="_class_in_brd_1abad5d8c51327ec335917c2193b30086c">00032</link> &#32;&#32;&#32;&#32;<link linkend="_class_in_brd_1abad5d8c51327ec335917c2193b30086c">InBrd</link>():<link linkend="_class_gme_brd">GmeBrd</link>()
+00033 &#32;&#32;&#32;&#32;{}
+00034 &#32;&#32;&#32;&#32;
+<anchor xml:id="__in_brd_8h_source_1l00035"/><link linkend="_class_in_brd_1a2b1b8305dee1ac861037a91e89fc99cd">00035</link> &#32;&#32;&#32;&#32;<link linkend="_class_in_brd_1a2b1b8305dee1ac861037a91e89fc99cd">InBrd</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;cl,&#32;<emphasis role="keywordtype">int</emphasis>&#32;m):&#32;<link linkend="_class_gme_brd">GmeBrd</link>(r,cl,m)
+00036 &#32;&#32;&#32;&#32;{&#32;celdata();}
+00037 &#32;&#32;&#32;&#32;
+00038 &#32;&#32;&#32;&#32;~<link linkend="_class_in_brd">InBrd</link>();
+00039 &#32;&#32;&#32;&#32;
+<anchor xml:id="__in_brd_8h_source_1l00040"/><link linkend="_class_in_brd_1af23b58faaa163dc90ee5877394fb81f9">00040</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_out_brd_1a0af7ee8eef4871714011bc8f4e9971a6">OutBrd::rdBrd</link>(<link linkend="_class_in_brd">InBrd</link>&#32;&amp;a);
+00041 &#32;&#32;&#32;&#32;
+00042 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;celdata();
+00043 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;addMine();
+00044 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;addVal();
+00045 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;dspBrd();
+00046 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;**sweep();
+00047 &#32;&#32;&#32;&#32;<link linkend="_class_in_brd">InBrd</link>&amp;&#32;operator&#32;=(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_in_brd">InBrd</link>&#32;&amp;right);
+00048 &#32;&#32;&#32;
+00049 };
+00050 
+00051 
+00052 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;INBRD_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+00053 
+</programlisting></section>

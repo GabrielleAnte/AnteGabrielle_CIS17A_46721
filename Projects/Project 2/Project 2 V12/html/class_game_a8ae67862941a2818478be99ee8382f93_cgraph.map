@@ -1,0 +1,18 @@
+<map id="Game::Game" name="Game::Game">
+<area shape="rect" id="node1" title="constructor #2 prototype for the game class" alt="" coords="5,284,105,311"/>
+<area shape="rect" id="node2" href="$class_game.html#ade11a025de0143ce182e2b9a83755144" title="setUp function prototype" alt="" coords="153,284,252,311"/>
+<area shape="rect" id="node3" href="$class_in_brd.html#acb13a93095bb62ca7e10bdc62ef9cdad" title=" " alt="" coords="307,5,417,32"/>
+<area shape="rect" id="node4" href="$class_in_brd.html#ad8a4edd62f029ff83cf1f962928b6e68" title=" " alt="" coords="312,56,412,83"/>
+<area shape="rect" id="node5" href="$class_in_brd.html#a92a51ca05ea3fc01b976628951c2086c" title=" " alt="" coords="311,107,413,133"/>
+<area shape="rect" id="node7" href="$class_player.html#a21dd4f636a667fe882abc76600dc0d9c" title=" " alt="" coords="310,157,414,184"/>
+<area shape="rect" id="node8" href="$class_player.html#a42ea717cab17fa83a43d647685eb81a6" title=" " alt="" coords="305,208,419,235"/>
+<area shape="rect" id="node9" href="$class_player.html#a76135d6989330f1d71485f7569f4f520" title=" " alt="" coords="307,259,417,285"/>
+<area shape="rect" id="node10" href="$class_player.html#a740b82f6723c1b4e985444caa4ab95e1" title=" " alt="" coords="309,309,415,336"/>
+<area shape="rect" id="node11" href="$class_gme_brd.html#ac9b58f005fbf43fef04596ebace1082e" title=" " alt="" coords="305,360,419,387"/>
+<area shape="rect" id="node12" href="$class_gme_brd.html#a08d5eda4c06a310c868668994c5d47b2" title=" " alt="" coords="300,411,424,437"/>
+<area shape="rect" id="node13" href="$class_player.html#a37fc1f766b05e107305976aa9e8d0fc4" title=" " alt="" coords="303,461,421,488"/>
+<area shape="rect" id="node14" href="$class_gme_brd.html#a279ed4807b7864824f79a6e7dce87d6f" title=" " alt="" coords="301,512,423,539"/>
+<area shape="rect" id="node15" href="$class_game.html#afdd9eefc48c8e437253bd0723fe2aef6" title="Display Intro function prototype." alt="" coords="309,563,415,589"/>
+<area shape="rect" id="node6" href="$class_cell.html#ae8de6c402ee3ca437b73a2839f0a34ba" title="member function to set the row number member variable, accepts int data type" alt="" coords="483,107,580,133"/>
+<area shape="rect" id="node16" href="$class_player.html#af9a6045fa96f736664c4eab4caa5e8e5" title=" " alt="" coords="472,563,591,589"/>
+</map>

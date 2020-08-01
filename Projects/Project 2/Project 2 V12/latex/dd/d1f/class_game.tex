@@ -1,0 +1,384 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+
+
+Collaboration diagram for Game\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\item 
+\mbox{\hyperlink{class_game_a8ae67862941a2818478be99ee8382f93}{Game}} (string n)
+\item 
+\mbox{\hyperlink{class_game_ae76f801286118a01afc4764276a0ee20}{Game}} (string n, string p, int r, int c, int m)
+\item 
+\mbox{\hyperlink{class_game_af909b709de6b4c0c2a1b3f4e7721cd4c}{Game}} (const \mbox{\hyperlink{class_game}{Game}} \&right)
+\item 
+void \mbox{\hyperlink{class_game_afdd9eefc48c8e437253bd0723fe2aef6}{sho\+Strt}} ()
+\item 
+void \mbox{\hyperlink{class_game_ade11a025de0143ce182e2b9a83755144}{set\+Up}} ()
+\item 
+void \mbox{\hyperlink{class_game_aa333825d0bca80e91e53c7e23f053405}{play}} ()
+\item 
+void \mbox{\hyperlink{class_game_adc9795bcae2278f21f2510106a68aa4a}{a\+Play}} ()
+\item 
+bool \mbox{\hyperlink{class_game_a42016555166b4ab075e1db5224a65d7d}{gme\+Over}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_game_a628db27089dea207435a6c8620daca3f}{nrow}}
+\item 
+int \mbox{\hyperlink{class_game_a444f05e25120130ed2730d7756329ecf}{ncol}}
+\item 
+int \mbox{\hyperlink{class_game_a532b1f133947e5ec0b1290cb2ccce644}{nmines}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_a5a84f7af5c736f92c1bb0ab672a7d08f}{set\+Up}} (string p, int r, int c, int m)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_game_a3704a89ccc3882ccbef9c258b65a4a76}{name}}
+\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_game_a6e48721b0532833b99fd5615a3628792}{player}}
+\item 
+\mbox{\hyperlink{class_in_brd}{In\+Brd}} \mbox{\hyperlink{class_game_a9b8b64c5cc0780a8e93545d6e49217e9}{inbrd}}
+\item 
+\mbox{\hyperlink{class_out_brd}{Out\+Brd}} \mbox{\hyperlink{class_game_a9f86479a63dd82113b4b7f29f2ea4048}{outbrd}}
+\item 
+int \mbox{\hyperlink{class_game_a18205f981b4ecee4fcdd36aa690afc18}{rC}}
+\item 
+int \mbox{\hyperlink{class_game_a861f1b5697afd1b10312ccc8613c8d6e}{cC}}
+\item 
+int \mbox{\hyperlink{class_game_a4c0c7d64cc8a5dc769a64ce5bf86fae5}{diff}}
+\item 
+\mbox{\hyperlink{class_gme_brd}{Gme\+Brd}} $\ast$ \mbox{\hyperlink{class_game_a2151159b147076312bafa0e2da74ffec}{gb}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_game_a46f8e4d93a538f64ac9fff26c3c5456d}{gme\+Cnt}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 26 of file Game.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a8ae67862941a2818478be99ee8382f93}\label{class_game_a8ae67862941a2818478be99ee8382f93}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{string}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_ae76f801286118a01afc4764276a0ee20}\label{class_game_ae76f801286118a01afc4764276a0ee20}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{string}]{n,  }\item[{string}]{p,  }\item[{int}]{r,  }\item[{int}]{c,  }\item[{int}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_af909b709de6b4c0c2a1b3f4e7721cd4c}\label{class_game_af909b709de6b4c0c2a1b3f4e7721cd4c}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game}{Game}} \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 81 of file Game.\+h.
+
+
+
+References In\+Brd\+::celdata(), inbrd, name, ncol, nmines, nrow, Gme\+Brd\+::set\+Col(), Gme\+Brd\+::set\+Mine(), and Gme\+Brd\+::set\+Row().
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_adc9795bcae2278f21f2510106a68aa4a}\label{class_game_adc9795bcae2278f21f2510106a68aa4a}} 
+\index{Game@{Game}!aPlay@{aPlay}}
+\index{aPlay@{aPlay}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{aPlay()}{aPlay()}}
+{\footnotesize\ttfamily void Game\+::a\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 154 of file Game.\+h.
+
+
+
+References Player\+::auto\+Chc(), Player\+::auto\+Flg(), Out\+Brd\+::chk\+Clr(), Out\+Brd\+::ck\+Flg(), Out\+Brd\+::clear(), Out\+Brd\+::dsp\+Brd(), Out\+Brd\+::flag(), Out\+Brd\+::rd\+Brd(), Out\+Brd\+::reveal(), Out\+Brd\+::spc\+Opn(), and Out\+Brd\+::unflag().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_game_a42016555166b4ab075e1db5224a65d7d}\label{class_game_a42016555166b4ab075e1db5224a65d7d}} 
+\index{Game@{Game}!gmeOver@{gmeOver}}
+\index{gmeOver@{gmeOver}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{gmeOver()}{gmeOver()}}
+{\footnotesize\ttfamily bool Game\+::gme\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 189 of file Game.\+h.
+
+
+
+References In\+Brd\+::dsp\+Brd(), Out\+Brd\+::f\+Remain(), Out\+Brd\+::loss(), Player\+::stats(), and Out\+Brd\+::win().
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_game_aa333825d0bca80e91e53c7e23f053405}\label{class_game_aa333825d0bca80e91e53c7e23f053405}} 
+\index{Game@{Game}!play@{play}}
+\index{play@{play}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Game\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 118 of file Game.\+h.
+
+
+
+References Player\+::ask\+Flg(), Out\+Brd\+::chk\+Clr(), Out\+Brd\+::ck\+Flg(), Out\+Brd\+::clear(), In\+Brd\+::dsp\+Brd(), Gme\+Brd\+::dsp\+Brd(), Out\+Brd\+::dsp\+Brd(), Out\+Brd\+::flag(), Player\+::get\+Chc(), Out\+Brd\+::rd\+Brd(), Out\+Brd\+::reveal(), Out\+Brd\+::spc\+Opn(), and Out\+Brd\+::unflag().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+% FIG 5
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{class_game_ade11a025de0143ce182e2b9a83755144}\label{class_game_ade11a025de0143ce182e2b9a83755144}} 
+\index{Game@{Game}!setUp@{setUp}}
+\index{setUp@{setUp}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+::set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file Game.\+h.
+
+
+
+References In\+Brd\+::add\+Mine(), In\+Brd\+::add\+Val(), In\+Brd\+::celdata(), Player\+::get\+Col(), Player\+::get\+Mine(), Player\+::get\+Row(), Player\+::set\+Brd(), Gme\+Brd\+::set\+Col(), Gme\+Brd\+::set\+Mine(), Player\+::set\+Name(), and Gme\+Brd\+::set\+Row().
+
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{class_game_a5a84f7af5c736f92c1bb0ab672a7d08f}\label{class_game_a5a84f7af5c736f92c1bb0ab672a7d08f}} 
+\index{Game@{Game}!setUp@{setUp}}
+\index{setUp@{setUp}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+::set\+Up (\begin{DoxyParamCaption}\item[{string}]{p,  }\item[{int}]{r,  }\item[{int}]{c,  }\item[{int}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 36 of file Game.\+h.
+
+
+
+References In\+Brd\+::add\+Mine(), In\+Brd\+::add\+Val(), In\+Brd\+::celdata(), Player\+::get\+Col(), Player\+::get\+Mine(), Player\+::get\+Row(), Player\+::set\+Brd(), Gme\+Brd\+::set\+Col(), Gme\+Brd\+::set\+Mine(), Player\+::set\+Name(), and Gme\+Brd\+::set\+Row().
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{class_game_afdd9eefc48c8e437253bd0723fe2aef6}\label{class_game_afdd9eefc48c8e437253bd0723fe2aef6}} 
+\index{Game@{Game}!shoStrt@{shoStrt}}
+\index{shoStrt@{shoStrt}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{shoStrt()}{shoStrt()}}
+{\footnotesize\ttfamily void Game\+::sho\+Strt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 94 of file Game.\+h.
+
+
+
+References Player\+::get\+Name().
+
+Here is the call graph for this function\+:
+% FIG 9
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_a861f1b5697afd1b10312ccc8613c8d6e}\label{class_game_a861f1b5697afd1b10312ccc8613c8d6e}} 
+\index{Game@{Game}!cC@{cC}}
+\index{cC@{cC}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{cC}{cC}}
+{\footnotesize\ttfamily int Game\+::cC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a4c0c7d64cc8a5dc769a64ce5bf86fae5}\label{class_game_a4c0c7d64cc8a5dc769a64ce5bf86fae5}} 
+\index{Game@{Game}!diff@{diff}}
+\index{diff@{diff}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{diff}{diff}}
+{\footnotesize\ttfamily int Game\+::diff\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a2151159b147076312bafa0e2da74ffec}\label{class_game_a2151159b147076312bafa0e2da74ffec}} 
+\index{Game@{Game}!gb@{gb}}
+\index{gb@{gb}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{gb}{gb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gme_brd}{Gme\+Brd}}$\ast$ Game\+::gb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a46f8e4d93a538f64ac9fff26c3c5456d}\label{class_game_a46f8e4d93a538f64ac9fff26c3c5456d}} 
+\index{Game@{Game}!gmeCnt@{gmeCnt}}
+\index{gmeCnt@{gmeCnt}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{gmeCnt}{gmeCnt}}
+{\footnotesize\ttfamily int Game\+::gme\+Cnt = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 34 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a9b8b64c5cc0780a8e93545d6e49217e9}\label{class_game_a9b8b64c5cc0780a8e93545d6e49217e9}} 
+\index{Game@{Game}!inbrd@{inbrd}}
+\index{inbrd@{inbrd}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{inbrd}{inbrd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_in_brd}{In\+Brd}} Game\+::inbrd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Game.\+h.
+
+
+
+Referenced by Game().
+
+\mbox{\Hypertarget{class_game_a3704a89ccc3882ccbef9c258b65a4a76}\label{class_game_a3704a89ccc3882ccbef9c258b65a4a76}} 
+\index{Game@{Game}!name@{name}}
+\index{name@{name}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Game\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Game.\+h.
+
+
+
+Referenced by Game().
+
+\mbox{\Hypertarget{class_game_a444f05e25120130ed2730d7756329ecf}\label{class_game_a444f05e25120130ed2730d7756329ecf}} 
+\index{Game@{Game}!ncol@{ncol}}
+\index{ncol@{ncol}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{ncol}{ncol}}
+{\footnotesize\ttfamily int Game\+::ncol\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file Game.\+h.
+
+
+
+Referenced by Game().
+
+\mbox{\Hypertarget{class_game_a532b1f133947e5ec0b1290cb2ccce644}\label{class_game_a532b1f133947e5ec0b1290cb2ccce644}} 
+\index{Game@{Game}!nmines@{nmines}}
+\index{nmines@{nmines}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{nmines}{nmines}}
+{\footnotesize\ttfamily int Game\+::nmines\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file Game.\+h.
+
+
+
+Referenced by Game().
+
+\mbox{\Hypertarget{class_game_a628db27089dea207435a6c8620daca3f}\label{class_game_a628db27089dea207435a6c8620daca3f}} 
+\index{Game@{Game}!nrow@{nrow}}
+\index{nrow@{nrow}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{nrow}{nrow}}
+{\footnotesize\ttfamily int Game\+::nrow\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 54 of file Game.\+h.
+
+
+
+Referenced by Game().
+
+\mbox{\Hypertarget{class_game_a9f86479a63dd82113b4b7f29f2ea4048}\label{class_game_a9f86479a63dd82113b4b7f29f2ea4048}} 
+\index{Game@{Game}!outbrd@{outbrd}}
+\index{outbrd@{outbrd}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{outbrd}{outbrd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_out_brd}{Out\+Brd}} Game\+::outbrd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a6e48721b0532833b99fd5615a3628792}\label{class_game_a6e48721b0532833b99fd5615a3628792}} 
+\index{Game@{Game}!player@{player}}
+\index{player@{player}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Game\+::player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a18205f981b4ecee4fcdd36aa690afc18}\label{class_game_a18205f981b4ecee4fcdd36aa690afc18}} 
+\index{Game@{Game}!rC@{rC}}
+\index{rC@{rC}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{rC}{rC}}
+{\footnotesize\ttfamily int Game\+::rC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Game.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_8h}{Game.\+h}}\end{DoxyCompactItemize}

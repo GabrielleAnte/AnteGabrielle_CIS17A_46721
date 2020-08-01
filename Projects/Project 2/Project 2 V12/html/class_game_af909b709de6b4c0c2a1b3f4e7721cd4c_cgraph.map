@@ -1,0 +1,8 @@
+<map id="Game::Game" name="Game::Game">
+<area shape="rect" id="node1" title="copy constructor prototype for the game class." alt="" coords="5,81,105,108"/>
+<area shape="rect" id="node2" href="$class_in_brd.html#a92a51ca05ea3fc01b976628951c2086c" title=" " alt="" coords="164,5,267,32"/>
+<area shape="rect" id="node4" href="$class_gme_brd.html#ac9b58f005fbf43fef04596ebace1082e" title=" " alt="" coords="158,56,273,83"/>
+<area shape="rect" id="node5" href="$class_gme_brd.html#a08d5eda4c06a310c868668994c5d47b2" title=" " alt="" coords="153,107,277,133"/>
+<area shape="rect" id="node6" href="$class_gme_brd.html#a279ed4807b7864824f79a6e7dce87d6f" title=" " alt="" coords="155,157,276,184"/>
+<area shape="rect" id="node3" href="$class_cell.html#ae8de6c402ee3ca437b73a2839f0a34ba" title="member function to set the row number member variable, accepts int data type" alt="" coords="325,5,423,32"/>
+</map>

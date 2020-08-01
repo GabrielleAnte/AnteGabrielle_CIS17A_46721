@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_in_brd">
+<title>InBrd Class Reference</title>
+<indexterm><primary>InBrd</primary></indexterm>
+<para>
+<computeroutput>#include &lt;InBrd.h&gt;</computeroutput>
+</para>
+Inheritance diagram for InBrd:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/d3f/class_in_brd__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for InBrd:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/d54/class_in_brd__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_in_brd_1abad5d8c51327ec335917c2193b30086c">InBrd</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_in_brd_1a2b1b8305dee1ac861037a91e89fc99cd">InBrd</link> (int r, int cl, int m)</para>
+</listitem>
+            <listitem><para><link linkend="_class_in_brd_1a98d1079c6c4f44b2def006ade6b2b996">~InBrd</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_in_brd_1a92a51ca05ea3fc01b976628951c2086c">celdata</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_in_brd_1acb13a93095bb62ca7e10bdc62ef9cdad">addMine</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_in_brd_1ad8a4edd62f029ff83cf1f962928b6e68">addVal</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_in_brd_1aa6d18ae85e12c4315b32f79830ab7719">dspBrd</link> ()</para>
+</listitem>
+            <listitem><para>int ** <link linkend="_class_in_brd_1a1bbc35528c6f4473187f214cf8c6d99f">sweep</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_in_brd">InBrd</link> &amp; <link linkend="_class_in_brd_1ab15a26f98623e2bbd5878605ab90cf9b">operator=</link> (const <link linkend="_class_in_brd">InBrd</link> &amp;right)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_cell">Cell</link> ** <link linkend="_class_in_brd_1a462e1ba31741109b6a86cb369eb21377">c</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Friends    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_in_brd_1af23b58faaa163dc90ee5877394fb81f9">OutBrd::rdBrd</link> (<link linkend="_class_in_brd">InBrd</link> &amp;a)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__in_brd_8h_source_1l00026">26</link> of file <link linkend="__in_brd_8h_source">InBrd.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_in_brd_1abad5d8c51327ec335917c2193b30086c"/>    <section>
+    <title>InBrd()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>InBrd</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>InBrd</secondary></indexterm>
+<para><computeroutput>InBrd::InBrd ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__in_brd_8h_source_1l00032">32</link> of file <link linkend="__in_brd_8h_source">InBrd.h</link>.</para>
+    </section><anchor xml:id="_class_in_brd_1a2b1b8305dee1ac861037a91e89fc99cd"/>    <section>
+    <title>InBrd()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>InBrd</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>InBrd</secondary></indexterm>
+<para><computeroutput>InBrd::InBrd (int r, int cl, int m)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__in_brd_8h_source_1l00035">35</link> of file <link linkend="__in_brd_8h_source">InBrd.h</link>.</para>
+    </section><anchor xml:id="_class_in_brd_1a98d1079c6c4f44b2def006ade6b2b996"/>    <section>
+    <title>~InBrd()</title>
+<indexterm><primary>~InBrd</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>~InBrd</secondary></indexterm>
+<para><computeroutput>InBrd::~InBrd ( )</computeroutput></para><para>
+Definition at line <link linkend="__in_brd_8cpp_source_1l00199">199</link> of file <link linkend="__in_brd_8cpp_source">InBrd.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_in_brd_1acb13a93095bb62ca7e10bdc62ef9cdad"/>    <section>
+    <title>addMine()</title>
+<indexterm><primary>addMine</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>addMine</secondary></indexterm>
+<para><computeroutput>void InBrd::addMine ( )</computeroutput></para><para>
+Definition at line <link linkend="__in_brd_8cpp_source_1l00060">60</link> of file <link linkend="__in_brd_8cpp_source">InBrd.cpp</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00036">Game::setUp()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/db8/class_in_brd_acb13a93095bb62ca7e10bdc62ef9cdad_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_in_brd_1ad8a4edd62f029ff83cf1f962928b6e68"/>    <section>
+    <title>addVal()</title>
+<indexterm><primary>addVal</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>addVal</secondary></indexterm>
+<para><computeroutput>void InBrd::addVal ( )</computeroutput></para><para>
+Definition at line <link linkend="__in_brd_8cpp_source_1l00075">75</link> of file <link linkend="__in_brd_8cpp_source">InBrd.cpp</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00036">Game::setUp()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/db8/class_in_brd_ad8a4edd62f029ff83cf1f962928b6e68_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_in_brd_1a92a51ca05ea3fc01b976628951c2086c"/>    <section>
+    <title>celdata()</title>
+<indexterm><primary>celdata</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>celdata</secondary></indexterm>
+<para><computeroutput>void InBrd::celdata ( )</computeroutput></para><para>
+Definition at line <link linkend="__in_brd_8cpp_source_1l00044">44</link> of file <link linkend="__in_brd_8cpp_source">InBrd.cpp</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00040">Cell::setnrow()</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00081">Game::Game()</link>, and <link linkend="__game_8h_source_1l00036">Game::setUp()</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/db8/class_in_brd_a92a51ca05ea3fc01b976628951c2086c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/db8/class_in_brd_a92a51ca05ea3fc01b976628951c2086c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_in_brd_1aa6d18ae85e12c4315b32f79830ab7719"/>    <section>
+    <title>dspBrd()</title>
+<indexterm><primary>dspBrd</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>dspBrd</secondary></indexterm>
+<para><computeroutput>void InBrd::dspBrd ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_gme_brd_1a5b068f96bc311c6d2e7b1f7e2d5fe4e0">GmeBrd</link>.</para>
+<para>
+Definition at line <link linkend="__in_brd_8cpp_source_1l00086">86</link> of file <link linkend="__in_brd_8cpp_source">InBrd.cpp</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00189">Game::gmeOver()</link>, and <link linkend="__game_8h_source_1l00118">Game::play()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/db8/class_in_brd_aa6d18ae85e12c4315b32f79830ab7719_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_in_brd_1ab15a26f98623e2bbd5878605ab90cf9b"/>    <section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_class_in_brd">InBrd</link> &amp; InBrd::operator= (const <link linkend="_class_in_brd">InBrd</link> &amp; right)</computeroutput></para><para>
+Definition at line <link linkend="__in_brd_8cpp_source_1l00175">175</link> of file <link linkend="__in_brd_8cpp_source">InBrd.cpp</link>.</para>
+<para>
+References <link linkend="__in_brd_8h_source_1l00029">c</link>.</para>
+    </section><anchor xml:id="_class_in_brd_1a1bbc35528c6f4473187f214cf8c6d99f"/>    <section>
+    <title>sweep()</title>
+<indexterm><primary>sweep</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>sweep</secondary></indexterm>
+<para><computeroutput>int ** InBrd::sweep ( )</computeroutput></para><para>
+Definition at line <link linkend="__in_brd_8cpp_source_1l00110">110</link> of file <link linkend="__in_brd_8cpp_source">InBrd.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Friends And Related Function Documentation</title>
+<anchor xml:id="_class_in_brd_1af23b58faaa163dc90ee5877394fb81f9"/>    <section>
+    <title>OutBrd::rdBrd</title>
+<indexterm><primary>OutBrd::rdBrd</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>OutBrd::rdBrd</secondary></indexterm>
+<para><computeroutput>void <link linkend="_class_out_brd_1a0af7ee8eef4871714011bc8f4e9971a6">OutBrd::rdBrd</link> (<link linkend="_class_in_brd">InBrd</link> &amp; a)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_in_brd_1a462e1ba31741109b6a86cb369eb21377"/>    <section>
+    <title>c</title>
+<indexterm><primary>c</primary><secondary>InBrd</secondary></indexterm>
+<indexterm><primary>InBrd</primary><secondary>c</secondary></indexterm>
+<para><computeroutput><link linkend="_class_cell">Cell</link>** InBrd::c<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__in_brd_8h_source_1l00029">29</link> of file <link linkend="__in_brd_8h_source">InBrd.h</link>.</para>
+<para>
+Referenced by <link linkend="__in_brd_8cpp_source_1l00175">operator=()</link>, and <link linkend="__out_brd_8cpp_source_1l00015">OutBrd::rdBrd()</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+<link linkend="__in_brd_8h">InBrd.h</link><link linkend="__in_brd_8cpp">InBrd.cpp</link></section>
+</section>

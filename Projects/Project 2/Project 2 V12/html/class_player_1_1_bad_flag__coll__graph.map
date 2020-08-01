@@ -1,0 +1,3 @@
+<map id="Player::BadFlag" name="Player::BadFlag">
+<area shape="rect" id="node1" title="choice to flag the cell is neither Y or N" alt="" coords="5,5,120,83"/>
+</map>

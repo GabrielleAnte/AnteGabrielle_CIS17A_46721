@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__out_brd_8cpp_source">
+<title>OutBrd.cpp</title>
+<programlisting>00001 <emphasis role="comment">/*</emphasis>
+00002 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+00003 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+00004 <emphasis role="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+00005 <emphasis role="comment">&#32;*/</emphasis>
+00006 
+00007 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+00008 <emphasis role="preprocessor">#include&#32;&lt;iomanip&gt;</emphasis>
+00009 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__gme_brd_8h">GmeBrd.h</link>&quot;</emphasis>
+00010 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__out_brd_8h">OutBrd.h</link>&quot;</emphasis>
+00011 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__in_brd_8h">InBrd.h</link>&quot;</emphasis>&#32;
+00012 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+00013 
+00014 
+<anchor xml:id="__out_brd_8cpp_source_1l00015"/><link linkend="_class_out_brd_1a0af7ee8eef4871714011bc8f4e9971a6">00015</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_out_brd_1a0af7ee8eef4871714011bc8f4e9971a6">OutBrd::rdBrd</link>(<link linkend="_class_in_brd">InBrd</link>&#32;&amp;a)
+00016 {&#32;&#32;&#32;
+00017 &#32;&#32;&#32;&#32;cell&#32;=a.<link linkend="_class_in_brd_1a462e1ba31741109b6a86cb369eb21377">c</link>;
+00018 }
+00019 
+<anchor xml:id="__out_brd_8cpp_source_1l00020"/><link linkend="_class_out_brd_1a07ad712503dc56ce0c4a94b625c4780a">00020</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_out_brd_1a07ad712503dc56ce0c4a94b625c4780a">OutBrd::dspBrd</link>()
+00021 {
+00022 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+00023 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;setw(4)&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>;
+00024 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;col;&#32;i++)&#32;{
+00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;i&#32;+&#32;1&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>;
+00026 &#32;&#32;&#32;&#32;}
+00027 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+00028 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i=0;&#32;i&#32;&lt;&#32;row;&#32;i++){
+00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;setw(2)&#32;&lt;&lt;&#32;i&#32;+&#32;1&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;|&#32;&quot;</emphasis>;
+00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;col;&#32;j++)&#32;{
+00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[i][j].getFlgd()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[i][j].setDisp(<emphasis role="charliteral">&apos;P&apos;</emphasis>);
+00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[i][j].getHddn()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[i][j].setDisp(<emphasis role="charliteral">&apos;*&apos;</emphasis>)&#32;;
+00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[i][j].getVal()&#32;==&#32;0)&#32;{
+00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[i][j].setDisp(cell[i][j].getSym());
+00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[i][j].setDisp(cell[i][j].getVal()+48);
+00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;cell[i][j].getDisp()&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>;
+00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+00043 &#32;&#32;&#32;&#32;}
+00044 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+00045 }
+00046 
+<anchor xml:id="__out_brd_8cpp_source_1l00047"/><link linkend="_class_out_brd_1af608ac43b10bea381e951393c1b2c9e9">00047</link> <emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_out_brd_1af608ac43b10bea381e951393c1b2c9e9">OutBrd::loss</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,<emphasis role="keywordtype">int</emphasis>&#32;c)
+00048 {
+00049 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[r-1][c-1].getMine()&#32;==&#32;<emphasis role="keyword">true</emphasis>&#32;&amp;&amp;&#32;cell[r-1][c-1].getHddn()&#32;==&#32;<emphasis role="keyword">false</emphasis>)
+00050 &#32;&#32;&#32;&#32;{
+00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+00052 &#32;&#32;&#32;&#32;}
+00053 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;
+00054 &#32;&#32;&#32;&#32;{
+00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00056 &#32;&#32;&#32;&#32;}
+00057 }
+00058 
+<anchor xml:id="__out_brd_8cpp_source_1l00059"/><link linkend="_class_out_brd_1a80ed53ea4a4ae752786cdc729cb4838f">00059</link> <emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_out_brd_1a80ed53ea4a4ae752786cdc729cb4838f">OutBrd::chkClr</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;c)
+00060 {
+00061 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[r&#32;-&#32;1][c&#32;-&#32;1].getSym()&#32;==&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>&#32;&amp;&amp;&#32;cell[r&#32;-&#32;1][c&#32;-&#32;1].getVal()&#32;==&#32;0){
+00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+00063 &#32;&#32;&#32;&#32;}
+00064 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+00065 &#32;&#32;&#32;&#32;{
+00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00067 &#32;&#32;&#32;&#32;}
+00068 }
+00069 
+<anchor xml:id="__out_brd_8cpp_source_1l00070"/><link linkend="_class_out_brd_1a82fca8e5252ad0300a663f07d2c8783d">00070</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_out_brd_1a82fca8e5252ad0300a663f07d2c8783d">OutBrd::clear</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;c)&#32;
+00071 &#32;&#32;&#32;&#32;{
+00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&#32;-&#32;1&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;c&#32;-&#32;1&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;cell[r&#32;-&#32;1][c&#32;-&#32;1].getHddn()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;<emphasis role="comment">//&#32;top&#32;left</emphasis>
+00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[r&#32;-&#32;1][c&#32;-&#32;1].setHddn(<emphasis role="keyword">false</emphasis>);
+00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[r&#32;-&#32;1][c&#32;-&#32;1].getSym()&#32;==&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>&#32;&amp;&amp;&#32;cell[r&#32;-&#32;1][c&#32;-&#32;1].getVal()&#32;==&#32;0)&#32;{
+00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;clear(r&#32;-&#32;1,&#32;c&#32;-&#32;1);
+00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&#32;-&#32;1&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;c&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;cell[r&#32;-&#32;1][c].getHddn()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;<emphasis role="comment">//&#32;top</emphasis>
+00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[r&#32;-&#32;1][c].setHddn(<emphasis role="keyword">false</emphasis>);
+00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[r&#32;-&#32;1][c].getSym()&#32;==&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>&#32;&amp;&amp;&#32;cell[r&#32;-&#32;1][c].getVal()&#32;==&#32;0)&#32;{
+00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;clear(r&#32;-&#32;1,&#32;c);
+00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&#32;-&#32;1&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;c&#32;+&#32;1&#32;&lt;&#32;col&#32;&amp;&amp;&#32;cell[r&#32;-&#32;1][c&#32;+&#32;1].getHddn()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;<emphasis role="comment">//&#32;top&#32;right</emphasis>
+00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[r&#32;-&#32;1][c&#32;+&#32;1].setHddn(<emphasis role="keyword">false</emphasis>);
+00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[r&#32;-&#32;1][c&#32;+&#32;1].getSym()&#32;==&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>&#32;&amp;&amp;&#32;cell[r&#32;-&#32;1][c&#32;+&#32;1].getVal()&#32;==&#32;0)&#32;{
+00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;clear(r&#32;-&#32;1,&#32;c&#32;+&#32;1);
+00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;c&#32;+&#32;1&#32;&lt;&#32;col&#32;&amp;&amp;&#32;cell[r][c&#32;+&#32;1].getHddn()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;<emphasis role="comment">//&#32;right</emphasis>
+00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[r][c&#32;+&#32;1].setHddn(<emphasis role="keyword">false</emphasis>);
+00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[r][c&#32;+&#32;1].getSym()&#32;==&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>&#32;&amp;&amp;&#32;cell[r][c&#32;+&#32;1].getVal()&#32;==&#32;0)&#32;{
+00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;clear(r,&#32;c&#32;+&#32;1);
+00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&#32;+&#32;1&#32;&lt;&#32;row&#32;&amp;&amp;&#32;c&#32;+&#32;1&#32;&lt;&#32;col&#32;&amp;&amp;&#32;cell[r&#32;+&#32;1][c&#32;+&#32;1].getHddn()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;<emphasis role="comment">//&#32;bottom&#32;right</emphasis>
+00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[r&#32;+&#32;1][c&#32;+&#32;1].setHddn(<emphasis role="keyword">false</emphasis>);
+00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[r&#32;+&#32;1][c&#32;+&#32;1].getSym()&#32;==&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>&#32;&amp;&amp;&#32;cell[r&#32;+&#32;1][c&#32;+&#32;1].getVal()&#32;==&#32;0)&#32;{
+00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;clear(r&#32;+&#32;1,&#32;c&#32;+&#32;1);
+00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;&#32;&#32;
+00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&#32;+&#32;1&#32;&lt;&#32;row&#32;&amp;&amp;&#32;c&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;cell[r&#32;+&#32;1][c].getHddn()==&#32;<emphasis role="keyword">true</emphasis>)&#32;<emphasis role="comment">//&#32;bottom</emphasis>
+00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[r&#32;+&#32;1][c].setHddn(<emphasis role="keyword">false</emphasis>);
+00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[r&#32;+&#32;1][c].getSym()&#32;==&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>&#32;&amp;&amp;&#32;cell[r&#32;+&#32;1][c].getVal()&#32;==&#32;0)&#32;{
+00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;clear(r&#32;+&#32;1,&#32;c);
+00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&#32;+&#32;1&#32;&lt;&#32;row&#32;&amp;&amp;&#32;c&#32;-&#32;1&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;cell[r&#32;+&#32;1][c&#32;-&#32;1].getHddn()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;<emphasis role="comment">//&#32;bottom&#32;left</emphasis>
+00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[r&#32;+&#32;1][c&#32;-&#32;1].setHddn(<emphasis role="keyword">false</emphasis>);
+00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[r&#32;+&#32;1][c&#32;-&#32;1].getSym()&#32;==&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>&#32;&amp;&amp;&#32;cell[r&#32;+&#32;1][c&#32;-&#32;1].getVal()&#32;==&#32;0)&#32;{
+00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;clear(r&#32;+&#32;1,&#32;c&#32;-&#32;1);
+00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;c&#32;-&#32;1&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;cell[r][c&#32;-&#32;1].getHddn()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;<emphasis role="comment">//&#32;left</emphasis>
+00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cell[r][c&#32;-&#32;1].setHddn(<emphasis role="keyword">false</emphasis>);
+00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cell[r][c&#32;-&#32;1].getSym()&#32;==&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>&#32;&amp;&amp;&#32;cell[r][c&#32;-&#32;1].getVal()&#32;==&#32;0)&#32;{
+00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;clear(r,&#32;c&#32;-&#32;1);
+00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00128 &#32;&#32;&#32;&#32;}
+</programlisting></section>

@@ -1,0 +1,21 @@
+digraph "Game::gmeOver"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Game::gmeOver",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="InBrd::dspBrd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/db8/class_in_brd.html#aa6d18ae85e12c4315b32f79830ab7719",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OutBrd::fRemain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#aa9ac410197c494be9af5aa806fcf6ce1",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OutBrd::loss",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#af608ac43b10bea381e951393c1b2c9e9",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Player::stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d53/class_player.html#a5b525e04839b6cd3252b288b9db6bca6",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="OutBrd::win",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#a3b1441409df7b1460bdc5b57734b1064",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="GmeBrd::getMine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d12/class_gme_brd.html#accbce40e77b3a158eb8f6ed0378cc744",tooltip=" "];
+}

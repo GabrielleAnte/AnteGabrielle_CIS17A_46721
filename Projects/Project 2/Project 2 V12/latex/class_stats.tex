@@ -1,0 +1,215 @@
+\hypertarget{class_stats}{}\doxysection{Stats$<$ T $>$ Class Template Reference}
+\label{class_stats}\index{Stats$<$ T $>$@{Stats$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Stats.\+h$>$}
+
+
+
+Collaboration diagram for Stats$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{class_stats__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stats_ae1419ec347a13f0407adbb6452af3291}{Stats}} ()
+\begin{DoxyCompactList}\small\item\em function prototype for the default constructor \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_stats_ac354450aeab00d23c067f36c03aa749e}{points}} ()
+\begin{DoxyCompactList}\small\item\em function prototype for the points function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_stats_ab4bb824334644a4a7309511048b0bb7a}{update}} (string name, bool win, T pt)
+\begin{DoxyCompactList}\small\item\em function prototype for the update function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_stats_a0325b8816fe08b31eff6f6d82fd1d2e9}{point}}
+\begin{DoxyCompactList}\small\item\em player class accessible variable to store the player\textquotesingle{}s points \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ string $>$ \mbox{\hyperlink{class_stats_ad97a8291ffa012c4bc0bdd8e059e5537}{names}}
+\begin{DoxyCompactList}\small\item\em this vector variable stores all the player\textquotesingle{}s names \end{DoxyCompactList}\item 
+static vector$<$ T $>$ \mbox{\hyperlink{class_stats_adac1de891638fb0645b5c63cf2582451}{wins}}
+\begin{DoxyCompactList}\small\item\em this vector variable stores all the player\textquotesingle{}s number of wins \end{DoxyCompactList}\item 
+static vector$<$ T $>$ \mbox{\hyperlink{class_stats_a5f1e6d7fe80b8fe9ceff95e54af484ab}{losses}}
+\begin{DoxyCompactList}\small\item\em this vector variable stores all the player\textquotesingle{}s number of losses \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ T $>$ \mbox{\hyperlink{class_stats_adb5dbe361c6cc2fa44917a4aeb8e6b1f}{pnts}}
+\begin{DoxyCompactList}\small\item\em kept private, this static vector variable stores all the player\textquotesingle{}s points \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Stats$<$ T $>$}
+
+Template class \mbox{\hyperlink{class_stats}{Stats}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stats_ae1419ec347a13f0407adbb6452af3291}\label{class_stats_ae1419ec347a13f0407adbb6452af3291}} 
+\index{Stats$<$ T $>$@{Stats$<$ T $>$}!Stats@{Stats}}
+\index{Stats@{Stats}!Stats$<$ T $>$@{Stats$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Stats()}{Stats()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_stats}{Stats}}$<$ T $>$\+::\mbox{\hyperlink{class_stats}{Stats}}}
+
+
+
+function prototype for the default constructor 
+
+default constructor for the \mbox{\hyperlink{class_stats}{Stats}} class 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37 \{}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_stats_a0325b8816fe08b31eff6f6d82fd1d2e9}{point}} = 0;}
+\DoxyCodeLine{39 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stats_ac354450aeab00d23c067f36c03aa749e}\label{class_stats_ac354450aeab00d23c067f36c03aa749e}} 
+\index{Stats$<$ T $>$@{Stats$<$ T $>$}!points@{points}}
+\index{points@{points}!Stats$<$ T $>$@{Stats$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{points()}{points()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_stats}{Stats}}$<$ T $>$\+::points}
+
+
+
+function prototype for the points function 
+
+increases and return the point value if the game is won; overridden by derived \mbox{\hyperlink{class_player}{Player}} class 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                   \{}
+\DoxyCodeLine{86     \textcolor{keywordtype}{bool} win = \textcolor{keyword}{true};}
+\DoxyCodeLine{87     \textcolor{keywordflow}{if} (win)}
+\DoxyCodeLine{88     \{}
+\DoxyCodeLine{89         \mbox{\hyperlink{class_stats_a0325b8816fe08b31eff6f6d82fd1d2e9}{point}}++;}
+\DoxyCodeLine{90     \}}
+\DoxyCodeLine{91     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_stats_a0325b8816fe08b31eff6f6d82fd1d2e9}{point}};}
+\DoxyCodeLine{92 \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_stats_ab4bb824334644a4a7309511048b0bb7a}\label{class_stats_ab4bb824334644a4a7309511048b0bb7a}} 
+\index{Stats$<$ T $>$@{Stats$<$ T $>$}!update@{update}}
+\index{update@{update}!Stats$<$ T $>$@{Stats$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_stats}{Stats}}$<$ T $>$\+::update (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{bool}]{win,  }\item[{T}]{pt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+function prototype for the update function 
+
+tracks if the player is a returning player and updates their stats, if not, they are added to the vector 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{}
+\DoxyCodeLine{45     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{46     \textcolor{keywordflow}{while} (i < \mbox{\hyperlink{class_stats_ad97a8291ffa012c4bc0bdd8e059e5537}{names}}.size()\&\& name!=\mbox{\hyperlink{class_stats_ad97a8291ffa012c4bc0bdd8e059e5537}{names}}.at(i))}
+\DoxyCodeLine{47     \{}
+\DoxyCodeLine{48         i++;}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50     \textcolor{keywordflow}{if} (i==\mbox{\hyperlink{class_stats_ad97a8291ffa012c4bc0bdd8e059e5537}{names}}.size())}
+\DoxyCodeLine{51     \{}
+\DoxyCodeLine{52         \mbox{\hyperlink{class_stats_ad97a8291ffa012c4bc0bdd8e059e5537}{names}}.push\_back(name);}
+\DoxyCodeLine{53         \textcolor{keywordflow}{if}(win)}
+\DoxyCodeLine{54         \{}
+\DoxyCodeLine{55             \mbox{\hyperlink{class_stats_adac1de891638fb0645b5c63cf2582451}{wins}}.push\_back(1);}
+\DoxyCodeLine{56             \mbox{\hyperlink{class_stats_a5f1e6d7fe80b8fe9ceff95e54af484ab}{losses}}.push\_back(0);}
+\DoxyCodeLine{57             \mbox{\hyperlink{class_stats_adb5dbe361c6cc2fa44917a4aeb8e6b1f}{pnts}}.push\_back(pt);}
+\DoxyCodeLine{58         \}}
+\DoxyCodeLine{59         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             \mbox{\hyperlink{class_stats_adac1de891638fb0645b5c63cf2582451}{wins}}.push\_back(0);}
+\DoxyCodeLine{62             \mbox{\hyperlink{class_stats_a5f1e6d7fe80b8fe9ceff95e54af484ab}{losses}}.push\_back(1);}
+\DoxyCodeLine{63             \mbox{\hyperlink{class_stats_adb5dbe361c6cc2fa44917a4aeb8e6b1f}{pnts}}.push\_back(0.0);}
+\DoxyCodeLine{64         \}}
+\DoxyCodeLine{65     \}}
+\DoxyCodeLine{66     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{67         \textcolor{keywordflow}{if}(win)}
+\DoxyCodeLine{68         \{}
+\DoxyCodeLine{69             \mbox{\hyperlink{class_stats_adac1de891638fb0645b5c63cf2582451}{wins}}.at(i)++;}
+\DoxyCodeLine{70             cout << \mbox{\hyperlink{class_stats_adac1de891638fb0645b5c63cf2582451}{wins}}.at(i);}
+\DoxyCodeLine{71             \mbox{\hyperlink{class_stats_adb5dbe361c6cc2fa44917a4aeb8e6b1f}{pnts}}.at(i)=\mbox{\hyperlink{class_stats_adb5dbe361c6cc2fa44917a4aeb8e6b1f}{pnts}}.at(i)+pt;}
+\DoxyCodeLine{72         \}}
+\DoxyCodeLine{73         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{74         \{}
+\DoxyCodeLine{75             \mbox{\hyperlink{class_stats_a5f1e6d7fe80b8fe9ceff95e54af484ab}{losses}}.at(i)++;}
+\DoxyCodeLine{76         \}}
+\DoxyCodeLine{77     \}}
+\DoxyCodeLine{78     }
+\DoxyCodeLine{79     \mbox{\hyperlink{class_stats_a0325b8816fe08b31eff6f6d82fd1d2e9}{point}} = \mbox{\hyperlink{class_stats_adb5dbe361c6cc2fa44917a4aeb8e6b1f}{pnts}}.at(i);}
+\DoxyCodeLine{80     \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{81 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_stats_a5f1e6d7fe80b8fe9ceff95e54af484ab}\label{class_stats_a5f1e6d7fe80b8fe9ceff95e54af484ab}} 
+\index{Stats$<$ T $>$@{Stats$<$ T $>$}!losses@{losses}}
+\index{losses@{losses}!Stats$<$ T $>$@{Stats$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{losses}{losses}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$ T $>$ \mbox{\hyperlink{class_stats}{Stats}}$<$ T $>$\+::losses\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+this vector variable stores all the player\textquotesingle{}s number of losses 
+
+\mbox{\Hypertarget{class_stats_ad97a8291ffa012c4bc0bdd8e059e5537}\label{class_stats_ad97a8291ffa012c4bc0bdd8e059e5537}} 
+\index{Stats$<$ T $>$@{Stats$<$ T $>$}!names@{names}}
+\index{names@{names}!Stats$<$ T $>$@{Stats$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{names}{names}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$ string $>$ \mbox{\hyperlink{class_stats}{Stats}}$<$ T $>$\+::names\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+this vector variable stores all the player\textquotesingle{}s names 
+
+declares template vector variables, placed outside of class \mbox{\Hypertarget{class_stats_adb5dbe361c6cc2fa44917a4aeb8e6b1f}\label{class_stats_adb5dbe361c6cc2fa44917a4aeb8e6b1f}} 
+\index{Stats$<$ T $>$@{Stats$<$ T $>$}!pnts@{pnts}}
+\index{pnts@{pnts}!Stats$<$ T $>$@{Stats$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pnts}{pnts}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$ T $>$ \mbox{\hyperlink{class_stats}{Stats}}$<$ T $>$\+::pnts\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+kept private, this static vector variable stores all the player\textquotesingle{}s points 
+
+\mbox{\Hypertarget{class_stats_a0325b8816fe08b31eff6f6d82fd1d2e9}\label{class_stats_a0325b8816fe08b31eff6f6d82fd1d2e9}} 
+\index{Stats$<$ T $>$@{Stats$<$ T $>$}!point@{point}}
+\index{point@{point}!Stats$<$ T $>$@{Stats$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{point}{point}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{class_stats}{Stats}}$<$ T $>$\+::point\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+player class accessible variable to store the player\textquotesingle{}s points 
+
+\mbox{\Hypertarget{class_stats_adac1de891638fb0645b5c63cf2582451}\label{class_stats_adac1de891638fb0645b5c63cf2582451}} 
+\index{Stats$<$ T $>$@{Stats$<$ T $>$}!wins@{wins}}
+\index{wins@{wins}!Stats$<$ T $>$@{Stats$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{wins}{wins}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$ T $>$ \mbox{\hyperlink{class_stats}{Stats}}$<$ T $>$\+::wins\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+this vector variable stores all the player\textquotesingle{}s number of wins 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_stats_8h}{Stats.\+h}}\end{DoxyCompactItemize}

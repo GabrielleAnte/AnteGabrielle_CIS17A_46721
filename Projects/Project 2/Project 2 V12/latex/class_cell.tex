@@ -1,0 +1,432 @@
+\hypertarget{class_cell}{}\doxysection{Cell Class Reference}
+\label{class_cell}\index{Cell@{Cell}}
+
+
+{\ttfamily \#include $<$Cell.\+h$>$}
+
+
+
+Collaboration diagram for Cell\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_cell__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cell_a394510643e8664cf12b5efaf5cb99f71}{Cell}} ()
+\begin{DoxyCompactList}\small\item\em function prototype for default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell_a4d36ca39f2f51e0a41c0f1990e2107ca}{Cell}} (bool m)
+\begin{DoxyCompactList}\small\item\em function prototype for second constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cell}{Cell}} \& \mbox{\hyperlink{class_cell_a150942ac9b1258ba308586131abc4ec8}{operator=}} (const \mbox{\hyperlink{class_cell}{Cell}} \&right)
+\begin{DoxyCompactList}\small\item\em function prototype for assignment operator \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a22e5aab236b2f42a4cec18652cce88fe}{set\+Disp}} (char a)
+\begin{DoxyCompactList}\small\item\em member function to set the display member variable, accepts char data type \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a0b22981cded7faf11c9313c165e90988}{set\+Sym}} (char a)
+\begin{DoxyCompactList}\small\item\em member function to set the symbol member variable, accepts char data type \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{set\+Hddn}} (bool a)
+\begin{DoxyCompactList}\small\item\em member function to set the hidden member variable, accepts bool data type \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_aa190ef553aef63dda30047619b39fe7a}{set\+Flgd}} (bool a)
+\begin{DoxyCompactList}\small\item\em member function to set the flagged member variable, accepts bool data type \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_a3e26b9878fa13187a7834e21ad1affa8}{set\+Mine}} (bool a)
+\begin{DoxyCompactList}\small\item\em member function to set the mine member variable, accepts bool data type \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_ae90b9eb1f9236ccf9054c25a1e1f915d}{set\+Val}} (int a)
+\begin{DoxyCompactList}\small\item\em member function to set the display member variable, accepts int data type \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_ae8de6c402ee3ca437b73a2839f0a34ba}{setnrow}} (int a)
+\begin{DoxyCompactList}\small\item\em member function to set the row number member variable, accepts int data type \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cell_ab0e328f5d053f7df313063bb3239fa09}{setncol}} (int a)
+\begin{DoxyCompactList}\small\item\em member function to set the column number member variable, accepts bool data type \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_cell_aaafbb0a9d3aa2abc56cb3290c9e4c09e}{get\+Disp}} () const
+\begin{DoxyCompactList}\small\item\em accessor function to retrieve char display value \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_cell_a7bb9afc27b36ce59a73dd3ba5b84785f}{get\+Sym}} () const
+\begin{DoxyCompactList}\small\item\em accessor function to retrieve char symbol value \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a572cd785292d1513d52209b5c5c70afa}{get\+Hddn}} () const
+\begin{DoxyCompactList}\small\item\em accessor function to retrieve bool hidden value \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a8692c2ff9061eeefd7355c2003ca376e}{get\+Flgd}} () const
+\begin{DoxyCompactList}\small\item\em accessor function to retrieve bool flagged value \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_aa9d4022cfcda877b37e2f232f3d7ec55}{get\+Mine}} () const
+\begin{DoxyCompactList}\small\item\em accessor function to retrieve bool mine value \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_aa076f9d0d9d00cb6cf91fa6a920055fe}{get\+Val}} () const
+\begin{DoxyCompactList}\small\item\em accessor function to retrieve int cell value \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_ac08f5c4f88c15093a71684f12cc2a67c}{getn\+Row}} () const
+\begin{DoxyCompactList}\small\item\em accessor function to retrieve int row number value \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_a024cf59b90e7e7ec057ac1093c80d59c}{getn\+Col}} () const
+\begin{DoxyCompactList}\small\item\em accessor function to retrieve int column number value \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_cell_aa0fe1bf41408c40ccf95a0434c8cd753}{display}}
+\begin{DoxyCompactList}\small\item\em what is seen by player \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_cell_a322c32087e3d7a061ab9168a1364cc7f}{symbol}}
+\begin{DoxyCompactList}\small\item\em to be outputted, either mine(\%),empty (-\/) or value \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_ad8c292051c80a49db6b505465ffc7771}{hidden}}
+\begin{DoxyCompactList}\small\item\em if the player can see cell \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a593898dc074bfdc46883f2976292e4d2}{flagged}}
+\begin{DoxyCompactList}\small\item\em if the player holds the cell \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_a9918b04ec15f46b116493b77e07aa618}{nrow}}
+\begin{DoxyCompactList}\small\item\em which row cell is located \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_a02831844b99ef62b8cccda162977872b}{ncol}}
+\begin{DoxyCompactList}\small\item\em which col cell is located \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_aeabf99afa55aaeb5d8e53cabd2886e44}{mine}}
+\begin{DoxyCompactList}\small\item\em if the cell has a mine \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_a2a5e46b6fdcc414fa3736bbc193f62e8}{value}}
+\begin{DoxyCompactList}\small\item\em what the cell value is; hint for adjacent cell \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cell_a394510643e8664cf12b5efaf5cb99f71}\label{class_cell_a394510643e8664cf12b5efaf5cb99f71}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function prototype for default constructor 
+
+This is the default constructor for \mbox{\hyperlink{_cell_8h}{Cell.\+h}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4             \{}
+\DoxyCodeLine{5     \mbox{\hyperlink{class_cell_aa0fe1bf41408c40ccf95a0434c8cd753}{display}} = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{6     \mbox{\hyperlink{class_cell_a322c32087e3d7a061ab9168a1364cc7f}{symbol}} = \textcolor{charliteral}{'-\/'};}
+\DoxyCodeLine{7     \mbox{\hyperlink{class_cell_ad8c292051c80a49db6b505465ffc7771}{hidden}} = \textcolor{keyword}{true}; }
+\DoxyCodeLine{8     \mbox{\hyperlink{class_cell_a593898dc074bfdc46883f2976292e4d2}{flagged}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_cell_a9918b04ec15f46b116493b77e07aa618}{nrow}}=0;}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_cell_a02831844b99ef62b8cccda162977872b}{ncol}}=0;}
+\DoxyCodeLine{11     \mbox{\hyperlink{class_cell_aeabf99afa55aaeb5d8e53cabd2886e44}{mine}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{12     \mbox{\hyperlink{class_cell_a2a5e46b6fdcc414fa3736bbc193f62e8}{value}} = 0;}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cell_a4d36ca39f2f51e0a41c0f1990e2107ca}\label{class_cell_a4d36ca39f2f51e0a41c0f1990e2107ca}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{bool}]{m }\end{DoxyParamCaption})}
+
+
+
+function prototype for second constructor 
+
+Constructor \#2\+: This is an overloaded constructor with a bool parameter for if the cell has a mine 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                   \{}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_cell_aa0fe1bf41408c40ccf95a0434c8cd753}{display}} = \textcolor{charliteral}{'*'};}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_cell_a322c32087e3d7a061ab9168a1364cc7f}{symbol}} = \textcolor{charliteral}{'-\/'};}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_cell_ad8c292051c80a49db6b505465ffc7771}{hidden}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_cell_a593898dc074bfdc46883f2976292e4d2}{flagged}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_cell_a9918b04ec15f46b116493b77e07aa618}{nrow}}=0;}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_cell_a02831844b99ef62b8cccda162977872b}{ncol}}=0;}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_cell_aeabf99afa55aaeb5d8e53cabd2886e44}{mine}} = m;}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_cell_a2a5e46b6fdcc414fa3736bbc193f62e8}{value}} = 0;}
+\DoxyCodeLine{25 \} }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_aaafbb0a9d3aa2abc56cb3290c9e4c09e}\label{class_cell_aaafbb0a9d3aa2abc56cb3290c9e4c09e}} 
+\index{Cell@{Cell}!getDisp@{getDisp}}
+\index{getDisp@{getDisp}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getDisp()}{getDisp()}}
+{\footnotesize\ttfamily char Cell\+::get\+Disp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+accessor function to retrieve char display value 
+
+\mbox{\Hypertarget{class_cell_a8692c2ff9061eeefd7355c2003ca376e}\label{class_cell_a8692c2ff9061eeefd7355c2003ca376e}} 
+\index{Cell@{Cell}!getFlgd@{getFlgd}}
+\index{getFlgd@{getFlgd}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getFlgd()}{getFlgd()}}
+{\footnotesize\ttfamily bool Cell\+::get\+Flgd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+accessor function to retrieve bool flagged value 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_cell_a8692c2ff9061eeefd7355c2003ca376e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cell_a572cd785292d1513d52209b5c5c70afa}\label{class_cell_a572cd785292d1513d52209b5c5c70afa}} 
+\index{Cell@{Cell}!getHddn@{getHddn}}
+\index{getHddn@{getHddn}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getHddn()}{getHddn()}}
+{\footnotesize\ttfamily bool Cell\+::get\+Hddn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+accessor function to retrieve bool hidden value 
+
+\mbox{\Hypertarget{class_cell_aa9d4022cfcda877b37e2f232f3d7ec55}\label{class_cell_aa9d4022cfcda877b37e2f232f3d7ec55}} 
+\index{Cell@{Cell}!getMine@{getMine}}
+\index{getMine@{getMine}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getMine()}{getMine()}}
+{\footnotesize\ttfamily bool Cell\+::get\+Mine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+accessor function to retrieve bool mine value 
+
+\mbox{\Hypertarget{class_cell_a024cf59b90e7e7ec057ac1093c80d59c}\label{class_cell_a024cf59b90e7e7ec057ac1093c80d59c}} 
+\index{Cell@{Cell}!getnCol@{getnCol}}
+\index{getnCol@{getnCol}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getnCol()}{getnCol()}}
+{\footnotesize\ttfamily int Cell\+::getn\+Col (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+accessor function to retrieve int column number value 
+
+\mbox{\Hypertarget{class_cell_ac08f5c4f88c15093a71684f12cc2a67c}\label{class_cell_ac08f5c4f88c15093a71684f12cc2a67c}} 
+\index{Cell@{Cell}!getnRow@{getnRow}}
+\index{getnRow@{getnRow}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getnRow()}{getnRow()}}
+{\footnotesize\ttfamily int Cell\+::getn\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+accessor function to retrieve int row number value 
+
+\mbox{\Hypertarget{class_cell_a7bb9afc27b36ce59a73dd3ba5b84785f}\label{class_cell_a7bb9afc27b36ce59a73dd3ba5b84785f}} 
+\index{Cell@{Cell}!getSym@{getSym}}
+\index{getSym@{getSym}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getSym()}{getSym()}}
+{\footnotesize\ttfamily char Cell\+::get\+Sym (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+accessor function to retrieve char symbol value 
+
+\mbox{\Hypertarget{class_cell_aa076f9d0d9d00cb6cf91fa6a920055fe}\label{class_cell_aa076f9d0d9d00cb6cf91fa6a920055fe}} 
+\index{Cell@{Cell}!getVal@{getVal}}
+\index{getVal@{getVal}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getVal()}{getVal()}}
+{\footnotesize\ttfamily int Cell\+::get\+Val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+accessor function to retrieve int cell value 
+
+\mbox{\Hypertarget{class_cell_a150942ac9b1258ba308586131abc4ec8}\label{class_cell_a150942ac9b1258ba308586131abc4ec8}} 
+\index{Cell@{Cell}!operator=@{operator=}}
+\index{operator=@{operator=}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} \& Cell\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell}{Cell}} \&}]{right }\end{DoxyParamCaption})}
+
+
+
+function prototype for assignment operator 
+
+This is a function for the assignment operator for the \mbox{\hyperlink{class_cell}{Cell}} class 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29 \{}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_cell_aa0fe1bf41408c40ccf95a0434c8cd753}{display}} = right.\mbox{\hyperlink{class_cell_aa0fe1bf41408c40ccf95a0434c8cd753}{display}};}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_cell_a322c32087e3d7a061ab9168a1364cc7f}{symbol}} = right.\mbox{\hyperlink{class_cell_a322c32087e3d7a061ab9168a1364cc7f}{symbol}};}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_cell_ad8c292051c80a49db6b505465ffc7771}{hidden}} = right.\mbox{\hyperlink{class_cell_ad8c292051c80a49db6b505465ffc7771}{hidden}}; }
+\DoxyCodeLine{33     \mbox{\hyperlink{class_cell_a593898dc074bfdc46883f2976292e4d2}{flagged}} = right.\mbox{\hyperlink{class_cell_a593898dc074bfdc46883f2976292e4d2}{flagged}};}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_cell_a9918b04ec15f46b116493b77e07aa618}{nrow}}=right.\mbox{\hyperlink{class_cell_a9918b04ec15f46b116493b77e07aa618}{nrow}};}
+\DoxyCodeLine{35     \mbox{\hyperlink{class_cell_a02831844b99ef62b8cccda162977872b}{ncol}}=right.\mbox{\hyperlink{class_cell_a02831844b99ef62b8cccda162977872b}{ncol}};}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_cell_aeabf99afa55aaeb5d8e53cabd2886e44}{mine}} = right.\mbox{\hyperlink{class_cell_aeabf99afa55aaeb5d8e53cabd2886e44}{mine}};}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_cell_a2a5e46b6fdcc414fa3736bbc193f62e8}{value}} = right.\mbox{\hyperlink{class_cell_a2a5e46b6fdcc414fa3736bbc193f62e8}{value}};}
+\DoxyCodeLine{38     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{39 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_cell_a22e5aab236b2f42a4cec18652cce88fe}\label{class_cell_a22e5aab236b2f42a4cec18652cce88fe}} 
+\index{Cell@{Cell}!setDisp@{setDisp}}
+\index{setDisp@{setDisp}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setDisp()}{setDisp()}}
+{\footnotesize\ttfamily void Cell\+::set\+Disp (\begin{DoxyParamCaption}\item[{char}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+member function to set the display member variable, accepts char data type 
+
+\mbox{\Hypertarget{class_cell_aa190ef553aef63dda30047619b39fe7a}\label{class_cell_aa190ef553aef63dda30047619b39fe7a}} 
+\index{Cell@{Cell}!setFlgd@{setFlgd}}
+\index{setFlgd@{setFlgd}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setFlgd()}{setFlgd()}}
+{\footnotesize\ttfamily void Cell\+::set\+Flgd (\begin{DoxyParamCaption}\item[{bool}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+member function to set the flagged member variable, accepts bool data type 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_cell_aa190ef553aef63dda30047619b39fe7a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}\label{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}} 
+\index{Cell@{Cell}!setHddn@{setHddn}}
+\index{setHddn@{setHddn}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setHddn()}{setHddn()}}
+{\footnotesize\ttfamily void Cell\+::set\+Hddn (\begin{DoxyParamCaption}\item[{bool}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+member function to set the hidden member variable, accepts bool data type 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{class_cell_a89a43f48ffb2aacaf5961e46fd78e197_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cell_a3e26b9878fa13187a7834e21ad1affa8}\label{class_cell_a3e26b9878fa13187a7834e21ad1affa8}} 
+\index{Cell@{Cell}!setMine@{setMine}}
+\index{setMine@{setMine}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setMine()}{setMine()}}
+{\footnotesize\ttfamily void Cell\+::set\+Mine (\begin{DoxyParamCaption}\item[{bool}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+member function to set the mine member variable, accepts bool data type 
+
+\mbox{\Hypertarget{class_cell_ab0e328f5d053f7df313063bb3239fa09}\label{class_cell_ab0e328f5d053f7df313063bb3239fa09}} 
+\index{Cell@{Cell}!setncol@{setncol}}
+\index{setncol@{setncol}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setncol()}{setncol()}}
+{\footnotesize\ttfamily void Cell\+::setncol (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+member function to set the column number member variable, accepts bool data type 
+
+\mbox{\Hypertarget{class_cell_ae8de6c402ee3ca437b73a2839f0a34ba}\label{class_cell_ae8de6c402ee3ca437b73a2839f0a34ba}} 
+\index{Cell@{Cell}!setnrow@{setnrow}}
+\index{setnrow@{setnrow}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setnrow()}{setnrow()}}
+{\footnotesize\ttfamily void Cell\+::setnrow (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+member function to set the row number member variable, accepts int data type 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cell_ae8de6c402ee3ca437b73a2839f0a34ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cell_a0b22981cded7faf11c9313c165e90988}\label{class_cell_a0b22981cded7faf11c9313c165e90988}} 
+\index{Cell@{Cell}!setSym@{setSym}}
+\index{setSym@{setSym}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setSym()}{setSym()}}
+{\footnotesize\ttfamily void Cell\+::set\+Sym (\begin{DoxyParamCaption}\item[{char}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+member function to set the symbol member variable, accepts char data type 
+
+\mbox{\Hypertarget{class_cell_ae90b9eb1f9236ccf9054c25a1e1f915d}\label{class_cell_ae90b9eb1f9236ccf9054c25a1e1f915d}} 
+\index{Cell@{Cell}!setVal@{setVal}}
+\index{setVal@{setVal}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setVal()}{setVal()}}
+{\footnotesize\ttfamily void Cell\+::set\+Val (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+member function to set the display member variable, accepts int data type 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cell_aa0fe1bf41408c40ccf95a0434c8cd753}\label{class_cell_aa0fe1bf41408c40ccf95a0434c8cd753}} 
+\index{Cell@{Cell}!display@{display}}
+\index{display@{display}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily char Cell\+::display\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+what is seen by player 
+
+\mbox{\Hypertarget{class_cell_a593898dc074bfdc46883f2976292e4d2}\label{class_cell_a593898dc074bfdc46883f2976292e4d2}} 
+\index{Cell@{Cell}!flagged@{flagged}}
+\index{flagged@{flagged}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{flagged}{flagged}}
+{\footnotesize\ttfamily bool Cell\+::flagged\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+if the player holds the cell 
+
+\mbox{\Hypertarget{class_cell_ad8c292051c80a49db6b505465ffc7771}\label{class_cell_ad8c292051c80a49db6b505465ffc7771}} 
+\index{Cell@{Cell}!hidden@{hidden}}
+\index{hidden@{hidden}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{hidden}{hidden}}
+{\footnotesize\ttfamily bool Cell\+::hidden\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+if the player can see cell 
+
+\mbox{\Hypertarget{class_cell_aeabf99afa55aaeb5d8e53cabd2886e44}\label{class_cell_aeabf99afa55aaeb5d8e53cabd2886e44}} 
+\index{Cell@{Cell}!mine@{mine}}
+\index{mine@{mine}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{mine}{mine}}
+{\footnotesize\ttfamily bool Cell\+::mine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+if the cell has a mine 
+
+\mbox{\Hypertarget{class_cell_a02831844b99ef62b8cccda162977872b}\label{class_cell_a02831844b99ef62b8cccda162977872b}} 
+\index{Cell@{Cell}!ncol@{ncol}}
+\index{ncol@{ncol}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{ncol}{ncol}}
+{\footnotesize\ttfamily int Cell\+::ncol\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+which col cell is located 
+
+\mbox{\Hypertarget{class_cell_a9918b04ec15f46b116493b77e07aa618}\label{class_cell_a9918b04ec15f46b116493b77e07aa618}} 
+\index{Cell@{Cell}!nrow@{nrow}}
+\index{nrow@{nrow}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{nrow}{nrow}}
+{\footnotesize\ttfamily int Cell\+::nrow\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+which row cell is located 
+
+\mbox{\Hypertarget{class_cell_a322c32087e3d7a061ab9168a1364cc7f}\label{class_cell_a322c32087e3d7a061ab9168a1364cc7f}} 
+\index{Cell@{Cell}!symbol@{symbol}}
+\index{symbol@{symbol}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{symbol}{symbol}}
+{\footnotesize\ttfamily char Cell\+::symbol\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+to be outputted, either mine(\%),empty (-\/) or value 
+
+\mbox{\Hypertarget{class_cell_a2a5e46b6fdcc414fa3736bbc193f62e8}\label{class_cell_a2a5e46b6fdcc414fa3736bbc193f62e8}} 
+\index{Cell@{Cell}!value@{value}}
+\index{value@{value}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily int Cell\+::value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+what the cell value is; hint for adjacent cell 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cell_8h}{Cell.\+h}}\item 
+\mbox{\hyperlink{_cell_8cpp}{Cell.\+cpp}}\end{DoxyCompactItemize}

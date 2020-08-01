@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__gme_brd_8h_source">
+<title>GmeBrd.h</title>
+<programlisting>00001 <emphasis role="comment">/*</emphasis>
+00002 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+00003 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+00004 <emphasis role="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+00005 <emphasis role="comment">&#32;*/</emphasis>
+00006 
+00007 <emphasis role="comment">/*&#32;</emphasis>
+00008 <emphasis role="comment">&#32;*&#32;File:&#32;&#32;&#32;GmeBrd.h</emphasis>
+00009 <emphasis role="comment">&#32;*&#32;Author:&#32;Gabrielle</emphasis>
+00010 <emphasis role="comment">&#32;*</emphasis>
+00011 <emphasis role="comment">&#32;*&#32;Created&#32;on&#32;July&#32;26,&#32;2020,&#32;3:17&#32;AM</emphasis>
+00012 <emphasis role="comment">&#32;*/</emphasis>
+00013 
+00014 <emphasis role="preprocessor">#ifndef&#32;GMEBRD_H</emphasis>
+00015 <emphasis role="preprocessor">#define&#32;GMEBRD_H</emphasis>
+00016 
+00017 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+00018 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__cell_8h">Cell.h</link>&quot;</emphasis>
+00019 
+00020 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+00021 
+<anchor xml:id="__gme_brd_8h_source_1l00022"/><link linkend="_class_gme_brd">00022</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_gme_brd">GmeBrd</link>{
+00023 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__gme_brd_8h_source_1l00024"/><link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">00024</link> &#32;&#32;&#32;&#32;<link linkend="_class_cell">Cell</link>&#32;**<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>;
+00025 <emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="__gme_brd_8h_source_1l00026"/><link linkend="_class_gme_brd_1ad5835d62cf112b2687a577c8c3915307">00026</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1ad5835d62cf112b2687a577c8c3915307">row</link>,&#32;col,&#32;mine;
+00027 <emphasis role="keyword">public</emphasis>:
+00028 &#32;&#32;&#32;&#32;
+<anchor xml:id="__gme_brd_8h_source_1l00029"/><link linkend="_class_gme_brd_1a2920499850a4d6e438c2c12154bbd055">00029</link> &#32;&#32;&#32;&#32;<link linkend="_class_gme_brd_1a2920499850a4d6e438c2c12154bbd055">GmeBrd</link>()
+00030 &#32;&#32;&#32;&#32;{
+00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;row&#32;=&#32;0;
+00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;col=0;
+00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mine=0;
+00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_cell">Cell</link>*[row];
+00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;row;&#32;i++)&#32;{
+00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*(c&#32;+&#32;i)&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_cell">Cell</link>&#32;[col];
+00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00038 &#32;&#32;&#32;&#32;}
+00039 &#32;&#32;&#32;&#32;
+<anchor xml:id="__gme_brd_8h_source_1l00040"/><link linkend="_class_gme_brd_1a9654654686735311aef97d49d37911bd">00040</link> &#32;&#32;&#32;&#32;<link linkend="_class_gme_brd_1a9654654686735311aef97d49d37911bd">GmeBrd</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;cl,&#32;<emphasis role="keywordtype">int</emphasis>&#32;m)
+00041 &#32;&#32;&#32;&#32;{
+00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;row&#32;=&#32;r;
+00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;col=cl;
+00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mine=m;
+00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_cell">Cell</link>*[row];
+00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;row;&#32;i++)&#32;{
+00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*(c&#32;+&#32;i)&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_cell">Cell</link>&#32;[col];
+00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;
+00049 &#32;&#32;&#32;&#32;}
+00050 &#32;&#32;&#32;&#32;
+<anchor xml:id="__gme_brd_8h_source_1l00051"/><link linkend="_class_gme_brd_1a37d4716b5f4f495cd0d8b2b221b74e61">00051</link> &#32;&#32;&#32;&#32;<link linkend="_class_gme_brd_1a37d4716b5f4f495cd0d8b2b221b74e61">~GmeBrd</link>()
+00052 &#32;&#32;&#32;&#32;{
+00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">delete</emphasis>[]&#32;c;
+00054 &#32;&#32;&#32;&#32;}
+00055 &#32;&#32;&#32;&#32;
+<anchor xml:id="__gme_brd_8h_source_1l00056"/><link linkend="_class_gme_brd_1a88556cfcca500806e96f998fee5a84e1">00056</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1a88556cfcca500806e96f998fee5a84e1">getRow</link>()<emphasis role="keyword">&#32;const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;row;}
+<anchor xml:id="__gme_brd_8h_source_1l00057"/><link linkend="_class_gme_brd_1a278e6bf2a51f6ff7fa5b81fcbbb33471">00057</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1a278e6bf2a51f6ff7fa5b81fcbbb33471">getCol</link>()<emphasis role="keyword">&#32;const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;col;}
+<anchor xml:id="__gme_brd_8h_source_1l00058"/><link linkend="_class_gme_brd_1accbce40e77b3a158eb8f6ed0378cc744">00058</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1accbce40e77b3a158eb8f6ed0378cc744">getMine</link>()<emphasis role="keyword">&#32;const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;mine;}
+00059 &#32;&#32;&#32;&#32;
+<anchor xml:id="__gme_brd_8h_source_1l00060"/><link linkend="_class_gme_brd_1a279ed4807b7864824f79a6e7dce87d6f">00060</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_gme_brd_1a279ed4807b7864824f79a6e7dce87d6f">setRow</link>(<emphasis role="keywordtype">int</emphasis>&#32;a){row=a;}
+<anchor xml:id="__gme_brd_8h_source_1l00061"/><link linkend="_class_gme_brd_1ac9b58f005fbf43fef04596ebace1082e">00061</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_gme_brd_1ac9b58f005fbf43fef04596ebace1082e">setCol</link>(<emphasis role="keywordtype">int</emphasis>&#32;a){col=a;}
+<anchor xml:id="__gme_brd_8h_source_1l00062"/><link linkend="_class_gme_brd_1a08d5eda4c06a310c868668994c5d47b2">00062</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_gme_brd_1a08d5eda4c06a310c868668994c5d47b2">setMine</link>(<emphasis role="keywordtype">int</emphasis>&#32;a){mine=a;}
+00063 &#32;&#32;&#32;&#32;
+<anchor xml:id="__gme_brd_8h_source_1l00064"/><link linkend="_class_gme_brd_1a5b068f96bc311c6d2e7b1f7e2d5fe4e0">00064</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_gme_brd_1a5b068f96bc311c6d2e7b1f7e2d5fe4e0">dspBrd</link>()=0;
+00065 };
+00066 
+00067 
+00068 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;GMEBRD_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+00069 
+</programlisting></section>

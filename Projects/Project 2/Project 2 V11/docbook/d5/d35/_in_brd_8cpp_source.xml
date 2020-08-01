@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__in_brd_8cpp_source">
+<title>InBrd.cpp</title>
+<programlisting>00001 <emphasis role="comment">/*</emphasis>
+00002 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+00003 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+00004 <emphasis role="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+00005 <emphasis role="comment">&#32;*/</emphasis>
+00006 
+00007 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+00008 <emphasis role="preprocessor">#include&#32;&lt;iomanip&gt;</emphasis>
+00009 <emphasis role="preprocessor">#include&#32;&lt;cstdlib&gt;</emphasis>
+00010 <emphasis role="preprocessor">#include&#32;&lt;ctime&gt;</emphasis>
+00011 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__gme_brd_8h">GmeBrd.h</link>&quot;</emphasis>
+00012 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__in_brd_8h">InBrd.h</link>&quot;</emphasis>
+00013 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__out_brd_8h">OutBrd.h</link>&quot;</emphasis>
+00014 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__cell_8h">Cell.h</link>&quot;</emphasis>
+00015 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+00016 
+00017 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1ad5835d62cf112b2687a577c8c3915307">GmeBrd::row</link>;
+00018 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1add7a2f883bd9dbb4d70609536c1c3655">GmeBrd::col</link>;
+00019 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1a380ced78a97eb23602ed3868eacff11c">GmeBrd::mine</link>;
+00020 
+00021 <emphasis role="comment">/*InBrd::InBrd(const&#32;InBrd&#32;&amp;right)</emphasis>
+00022 <emphasis role="comment">{</emphasis>
+00023 <emphasis role="comment">&#32;&#32;&#32;&#32;row=right.row;</emphasis>
+00024 <emphasis role="comment">&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;&quot;right&quot;&#32;&lt;&lt;&#32;right.row;</emphasis>
+00025 <emphasis role="comment">&#32;&#32;&#32;&#32;col=right.col;</emphasis>
+00026 <emphasis role="comment">&#32;&#32;&#32;&#32;mine=&#32;right.mine;</emphasis>
+00027 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;for&#32;(int&#32;i=0;&#32;i&lt;right.row;i++)</emphasis>
+00028 <emphasis role="comment">&#32;&#32;&#32;&#32;{</emphasis>
+00029 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;for&#32;(int&#32;j=0;j&lt;right.col;j++)</emphasis>
+00030 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+00031 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setDisp(right.c[i][j].getDisp());</emphasis>
+00032 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setSym(right.c[i][j].getSym());</emphasis>
+00033 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setFlgd(right.c[i][j].getFlgd());</emphasis>
+00034 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setHddn(right.c[i][j].getHddn());</emphasis>
+00035 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setMine(right.c[i][j].getMine());</emphasis>
+00036 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setVal(right.c[i][j].getVal());</emphasis>
+00037 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setncol(right.c[i][j].getnCol());</emphasis>
+00038 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setnrow(right.c[i][j].getnRow());</emphasis>
+00039 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+00040 <emphasis role="comment">&#32;&#32;&#32;&#32;}</emphasis>
+00041 <emphasis role="comment">&#32;&#32;&#32;&#32;//&#32;&#32;c=right.c;</emphasis>
+00042 <emphasis role="comment">}*/</emphasis>
+00043 
+<anchor xml:id="__in_brd_8cpp_source_1l00044"/><link linkend="_class_in_brd_1a92a51ca05ea3fc01b976628951c2086c">00044</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_in_brd_1a92a51ca05ea3fc01b976628951c2086c">InBrd::celdata</link>()
+00045 {
+00046 &#32;&#32;&#32;&#32;c&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_cell">Cell</link>*[row];
+00047 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;row;&#32;i++)&#32;{
+00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*(c&#32;+&#32;i)&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_cell">Cell</link>&#32;[col];
+00049 &#32;&#32;&#32;&#32;}
+00050 
+00051 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;row;&#32;i++)&#32;
+00052 &#32;&#32;&#32;&#32;{
+00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;col;&#32;j++)&#32;{
+00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].<link linkend="_class_cell_1ae8de6c402ee3ca437b73a2839f0a34ba">setnrow</link>(i&#32;+&#32;1);
+00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setncol(j&#32;+&#32;1);
+00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00057 &#32;&#32;&#32;&#32;}
+00058 }
+00059 
+<anchor xml:id="__in_brd_8cpp_source_1l00060"/><link linkend="_class_in_brd_1acb13a93095bb62ca7e10bdc62ef9cdad">00060</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_in_brd_1acb13a93095bb62ca7e10bdc62ef9cdad">InBrd::addMine</link>()
+00061 {
+00062 &#32;&#32;&#32;&#32;srand(time(0));
+00063 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;rnum=0,&#32;cnum=0;
+00064 
+00065 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;mine;&#32;i++)&#32;{
+00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">do</emphasis>&#32;{
+00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rnum&#32;=&#32;rand()&#32;%&#32;row;
+00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cnum&#32;=&#32;rand()&#32;%&#32;col;
+00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">while</emphasis>&#32;(c[rnum][cnum].getMine()&#32;==&#32;<emphasis role="keyword">true</emphasis>);
+00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[rnum][cnum].setMine(<emphasis role="keyword">true</emphasis>);
+00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[rnum][cnum].setSym(<emphasis role="charliteral">&apos;%&apos;</emphasis>);
+00072 &#32;&#32;&#32;&#32;}
+00073 }
+00074 
+<anchor xml:id="__in_brd_8cpp_source_1l00075"/><link linkend="_class_in_brd_1ad8a4edd62f029ff83cf1f962928b6e68">00075</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_in_brd_1ad8a4edd62f029ff83cf1f962928b6e68">InBrd::addVal</link>()
+00076 {
+00077 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;**val&#32;=&#32;sweep();
+00078 
+00079 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;row;&#32;i++)&#32;{
+00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;col;&#32;j++)&#32;{
+00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setVal(val[i][j]);
+00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00083 &#32;&#32;&#32;&#32;}
+00084 }
+00085 
+<anchor xml:id="__in_brd_8cpp_source_1l00086"/><link linkend="_class_in_brd_1aa6d18ae85e12c4315b32f79830ab7719">00086</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_in_brd_1aa6d18ae85e12c4315b32f79830ab7719">InBrd::dspBrd</link>()
+00087 {
+00088 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+00089 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;setw(4)&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>;
+00090 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;col;&#32;i++)&#32;{
+00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;i&#32;+&#32;1&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>;
+00092 &#32;&#32;&#32;&#32;}
+00093 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+00094 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;row;&#32;i++)&#32;
+00095 &#32;&#32;&#32;&#32;{
+00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;setw(2)&#32;&lt;&lt;&#32;i&#32;+&#32;1&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;|&#32;&quot;</emphasis>;
+00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;col;&#32;j++)&#32;{
+00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c[i][j].getVal()&#32;==&#32;0)&#32;{
+00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setDisp(c[i][j].getSym());
+00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setDisp(c[i][j].getVal()+48);
+00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;c[i][j].getDisp()&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>;
+00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+00106 &#32;&#32;&#32;&#32;}
+00107 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+00108 }
+00109 
+<anchor xml:id="__in_brd_8cpp_source_1l00110"/><link linkend="_class_in_brd_1a1bbc35528c6f4473187f214cf8c6d99f">00110</link> <emphasis role="keywordtype">int</emphasis>**&#32;<link linkend="_class_in_brd_1a1bbc35528c6f4473187f214cf8c6d99f">InBrd::sweep</link>()
+00111 {
+00112 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;**mines&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>*[row];
+00113 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;row;&#32;i++)&#32;{
+00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*(mines&#32;+&#32;i)&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;[col];
+00115 &#32;&#32;&#32;&#32;};
+00116 
+00117 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;row;&#32;i++)&#32;{
+00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;col;&#32;j++)&#32;{
+00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mines[i][j]&#32;=&#32;0;
+00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c[i][j].getMine()&#32;==&#32;<emphasis role="keyword">false</emphasis>)&#32;{
+00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;-&#32;1&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;j&#32;-&#32;1&#32;&gt;=&#32;0)&#32;<emphasis role="comment">//&#32;top&#32;left</emphasis>
+00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c[i&#32;-&#32;1][j&#32;-&#32;1].getMine()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mines[i][j]++;
+00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;-&#32;1&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;j&#32;&gt;=&#32;0)&#32;<emphasis role="comment">//&#32;top</emphasis>
+00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c[i&#32;-&#32;1][j].getMine()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mines[i][j]++;
+00131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;-&#32;1&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;j&#32;+&#32;1&#32;&lt;&#32;col)&#32;<emphasis role="comment">//&#32;top&#32;right</emphasis>
+00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c[i&#32;-&#32;1][j&#32;+&#32;1].getMine()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mines[i][j]++;
+00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;j&#32;+&#32;1&#32;&lt;&#32;col)&#32;<emphasis role="comment">//&#32;right</emphasis>
+00140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c[i][j&#32;+&#32;1].getMine()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mines[i][j]++;
+00143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;+&#32;1&#32;&lt;&#32;row&#32;&amp;&amp;&#32;j&#32;+&#32;1&#32;&lt;&#32;col)&#32;<emphasis role="comment">//&#32;bottom&#32;right</emphasis>
+00146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c[i&#32;+&#32;1][j&#32;+&#32;1].getMine()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mines[i][j]++;
+00149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;+&#32;1&#32;&lt;&#32;row&#32;&amp;&amp;&#32;j&#32;&gt;=&#32;0)&#32;<emphasis role="comment">//&#32;bottom</emphasis>
+00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c[i&#32;+&#32;1][j].getMine()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mines[i][j]++;
+00155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;+&#32;1&#32;&lt;&#32;row&#32;&amp;&amp;&#32;j&#32;-&#32;1&#32;&gt;=&#32;0)&#32;<emphasis role="comment">//&#32;bottom&#32;left</emphasis>
+00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c[i&#32;+&#32;1][j&#32;-&#32;1].getMine()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mines[i][j]++;
+00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;&gt;=&#32;0&#32;&amp;&amp;&#32;j&#32;-&#32;1&#32;&gt;=&#32;0)&#32;<emphasis role="comment">//&#32;left</emphasis>
+00164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(c[i][j&#32;-&#32;1].getMine()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mines[i][j]++;
+00167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00171 &#32;&#32;&#32;&#32;}
+00172 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;mines;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00173 }
+00174 
+<anchor xml:id="__in_brd_8cpp_source_1l00175"/><link linkend="_class_in_brd_1ab15a26f98623e2bbd5878605ab90cf9b">00175</link> <link linkend="_class_in_brd">InBrd</link>&amp;&#32;<link linkend="_class_in_brd_1ab15a26f98623e2bbd5878605ab90cf9b">InBrd::operator =</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_in_brd">InBrd</link>&#32;&amp;right)
+00176 {&#32;&#32;&#32;
+00177 &#32;&#32;&#32;&#32;c&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_cell">Cell</link>*[row];
+00178 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;row;&#32;i++)&#32;{
+00179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*(c&#32;+&#32;i)&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_cell">Cell</link>&#32;[col];
+00180 &#32;&#32;&#32;&#32;}&#32;
+00181 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;for&#32;(int&#32;i=0;&#32;i&lt;right.row;i++)</emphasis>
+00182 <emphasis role="comment">&#32;&#32;&#32;&#32;{</emphasis>
+00183 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;for&#32;(int&#32;j=0;j&lt;right.col;j++)</emphasis>
+00184 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+00185 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setDisp(right.c[i][j].getDisp());</emphasis>
+00186 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setSym(right.c[i][j].getSym());</emphasis>
+00187 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setFlgd(right.c[i][j].getFlgd());</emphasis>
+00188 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setHddn(right.c[i][j].getHddn());</emphasis>
+00189 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setMine(right.c[i][j].getMine());</emphasis>
+00190 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setVal(right.c[i][j].getVal());</emphasis>
+00191 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setncol(right.c[i][j].getnCol());</emphasis>
+00192 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c[i][j].setnrow(right.c[i][j].getnRow());</emphasis>
+00193 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+00194 <emphasis role="comment">&#32;&#32;&#32;&#32;}*/</emphasis>
+00195 &#32;&#32;&#32;&#32;c=right.<link linkend="_class_in_brd_1a462e1ba31741109b6a86cb369eb21377">c</link>;
+00196 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*<emphasis role="keyword">this</emphasis>;
+00197 }
+00198 
+<anchor xml:id="__in_brd_8cpp_source_1l00199"/><link linkend="_class_in_brd_1a98d1079c6c4f44b2def006ade6b2b996">00199</link> <link linkend="_class_in_brd_1a98d1079c6c4f44b2def006ade6b2b996">InBrd::~InBrd</link>()
+00200 {
+00201 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;row;&#32;i++)&#32;{
+00202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">delete</emphasis>[]&#32;*(c&#32;+&#32;i);}
+00203 &#32;&#32;&#32;&#32;<emphasis role="keyword">delete</emphasis>[]&#32;c;
+00204 }
+</programlisting></section>

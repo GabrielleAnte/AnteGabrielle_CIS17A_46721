@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_game">
+<title>Game Class Reference</title>
+<indexterm><primary>Game</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Game.h&gt;</computeroutput>
+</para>
+Collaboration diagram for Game:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/db2/class_game__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_game_1ad59df6562a58a614fda24622d3715b65">Game</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_game_1a8ae67862941a2818478be99ee8382f93">Game</link> (string n)</para>
+</listitem>
+            <listitem><para><link linkend="_class_game_1ae76f801286118a01afc4764276a0ee20">Game</link> (string n, string p, int r, int c, int m)</para>
+</listitem>
+            <listitem><para><link linkend="_class_game_1af909b709de6b4c0c2a1b3f4e7721cd4c">Game</link> (const <link linkend="_class_game">Game</link> &amp;right)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_1afdd9eefc48c8e437253bd0723fe2aef6">shoStrt</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_1ade11a025de0143ce182e2b9a83755144">setUp</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_1aa333825d0bca80e91e53c7e23f053405">play</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_1adc9795bcae2278f21f2510106a68aa4a">aPlay</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_game_1a42016555166b4ab075e1db5224a65d7d">gmeOver</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_game_1a628db27089dea207435a6c8620daca3f">nrow</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_game_1a444f05e25120130ed2730d7756329ecf">ncol</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_game_1a532b1f133947e5ec0b1290cb2ccce644">nmines</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_game_1a5a84f7af5c736f92c1bb0ab672a7d08f">setUp</link> (string p, int r, int c, int m)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_game_1a3704a89ccc3882ccbef9c258b65a4a76">name</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_player">Player</link> <link linkend="_class_game_1a6e48721b0532833b99fd5615a3628792">player</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_in_brd">InBrd</link> <link linkend="_class_game_1a9b8b64c5cc0780a8e93545d6e49217e9">inbrd</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_out_brd">OutBrd</link> <link linkend="_class_game_1a9f86479a63dd82113b4b7f29f2ea4048">outbrd</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_game_1a18205f981b4ecee4fcdd36aa690afc18">rC</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_game_1a861f1b5697afd1b10312ccc8613c8d6e">cC</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_game_1a4c0c7d64cc8a5dc769a64ce5bf86fae5">diff</link></para>
+</listitem>
+            <listitem><para><link linkend="_class_gme_brd">GmeBrd</link> * <link linkend="_class_game_1a2151159b147076312bafa0e2da74ffec">gb</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static int <link linkend="_class_game_1a46f8e4d93a538f64ac9fff26c3c5456d">gmeCnt</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__game_8h_source_1l00026">26</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_game_1ad59df6562a58a614fda24622d3715b65"/>    <section>
+    <title>Game()<computeroutput>[1/4]</computeroutput></title>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<para><computeroutput>Game::Game ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00056">56</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+    </section><anchor xml:id="_class_game_1a8ae67862941a2818478be99ee8382f93"/>    <section>
+    <title>Game()<computeroutput>[2/4]</computeroutput></title>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<para><computeroutput>Game::Game (string n)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00066">66</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+    </section><anchor xml:id="_class_game_1ae76f801286118a01afc4764276a0ee20"/>    <section>
+    <title>Game()<computeroutput>[3/4]</computeroutput></title>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<para><computeroutput>Game::Game (string n, string p, int r, int c, int m)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00074">74</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+    </section><anchor xml:id="_class_game_1af909b709de6b4c0c2a1b3f4e7721cd4c"/>    <section>
+    <title>Game()<computeroutput>[4/4]</computeroutput></title>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<para><computeroutput>Game::Game (const <link linkend="_class_game">Game</link> &amp; right)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00081">81</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+References <link linkend="__in_brd_8cpp_source_1l00044">InBrd::celdata()</link>, <link linkend="__game_8h_source_1l00030">inbrd</link>, <link linkend="__game_8h_source_1l00028">name</link>, <link linkend="__game_8h_source_1l00054">ncol</link>, <link linkend="__game_8h_source_1l00054">nmines</link>, <link linkend="__game_8h_source_1l00054">nrow</link>, <link linkend="__gme_brd_8h_source_1l00061">GmeBrd::setCol()</link>, <link linkend="__gme_brd_8h_source_1l00062">GmeBrd::setMine()</link>, and <link linkend="__gme_brd_8h_source_1l00060">GmeBrd::setRow()</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d1f/class_game_af909b709de6b4c0c2a1b3f4e7721cd4c_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_game_1adc9795bcae2278f21f2510106a68aa4a"/>    <section>
+    <title>aPlay()</title>
+<indexterm><primary>aPlay</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>aPlay</secondary></indexterm>
+<para><computeroutput>void Game::aPlay ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00154">154</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+References <link linkend="__player_8h_source_1l00240">Player::autoChc()</link>, <link linkend="__player_8h_source_1l00246">Player::autoFlg()</link>, <link linkend="__out_brd_8cpp_source_1l00059">OutBrd::chkClr()</link>, <link linkend="__out_brd_8h_source_1l00077">OutBrd::ckFlg()</link>, <link linkend="__out_brd_8cpp_source_1l00070">OutBrd::clear()</link>, <link linkend="__out_brd_8cpp_source_1l00020">OutBrd::dspBrd()</link>, <link linkend="__out_brd_8h_source_1l00037">OutBrd::flag()</link>, <link linkend="__out_brd_8cpp_source_1l00015">OutBrd::rdBrd()</link>, <link linkend="__out_brd_8h_source_1l00034">OutBrd::reveal()</link>, <link linkend="__out_brd_8h_source_1l00043">OutBrd::spcOpn()</link>, and <link linkend="__out_brd_8h_source_1l00040">OutBrd::unflag()</link>.</para>
+<para>
+Referenced by <link linkend="__ante___gabrielle___project__2_8cpp_source_1l00061">main()</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d1f/class_game_adc9795bcae2278f21f2510106a68aa4a_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d1f/class_game_adc9795bcae2278f21f2510106a68aa4a_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_game_1a42016555166b4ab075e1db5224a65d7d"/>    <section>
+    <title>gmeOver()</title>
+<indexterm><primary>gmeOver</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>gmeOver</secondary></indexterm>
+<para><computeroutput>bool Game::gmeOver ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00189">189</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+References <link linkend="__in_brd_8cpp_source_1l00086">InBrd::dspBrd()</link>, <link linkend="__out_brd_8h_source_1l00082">OutBrd::fRemain()</link>, <link linkend="__out_brd_8cpp_source_1l00047">OutBrd::loss()</link>, <link linkend="__player_8h_source_1l00208">Player::stats()</link>, and <link linkend="__out_brd_8h_source_1l00058">OutBrd::win()</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d1f/class_game_a42016555166b4ab075e1db5224a65d7d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_game_1aa333825d0bca80e91e53c7e23f053405"/>    <section>
+    <title>play()</title>
+<indexterm><primary>play</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>play</secondary></indexterm>
+<para><computeroutput>void Game::play ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00118">118</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+References <link linkend="__player_8h_source_1l00185">Player::askFlg()</link>, <link linkend="__out_brd_8cpp_source_1l00059">OutBrd::chkClr()</link>, <link linkend="__out_brd_8h_source_1l00077">OutBrd::ckFlg()</link>, <link linkend="__out_brd_8cpp_source_1l00070">OutBrd::clear()</link>, <link linkend="__in_brd_8cpp_source_1l00086">InBrd::dspBrd()</link>, <link linkend="_class_gme_brd_1a5b068f96bc311c6d2e7b1f7e2d5fe4e0">GmeBrd::dspBrd()</link>, <link linkend="__out_brd_8cpp_source_1l00020">OutBrd::dspBrd()</link>, <link linkend="__out_brd_8h_source_1l00037">OutBrd::flag()</link>, <link linkend="__player_8h_source_1l00142">Player::getChc()</link>, <link linkend="__out_brd_8cpp_source_1l00015">OutBrd::rdBrd()</link>, <link linkend="__out_brd_8h_source_1l00034">OutBrd::reveal()</link>, <link linkend="__out_brd_8h_source_1l00043">OutBrd::spcOpn()</link>, and <link linkend="__out_brd_8h_source_1l00040">OutBrd::unflag()</link>.</para>
+<para>
+Referenced by <link linkend="__ante___gabrielle___project__2_8cpp_source_1l00061">main()</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d1f/class_game_aa333825d0bca80e91e53c7e23f053405_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d1f/class_game_aa333825d0bca80e91e53c7e23f053405_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_game_1ade11a025de0143ce182e2b9a83755144"/>    <section>
+    <title>setUp()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>setUp</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>setUp</secondary></indexterm>
+<para><computeroutput>void Game::setUp ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00101">101</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+References <link linkend="__in_brd_8cpp_source_1l00060">InBrd::addMine()</link>, <link linkend="__in_brd_8cpp_source_1l00075">InBrd::addVal()</link>, <link linkend="__in_brd_8cpp_source_1l00044">InBrd::celdata()</link>, <link linkend="__player_8h_source_1l00182">Player::getCol()</link>, <link linkend="__player_8h_source_1l00183">Player::getMine()</link>, <link linkend="__player_8h_source_1l00181">Player::getRow()</link>, <link linkend="__player_8h_source_1l00074">Player::setBrd()</link>, <link linkend="__gme_brd_8h_source_1l00061">GmeBrd::setCol()</link>, <link linkend="__gme_brd_8h_source_1l00062">GmeBrd::setMine()</link>, <link linkend="__player_8h_source_1l00068">Player::setName()</link>, and <link linkend="__gme_brd_8h_source_1l00060">GmeBrd::setRow()</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d1f/class_game_ade11a025de0143ce182e2b9a83755144_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_game_1a5a84f7af5c736f92c1bb0ab672a7d08f"/>    <section>
+    <title>setUp()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>setUp</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>setUp</secondary></indexterm>
+<para><computeroutput>void Game::setUp (string p, int r, int c, int m)<computeroutput>[inline]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00036">36</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+References <link linkend="__in_brd_8cpp_source_1l00060">InBrd::addMine()</link>, <link linkend="__in_brd_8cpp_source_1l00075">InBrd::addVal()</link>, <link linkend="__in_brd_8cpp_source_1l00044">InBrd::celdata()</link>, <link linkend="__player_8h_source_1l00182">Player::getCol()</link>, <link linkend="__player_8h_source_1l00183">Player::getMine()</link>, <link linkend="__player_8h_source_1l00181">Player::getRow()</link>, <link linkend="__player_8h_source_1l00074">Player::setBrd()</link>, <link linkend="__gme_brd_8h_source_1l00061">GmeBrd::setCol()</link>, <link linkend="__gme_brd_8h_source_1l00062">GmeBrd::setMine()</link>, <link linkend="__player_8h_source_1l00068">Player::setName()</link>, and <link linkend="__gme_brd_8h_source_1l00060">GmeBrd::setRow()</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d1f/class_game_a5a84f7af5c736f92c1bb0ab672a7d08f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_game_1afdd9eefc48c8e437253bd0723fe2aef6"/>    <section>
+    <title>shoStrt()</title>
+<indexterm><primary>shoStrt</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>shoStrt</secondary></indexterm>
+<para><computeroutput>void Game::shoStrt ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00094">94</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+References <link linkend="__player_8h_source_1l00067">Player::getName()</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d1f/class_game_afdd9eefc48c8e437253bd0723fe2aef6_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_game_1a861f1b5697afd1b10312ccc8613c8d6e"/>    <section>
+    <title>cC</title>
+<indexterm><primary>cC</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>cC</secondary></indexterm>
+<para><computeroutput>int Game::cC<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00032">32</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+    </section><anchor xml:id="_class_game_1a4c0c7d64cc8a5dc769a64ce5bf86fae5"/>    <section>
+    <title>diff</title>
+<indexterm><primary>diff</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>diff</secondary></indexterm>
+<para><computeroutput>int Game::diff<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00033">33</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+    </section><anchor xml:id="_class_game_1a2151159b147076312bafa0e2da74ffec"/>    <section>
+    <title>gb</title>
+<indexterm><primary>gb</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>gb</secondary></indexterm>
+<para><computeroutput><link linkend="_class_gme_brd">GmeBrd</link>* Game::gb<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00035">35</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+    </section><anchor xml:id="_class_game_1a46f8e4d93a538f64ac9fff26c3c5456d"/>    <section>
+    <title>gmeCnt</title>
+<indexterm><primary>gmeCnt</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>gmeCnt</secondary></indexterm>
+<para><computeroutput>int Game::gmeCnt = 0<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00034">34</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+    </section><anchor xml:id="_class_game_1a9b8b64c5cc0780a8e93545d6e49217e9"/>    <section>
+    <title>inbrd</title>
+<indexterm><primary>inbrd</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>inbrd</secondary></indexterm>
+<para><computeroutput><link linkend="_class_in_brd">InBrd</link> Game::inbrd<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00030">30</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00081">Game()</link>.</para>
+    </section><anchor xml:id="_class_game_1a3704a89ccc3882ccbef9c258b65a4a76"/>    <section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>string Game::name<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00028">28</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00081">Game()</link>.</para>
+    </section><anchor xml:id="_class_game_1a444f05e25120130ed2730d7756329ecf"/>    <section>
+    <title>ncol</title>
+<indexterm><primary>ncol</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>ncol</secondary></indexterm>
+<para><computeroutput>int Game::ncol<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00054">54</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00081">Game()</link>.</para>
+    </section><anchor xml:id="_class_game_1a532b1f133947e5ec0b1290cb2ccce644"/>    <section>
+    <title>nmines</title>
+<indexterm><primary>nmines</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>nmines</secondary></indexterm>
+<para><computeroutput>int Game::nmines<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00054">54</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00081">Game()</link>.</para>
+    </section><anchor xml:id="_class_game_1a628db27089dea207435a6c8620daca3f"/>    <section>
+    <title>nrow</title>
+<indexterm><primary>nrow</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>nrow</secondary></indexterm>
+<para><computeroutput>int Game::nrow<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00054">54</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00081">Game()</link>.</para>
+    </section><anchor xml:id="_class_game_1a9f86479a63dd82113b4b7f29f2ea4048"/>    <section>
+    <title>outbrd</title>
+<indexterm><primary>outbrd</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>outbrd</secondary></indexterm>
+<para><computeroutput><link linkend="_class_out_brd">OutBrd</link> Game::outbrd<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00031">31</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+    </section><anchor xml:id="_class_game_1a6e48721b0532833b99fd5615a3628792"/>    <section>
+    <title>player</title>
+<indexterm><primary>player</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>player</secondary></indexterm>
+<para><computeroutput><link linkend="_class_player">Player</link> Game::player<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00029">29</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+    </section><anchor xml:id="_class_game_1a18205f981b4ecee4fcdd36aa690afc18"/>    <section>
+    <title>rC</title>
+<indexterm><primary>rC</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>rC</secondary></indexterm>
+<para><computeroutput>int Game::rC<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__game_8h_source_1l00032">32</link> of file <link linkend="__game_8h_source">Game.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__game_8h">Game.h</link></section>
+</section>

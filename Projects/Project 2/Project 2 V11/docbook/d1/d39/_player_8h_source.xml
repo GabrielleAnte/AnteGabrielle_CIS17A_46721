@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__player_8h_source">
+<title>Player.h</title>
+<programlisting>00001 <emphasis role="comment">/*</emphasis>
+00002 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+00003 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+00004 <emphasis role="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+00005 <emphasis role="comment">&#32;*/</emphasis>
+00006 
+00007 <emphasis role="comment">/*&#32;</emphasis>
+00008 <emphasis role="comment">&#32;*&#32;File:&#32;&#32;&#32;Player.h</emphasis>
+00009 <emphasis role="comment">&#32;*&#32;Author:&#32;Gabrielle</emphasis>
+00010 <emphasis role="comment">&#32;*</emphasis>
+00011 <emphasis role="comment">&#32;*&#32;Created&#32;on&#32;July&#32;26,&#32;2020,&#32;3:47&#32;AM</emphasis>
+00012 <emphasis role="comment">&#32;*/</emphasis>
+00013 
+00014 <emphasis role="preprocessor">#ifndef&#32;_DIAGRAM_PLAYER_H</emphasis>
+00015 <emphasis role="preprocessor">#define&#32;_DIAGRAM_PLAYER_H</emphasis>
+00016 <emphasis role="preprocessor">#ifndef&#32;PLAYER_H</emphasis>
+00017 <emphasis role="preprocessor">#define&#32;PLAYER_H</emphasis>
+<anchor xml:id="__player_8h_source_1l00018"/><link linkend="__player_8h_1aa3fab1fddd7bdec7c2d0867fb8aaad64">00018</link> 
+00019 
+00020 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+00021 <emphasis role="preprocessor">#include&#32;&lt;cstdlib&gt;</emphasis>
+00022 <emphasis role="preprocessor">#include&#32;&lt;cctype&gt;</emphasis>
+00023 <emphasis role="preprocessor">#include&#32;&lt;regex&gt;</emphasis>
+00024 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+00025 <emphasis role="preprocessor">#include&#32;&lt;sstream&gt;</emphasis>
+00026 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__stats_8h">Stats.h</link>&quot;</emphasis>
+00027 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+00028 
+<anchor xml:id="__player_8h_source_1l00029"/><link linkend="_class_player">00029</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_player">Player</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_stats">Stats</link>&lt;int&gt;
+00030 {
+00031 <emphasis role="keyword">private</emphasis>:&#32;
+<anchor xml:id="__player_8h_source_1l00032"/><link linkend="_class_player_1acf0355128a99ee20ad9931b760fb2de1">00032</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_player_1acf0355128a99ee20ad9931b760fb2de1">name</link>;
+<anchor xml:id="__player_8h_source_1l00033"/><link linkend="_class_player_1ab4e6ed0131da3921bc80b39f9b455dc9">00033</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_player_1ab4e6ed0131da3921bc80b39f9b455dc9">row</link>,&#32;col,&#32;mine;
+<anchor xml:id="__player_8h_source_1l00034"/><link linkend="_class_player_1af14f0d6ce7546bc1ded859df40cd8819">00034</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_player_1af14f0d6ce7546bc1ded859df40cd8819">number</link>;
+<anchor xml:id="__player_8h_source_1l00035"/><link linkend="_class_player_1a258026b604c89c0c46afca64d50fd82b">00035</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_player_1a258026b604c89c0c46afca64d50fd82b">pts</link>;
+<anchor xml:id="__player_8h_source_1l00036"/><link linkend="_class_player_1ae0614b9668feae646a3942e077f6254a">00036</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_player_1ae0614b9668feae646a3942e077f6254a">invalid</link>;
+00037 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__player_8h_source_1l00039"/><link linkend="_class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8">00039</link> &#32;&#32;&#32;&#32;<link linkend="_class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player</link>():<link linkend="_class_stats">Stats</link>()
+00040 &#32;&#32;&#32;&#32;{&#32;&#32;&#32;
+00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name&#32;=&#32;<emphasis role="stringliteral">&quot;Anon&quot;</emphasis>;
+00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;row=0;
+00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;col=0;
+00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mine=0;
+00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid=<emphasis role="keyword">true</emphasis>;
+00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pts=0.00;
+00047 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__player_8h_source_1l00049"/><link linkend="_class_player_1a0fb947f3bd20596cbff1f576711ce90e">00049</link> &#32;&#32;&#32;&#32;<link linkend="_class_player_1a0fb947f3bd20596cbff1f576711ce90e">Player</link>(<emphasis role="keywordtype">string</emphasis>&#32;n)
+00050 &#32;&#32;&#32;&#32;{
+00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=n;
+00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;row=0;
+00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;col=0;
+00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mine=0;
+00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid=<emphasis role="keyword">true</emphasis>;
+00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pts=0.00;
+00057 &#32;&#32;&#32;&#32;}
+00058 &#32;&#32;&#32;&#32;
+<anchor xml:id="__player_8h_source_1l00059"/><link linkend="_class_player_1_1_bad_r_c">00059</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_player_1_1_bad_r_c">BadRC</link>{};
+<anchor xml:id="__player_8h_source_1l00060"/><link linkend="_class_player_1_1_bad_mns">00060</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_player_1_1_bad_mns">BadMns</link>{};
+<anchor xml:id="__player_8h_source_1l00061"/><link linkend="_class_player_1_1_badrc">00061</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_player_1_1_badrc">Badrc</link>{};
+<anchor xml:id="__player_8h_source_1l00062"/><link linkend="_class_player_1_1_bad_chc">00062</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_player_1_1_bad_chc">BadChc</link>{};
+<anchor xml:id="__player_8h_source_1l00063"/><link linkend="_class_player_1_1_bad_flag">00063</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_player_1_1_bad_flag">BadFlag</link>{};
+<anchor xml:id="__player_8h_source_1l00064"/><link linkend="_class_player_1_1_less_tn1">00064</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_player_1_1_less_tn1">LessTn1</link>{};
+00065 &#32;&#32;&#32;&#32;
+<anchor xml:id="__player_8h_source_1l00067"/><link linkend="_class_player_1af9a6045fa96f736664c4eab4caa5e8e5">00067</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_player_1af9a6045fa96f736664c4eab4caa5e8e5">getName</link>(){<emphasis role="keywordflow">return</emphasis>&#32;name;}
+<anchor xml:id="__player_8h_source_1l00068"/><link linkend="_class_player_1a37fc1f766b05e107305976aa9e8d0fc4">00068</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1a37fc1f766b05e107305976aa9e8d0fc4">setName</link>(){
+00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;n=<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Enter&#32;the&#32;player&#32;name:&#32;&quot;</emphasis>;
+00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;n;
+00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=n;
+00073 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__player_8h_source_1l00074"/><link linkend="_class_player_1a740b82f6723c1b4e985444caa4ab95e1">00074</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1a740b82f6723c1b4e985444caa4ab95e1">setBrd</link>()
+00075 &#32;&#32;&#32;&#32;{
+00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;r=0,&#32;c=0,&#32;m=0;
+00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Input&#32;the&#32;row&#32;and&#32;column.&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;r&#32;&gt;&gt;&#32;c;
+00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;input&#32;validation</emphasis>
+00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>(invalid){
+00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>{
+00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cin.fail())
+00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<link linkend="_class_player_1_1_bad_r_c">BadRC</link>();
+00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&lt;1&#32;||&#32;c&#32;&lt;1)
+00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<link linkend="_class_player_1_1_less_tn1">LessTn1</link>();
+00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<link linkend="_class_player_1_1_bad_r_c">Player::BadRC</link>)
+00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin.clear();
+00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin.ignore();
+00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Input&#32;the&#32;row&#32;and&#32;column.&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;r&#32;&gt;&gt;&#32;c;
+00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<link linkend="_class_player_1_1_less_tn1">Player::LessTn1</link>)
+00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Input&#32;the&#32;row&#32;and&#32;column.&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;r&#32;&gt;&gt;&#32;c;
+00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin.ignore();
+00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid=<emphasis role="keyword">true</emphasis>;
+00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;regex&#32;s(<emphasis role="stringliteral">&quot;[0-9]+&quot;</emphasis>);
+00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;sm;
+00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Input&#32;the&#32;number&#32;of&#32;mines.&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;getline(cin,sm);
+00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//input&#32;validation</emphasis>
+00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>(invalid){
+00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>{
+00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;istringstream&#32;(sm)&#32;&gt;&gt;&#32;m;
+00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!regex_match(sm,s))
+00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<link linkend="_class_player_1_1_bad_mns">BadMns</link>();
+00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(m&#32;&lt;0&#32;||&#32;m&gt;r*c)
+00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<link linkend="_class_player_1_1_bad_mns">BadMns</link>();
+00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<link linkend="_class_player_1_1_bad_mns">Player::BadMns</link>)
+00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Input&#32;the&#32;number&#32;of&#32;mines.&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;getline(cin,sm);
+00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mine=m;
+00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;row=r;
+00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;col=c;
+00139 &#32;&#32;&#32;&#32;}
+00140 &#32;&#32;&#32;&#32;
+00141 &#32;&#32;&#32;&#32;
+<anchor xml:id="__player_8h_source_1l00142"/><link linkend="_class_player_1ac0410e4338e9abaa3173836a10547343">00142</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1ac0410e4338e9abaa3173836a10547343">getChc</link>(<emphasis role="keywordtype">int</emphasis>&#32;&amp;rChoice,&#32;<emphasis role="keywordtype">int</emphasis>&#32;&amp;cChoice)
+00143 &#32;&#32;&#32;&#32;{
+00144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Pick&#32;a&#32;cell&#32;[row&#32;x&#32;col]:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;rChoice&#32;&gt;&gt;&#32;cChoice;
+00146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//input&#32;validation</emphasis>
+00147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>(invalid){
+00148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>{
+00149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cin.fail())
+00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<link linkend="_class_player_1_1_badrc">Badrc</link>();
+00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(rChoice&#32;&lt;&#32;1&#32;||&#32;rChoice&#32;&gt;&#32;row)
+00154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Row&#32;player&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;row;
+00156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<link linkend="_class_player_1_1_bad_chc">BadChc</link>();
+00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(cChoice&#32;&lt;&#32;1&#32;||&#32;cChoice&#32;&gt;&#32;col)
+00159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;col&quot;</emphasis>&#32;&lt;&lt;col&#32;&lt;&lt;&#32;endl;
+00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<link linkend="_class_player_1_1_bad_chc">BadChc</link>();
+00162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+00164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<link linkend="_class_player_1_1_badrc">Player::Badrc</link>)
+00166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin.clear();
+00168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin.ignore();
+00169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Pick&#32;a&#32;cell&#32;[row&#32;x&#32;col]:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;rChoice&#32;&gt;&gt;&#32;cChoice;
+00171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<link linkend="_class_player_1_1_bad_chc">Player::BadChc</link>)
+00173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Pick&#32;a&#32;cell&#32;[row&#32;x&#32;col]:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;rChoice&#32;&gt;&gt;&#32;cChoice;
+00176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid=<emphasis role="keyword">true</emphasis>;
+00179 &#32;&#32;&#32;&#32;}
+00180 &#32;&#32;&#32;&#32;
+<anchor xml:id="__player_8h_source_1l00181"/><link linkend="_class_player_1a76135d6989330f1d71485f7569f4f520">00181</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_player_1a76135d6989330f1d71485f7569f4f520">getRow</link>(){<emphasis role="keywordflow">return</emphasis>&#32;row;}
+<anchor xml:id="__player_8h_source_1l00182"/><link linkend="_class_player_1a21dd4f636a667fe882abc76600dc0d9c">00182</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_player_1a21dd4f636a667fe882abc76600dc0d9c">getCol</link>(){<emphasis role="keywordflow">return</emphasis>&#32;col;}
+<anchor xml:id="__player_8h_source_1l00183"/><link linkend="_class_player_1a42ea717cab17fa83a43d647685eb81a6">00183</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_player_1a42ea717cab17fa83a43d647685eb81a6">getMine</link>(){<emphasis role="keywordflow">return</emphasis>&#32;mine;}
+00184 &#32;&#32;&#32;&#32;
+<anchor xml:id="__player_8h_source_1l00185"/><link linkend="_class_player_1a2d07cc5039ccd5fe1af4dec145b7d717">00185</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_player_1a2d07cc5039ccd5fe1af4dec145b7d717">askFlg</link>(){
+00186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;choice=<emphasis role="charliteral">&apos;&#32;&apos;</emphasis>;
+00187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Flag&#32;it?&#32;[Y/N]:&#32;&quot;</emphasis>;
+00188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;choice;
+00189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//input&#32;validation</emphasis>
+00190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>(invalid){
+00191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>{
+00192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(toupper(choice)&#32;!=&#32;<emphasis role="charliteral">&apos;Y&apos;</emphasis>&#32;&amp;&amp;&#32;toupper(choice)&#32;!=&#32;<emphasis role="charliteral">&apos;N&apos;</emphasis>)
+00193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<link linkend="_class_player_1_1_bad_flag">BadFlag</link>();
+00195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+00197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(<link linkend="_class_player_1_1_bad_flag">Player::BadFlag</link>)
+00199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Flag&#32;it?&#32;[Y/N]:&#32;&quot;</emphasis>;
+00201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;choice;
+00202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00204 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;invalid&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+00205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;toupper(choice);
+00206 &#32;&#32;&#32;&#32;}
+00207 &#32;&#32;&#32;&#32;
+<anchor xml:id="__player_8h_source_1l00208"/><link linkend="_class_player_1a5b525e04839b6cd3252b288b9db6bca6">00208</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1a5b525e04839b6cd3252b288b9db6bca6">stats</link>(<emphasis role="keywordtype">bool</emphasis>&#32;win)
+00209 &#32;&#32;&#32;&#32;{
+00210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;number=update(name,&#32;win);
+00211 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pts=points(win);
+00212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;endl;
+00213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Name:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;names.at(number)&#32;&lt;&lt;&#32;endl;
+00214 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Wins:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;wins.at(number)&#32;&lt;&lt;&#32;endl;
+00215 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Losses:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;losses.at(number)&#32;&lt;&lt;&#32;endl;
+00216 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Points:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;pts&#32;&lt;&lt;&#32;endl&#32;&lt;&lt;&#32;endl;
+00217 &#32;&#32;&#32;&#32;}
+00218 &#32;&#32;&#32;&#32;
+<anchor xml:id="__player_8h_source_1l00219"/><link linkend="_class_player_1a1bba8328130b421db32a59fdc3d0292f">00219</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_player_1a1bba8328130b421db32a59fdc3d0292f">points</link>(<emphasis role="keywordtype">bool</emphasis>&#32;win)
+00220 &#32;&#32;&#32;&#32;{
+00221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(win)
+00222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pts+=2.5;
+00224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;pts;
+00226 &#32;&#32;&#32;&#32;}
+00227 &#32;&#32;&#32;&#32;
+00228 &#32;&#32;&#32;&#32;<emphasis role="comment">//AI&#32;mode</emphasis>
+<anchor xml:id="__player_8h_source_1l00229"/><link linkend="_class_player_1a21f5d3d0f858ecff23b604e907f36247">00229</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1a21f5d3d0f858ecff23b604e907f36247">setName</link>(<emphasis role="keywordtype">string</emphasis>&#32;n){
+00230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=n;
+00231 &#32;&#32;&#32;&#32;}
+00232 &#32;&#32;&#32;&#32;
+<anchor xml:id="__player_8h_source_1l00233"/><link linkend="_class_player_1a31e5f0df2e737d1163fe45c94d5b3190">00233</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1a31e5f0df2e737d1163fe45c94d5b3190">setBrd</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;c,&#32;<emphasis role="keywordtype">int</emphasis>&#32;m)
+00234 &#32;&#32;&#32;&#32;{
+00235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;mine=m;
+00236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;row=r;
+00237 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;col=c;
+00238 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//input&#32;val</emphasis>
+00239 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__player_8h_source_1l00240"/><link linkend="_class_player_1a9a5a3685995386ec8838dc5afaeb4369">00240</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_player_1a9a5a3685995386ec8838dc5afaeb4369">autoChc</link>(<emphasis role="keywordtype">int</emphasis>&#32;&amp;rChoice,<emphasis role="keywordtype">int</emphasis>&#32;&amp;cChoice)
+00241 &#32;&#32;&#32;&#32;{
+00242 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Pick&#32;a&#32;cell&#32;[row&#32;x&#32;col]:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00243 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rChoice&#32;=&#32;rand()%row+1;
+00244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cChoice&#32;=&#32;rand()%col+1;
+00245 &#32;&#32;&#32;&#32;}&#32;&#32;
+<anchor xml:id="__player_8h_source_1l00246"/><link linkend="_class_player_1a4247a12755b827d0c0002f2aac93db03">00246</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_player_1a4247a12755b827d0c0002f2aac93db03">autoFlg</link>()
+00247 &#32;&#32;&#32;&#32;{
+00248 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;choice=<emphasis role="charliteral">&apos;&#32;&apos;</emphasis>;
+00249 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Flag&#32;it?&#32;[Y/N]:&#32;&quot;</emphasis>;
+00250 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(rand()%2==0){choice=<emphasis role="charliteral">&apos;Y&apos;</emphasis>;}
+00251 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>{choice=<emphasis role="charliteral">&apos;N&apos;</emphasis>;}
+00252 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;toupper(choice);
+00253 &#32;&#32;&#32;&#32;}
+00254 &#32;&#32;&#32;&#32;
+00255 &#32;&#32;&#32;&#32;
+00256 };
+00257 
+00258 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;PLAYER_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+00259 
+</programlisting></section>

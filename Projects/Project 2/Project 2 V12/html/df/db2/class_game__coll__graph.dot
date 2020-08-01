@@ -1,0 +1,39 @@
+digraph "Game"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Game\n|# nrow\l# ncol\l# nmines\l- rC\l- cC\l- diff\l- gmeCnt\l|+ Game()\l+ Game()\l+ Game()\l+ Game()\l+ shoStrt()\l+ setUp()\l+ play()\l+ aPlay()\l+ gmeOver()\l- setUp()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -gb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{GmeBrd\n|# row\l# col\l# mine\l|+ GmeBrd()\l+ GmeBrd()\l+ ~GmeBrd()\l+ getRow()\l+ getCol()\l+ getMine()\l+ setRow()\l+ setCol()\l+ setMine()\l+ dspBrd()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d12/class_gme_brd.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" -c" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Cell\n|- display\l- symbol\l- hidden\l- flagged\l- nrow\l- ncol\l- mine\l- value\l|+ Cell()\l+ Cell()\l+ operator=()\l+ setDisp()\l+ setSym()\l+ setHddn()\l+ setFlgd()\l+ setMine()\l+ setVal()\l+ setnrow()\l+ setncol()\l+ getDisp()\l+ getSym()\l+ getHddn()\l+ getFlgd()\l+ getMine()\l+ getVal()\l+ getnRow()\l+ getnCol()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d11/class_cell.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -outbrd" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{OutBrd\n||+ OutBrd()\l+ rdBrd()\l+ reveal()\l+ flag()\l+ unflag()\l+ spcOpn()\l+ loss()\l+ win()\l+ ckFlg()\l+ chkClr()\l+ clear()\l+ fRemain()\l+ dspBrd()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 -> Node4 [color="grey25",fontsize="10",style="solid",label=" -cell" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -name" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{std::string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{std::basic_string\<\l char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node7 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -player" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{Player\n|- row\l- col\l- mine\l- number\l- pts\l- invalid\l|+ Player()\l+ Player()\l+ getName()\l+ setName()\l+ setBrd()\l+ getChc()\l+ getRow()\l+ getCol()\l+ getMine()\l+ askFlg()\l+ stats()\l+ points()\l+ setName()\l+ setBrd()\l+ autoChc()\l+ autoFlg()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d53/class_player.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 [label="{Stats\< int \>\n|# point\l# names\l# wins\l# losses\l|+ Stats()\l+ points()\l# update()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d1b/class_stats.html",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="orange",fontsize="10",style="solid",label=" \< int \>" ,fontname="Helvetica"];
+  Node9 [label="{Stats\< T \>\n|# wins\l# losses\l|+ Stats()\l+ points()\l# update()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d1b/class_stats.html",tooltip=" "];
+  Node10 -> Node9 [color="grey25",fontsize="10",style="solid",label=" #names" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node10 [label="{std::vector\< string \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node10 [color="grey25",fontsize="10",style="solid",label=" +elements" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node11 -> Node10 [dir="back",color="orange",fontsize="10",style="solid",label=" \< string \>" ,fontname="Helvetica"];
+  Node11 [label="{std::vector\< T \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node12 -> Node11 [color="grey25",fontsize="10",style="solid",label=" +elements" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node12 [label="{T\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node9 [color="grey25",fontsize="10",style="solid",label=" #point" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 -> Node7 [color="grey25",fontsize="10",style="solid",label=" -name" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node13 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -inbrd" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node13 [label="{InBrd\n||+ InBrd()\l+ InBrd()\l+ ~InBrd()\l+ celdata()\l+ addMine()\l+ addVal()\l+ dspBrd()\l+ sweep()\l+ operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/db8/class_in_brd.html",tooltip=" "];
+  Node2 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 -> Node13 [color="grey25",fontsize="10",style="solid",label=" -c" ,arrowhead="odiamond",fontname="Helvetica"];
+}

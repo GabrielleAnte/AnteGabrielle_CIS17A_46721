@@ -1,0 +1,42 @@
+digraph "Game::play"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Game::play",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Player::askFlg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d53/class_player.html#a2d07cc5039ccd5fe1af4dec145b7d717",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OutBrd::chkClr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#a80ed53ea4a4ae752786cdc729cb4838f",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="OutBrd::ckFlg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#aa92302a7d20fb2e20522e37ed48be906",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Cell::getFlgd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d11/class_cell.html#a8692c2ff9061eeefd7355c2003ca376e",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="OutBrd::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#a82fca8e5252ad0300a663f07d2c8783d",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="InBrd::dspBrd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/db8/class_in_brd.html#aa6d18ae85e12c4315b32f79830ab7719",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="GmeBrd::dspBrd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d12/class_gme_brd.html#a5b068f96bc311c6d2e7b1f7e2d5fe4e0",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="OutBrd::dspBrd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#a07ad712503dc56ce0c4a94b625c4780a",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="OutBrd::flag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#aae382b8a171780c274e67a49328ef4d5",tooltip=" "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Cell::setFlgd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d11/class_cell.html#aa190ef553aef63dda30047619b39fe7a",tooltip=" "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Player::getChc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d53/class_player.html#ac0410e4338e9abaa3173836a10547343",tooltip=" "];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="OutBrd::rdBrd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#a0af7ee8eef4871714011bc8f4e9971a6",tooltip=" "];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="OutBrd::reveal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#a4c07c984330c7d56eacb3154f41b731a",tooltip=" "];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Cell::setHddn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d11/class_cell.html#a89a43f48ffb2aacaf5961e46fd78e197",tooltip=" "];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="OutBrd::spcOpn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#af35a0c9f121c0b2dddf81e88304343b7",tooltip=" "];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="OutBrd::unflag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df1/class_out_brd.html#ab33baa2658c6ccd009b3043fe389d0c4",tooltip=" "];
+  Node17 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,9 @@
+<map id="Game::gmeOver" name="Game::gmeOver">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,121,133"/>
+<area shape="rect" id="node2" href="$class_in_brd.html#aa6d18ae85e12c4315b32f79830ab7719" title=" " alt="" coords="178,5,279,32"/>
+<area shape="rect" id="node3" href="$class_out_brd.html#aa9ac410197c494be9af5aa806fcf6ce1" title=" " alt="" coords="169,56,288,83"/>
+<area shape="rect" id="node4" href="$class_out_brd.html#af608ac43b10bea381e951393c1b2c9e9" title=" " alt="" coords="181,107,276,133"/>
+<area shape="rect" id="node5" href="$class_player.html#a5b525e04839b6cd3252b288b9db6bca6" title=" " alt="" coords="181,157,277,184"/>
+<area shape="rect" id="node6" href="$class_out_brd.html#a3b1441409df7b1460bdc5b57734b1064" title=" " alt="" coords="183,208,274,235"/>
+<area shape="rect" id="node7" href="$class_gme_brd.html#accbce40e77b3a158eb8f6ed0378cc744" title=" " alt="" coords="336,208,460,235"/>
+</map>

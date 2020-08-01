@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__player_8h">
+<title>Player.h File Reference</title>
+<indexterm><primary>Player.h</primary></indexterm>
+<programlisting>#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+#include &lt;cctype&gt;
+#include &lt;regex&gt;
+#include &lt;string&gt;
+#include &lt;sstream&gt;
+#include &quot;Stats.h&quot;
+</programlisting>Include dependency graph for Player.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/d04/_player_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/d07/_player_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_player">Player</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_bad_r_c">Player::BadRC</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_bad_mns">Player::BadMns</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_badrc">Player::Badrc</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_bad_chc">Player::BadChc</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_bad_flag">Player::BadFlag</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_less_tn1">Player::LessTn1</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="__player_8h_1aa3fab1fddd7bdec7c2d0867fb8aaad64">PLAYER_H</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="__player_8h_1aa3fab1fddd7bdec7c2d0867fb8aaad64"/>    <section>
+    <title>PLAYER_H</title>
+<indexterm><primary>PLAYER_H</primary><secondary>Player.h</secondary></indexterm>
+<indexterm><primary>Player.h</primary><secondary>PLAYER_H</secondary></indexterm>
+<para><computeroutput>#define PLAYER_H</computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00018">18</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+</section>
+</section>

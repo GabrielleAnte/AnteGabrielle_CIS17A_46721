@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__ante___gabrielle___project__2_8cpp">
+<title>Ante_Gabrielle_Project_2.cpp File Reference</title>
+<indexterm><primary>Ante_Gabrielle_Project_2.cpp</primary></indexterm>
+<programlisting>#include &lt;iostream&gt;
+#include &lt;cstdlib&gt;
+#include &lt;ctime&gt;
+#include &lt;iomanip&gt;
+#include &lt;string&gt;
+#include &lt;cstring&gt;
+#include &lt;fstream&gt;
+#include &quot;Game.h&quot;
+#include &quot;Cell.h&quot;
+</programlisting>Include dependency graph for Ante_Gabrielle_Project_2.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d2e/_ante___gabrielle___project__2_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="__ante___gabrielle___project__2_8cpp_1a6474a3e8ed6ba43cc3617394c045f7a8">reRun</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="__ante___gabrielle___project__2_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">main</link> (int argc, char **argv)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__ante___gabrielle___project__2_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627"/>    <section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>Ante_Gabrielle_Project_2.cpp</secondary></indexterm>
+<indexterm><primary>Ante_Gabrielle_Project_2.cpp</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (int argc, char ** argv)</computeroutput></para><para>
+Definition at line <link linkend="__ante___gabrielle___project__2_8cpp_source_1l00061">61</link> of file <link linkend="__ante___gabrielle___project__2_8cpp_source">Ante_Gabrielle_Project_2.cpp</link>.</para>
+<para>
+References <link linkend="__game_8h_source_1l00154">Game::aPlay()</link>, <link linkend="__game_8h_source_1l00118">Game::play()</link>, and <link linkend="__ante___gabrielle___project__2_8cpp_source_1l00076">reRun()</link>.</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d6/d4d/_ante___gabrielle___project__2_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="__ante___gabrielle___project__2_8cpp_1a6474a3e8ed6ba43cc3617394c045f7a8"/>    <section>
+    <title>reRun()</title>
+<indexterm><primary>reRun</primary><secondary>Ante_Gabrielle_Project_2.cpp</secondary></indexterm>
+<indexterm><primary>Ante_Gabrielle_Project_2.cpp</primary><secondary>reRun</secondary></indexterm>
+<para><computeroutput>bool reRun ( )</computeroutput></para><para>
+Definition at line <link linkend="__ante___gabrielle___project__2_8cpp_source_1l00076">76</link> of file <link linkend="__ante___gabrielle___project__2_8cpp_source">Ante_Gabrielle_Project_2.cpp</link>.</para>
+<para>
+Referenced by <link linkend="__ante___gabrielle___project__2_8cpp_source_1l00061">main()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d6/d4d/_ante___gabrielle___project__2_8cpp_a6474a3e8ed6ba43cc3617394c045f7a8_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

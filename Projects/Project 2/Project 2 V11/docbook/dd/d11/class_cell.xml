@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_cell">
+<title>Cell Class Reference</title>
+<indexterm><primary>Cell</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Cell.h&gt;</computeroutput>
+</para>
+Collaboration diagram for Cell:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/d00/class_cell__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_cell_1a394510643e8664cf12b5efaf5cb99f71">Cell</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_cell_1a4d36ca39f2f51e0a41c0f1990e2107ca">Cell</link> (bool m)</para>
+</listitem>
+            <listitem><para><link linkend="_class_cell">Cell</link> &amp; <link linkend="_class_cell_1a150942ac9b1258ba308586131abc4ec8">operator=</link> (const <link linkend="_class_cell">Cell</link> &amp;right)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_cell_1a22e5aab236b2f42a4cec18652cce88fe">setDisp</link> (char a)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_cell_1a0b22981cded7faf11c9313c165e90988">setSym</link> (char a)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_cell_1a89a43f48ffb2aacaf5961e46fd78e197">setHddn</link> (bool a)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_cell_1aa190ef553aef63dda30047619b39fe7a">setFlgd</link> (bool a)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_cell_1a3e26b9878fa13187a7834e21ad1affa8">setMine</link> (bool a)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_cell_1ae90b9eb1f9236ccf9054c25a1e1f915d">setVal</link> (int a)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_cell_1ae8de6c402ee3ca437b73a2839f0a34ba">setnrow</link> (int a)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_cell_1ab0e328f5d053f7df313063bb3239fa09">setncol</link> (int a)</para>
+</listitem>
+            <listitem><para>char <link linkend="_class_cell_1aaafbb0a9d3aa2abc56cb3290c9e4c09e">getDisp</link> () const</para>
+</listitem>
+            <listitem><para>char <link linkend="_class_cell_1a7bb9afc27b36ce59a73dd3ba5b84785f">getSym</link> () const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_cell_1a572cd785292d1513d52209b5c5c70afa">getHddn</link> () const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_cell_1a8692c2ff9061eeefd7355c2003ca376e">getFlgd</link> () const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_cell_1aa9d4022cfcda877b37e2f232f3d7ec55">getMine</link> () const</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_cell_1aa076f9d0d9d00cb6cf91fa6a920055fe">getVal</link> () const</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_cell_1ac08f5c4f88c15093a71684f12cc2a67c">getnRow</link> () const</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_cell_1a024cf59b90e7e7ec057ac1093c80d59c">getnCol</link> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_class_cell_1aa0fe1bf41408c40ccf95a0434c8cd753">display</link></para>
+
+<para>what is seen by player </para>
+</listitem>
+            <listitem><para>char <link linkend="_class_cell_1a322c32087e3d7a061ab9168a1364cc7f">symbol</link></para>
+
+<para>to be outputted, either mine(%),empty (-) or value </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_cell_1ad8c292051c80a49db6b505465ffc7771">hidden</link></para>
+
+<para>if the player can see cell </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_cell_1a593898dc074bfdc46883f2976292e4d2">flagged</link></para>
+
+<para>if the player holds the cell </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_cell_1a9918b04ec15f46b116493b77e07aa618">nrow</link></para>
+
+<para>which row cell is located </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_cell_1a02831844b99ef62b8cccda162977872b">ncol</link></para>
+
+<para>which col cell is located </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_cell_1aeabf99afa55aaeb5d8e53cabd2886e44">mine</link></para>
+
+<para>if the cell has a mine </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_cell_1a2a5e46b6fdcc414fa3736bbc193f62e8">value</link></para>
+
+<para>what the cell value is; hint for adjacent cell </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__cell_8h_source_1l00019">19</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_cell_1a394510643e8664cf12b5efaf5cb99f71"/>    <section>
+    <title>Cell()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Cell</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>Cell</secondary></indexterm>
+<para><computeroutput>Cell::Cell ( )</computeroutput></para><para>
+Definition at line <link linkend="__cell_8cpp_source_1l00009">9</link> of file <link linkend="__cell_8cpp_source">Cell.cpp</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00021">display</link>, <link linkend="__cell_8h_source_1l00024">flagged</link>, <link linkend="__cell_8h_source_1l00023">hidden</link>, <link linkend="__cell_8h_source_1l00027">mine</link>, <link linkend="__cell_8h_source_1l00026">ncol</link>, <link linkend="__cell_8h_source_1l00025">nrow</link>, <link linkend="__cell_8h_source_1l00022">symbol</link>, and <link linkend="__cell_8h_source_1l00028">value</link>.</para>
+    </section><anchor xml:id="_class_cell_1a4d36ca39f2f51e0a41c0f1990e2107ca"/>    <section>
+    <title>Cell()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Cell</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>Cell</secondary></indexterm>
+<para><computeroutput>Cell::Cell (bool m)</computeroutput></para><para>
+Definition at line <link linkend="__cell_8cpp_source_1l00020">20</link> of file <link linkend="__cell_8cpp_source">Cell.cpp</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00021">display</link>, <link linkend="__cell_8h_source_1l00024">flagged</link>, <link linkend="__cell_8h_source_1l00023">hidden</link>, <link linkend="__cell_8h_source_1l00027">mine</link>, <link linkend="__cell_8h_source_1l00026">ncol</link>, <link linkend="__cell_8h_source_1l00025">nrow</link>, <link linkend="__cell_8h_source_1l00022">symbol</link>, and <link linkend="__cell_8h_source_1l00028">value</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_cell_1aaafbb0a9d3aa2abc56cb3290c9e4c09e"/>    <section>
+    <title>getDisp()</title>
+<indexterm><primary>getDisp</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>getDisp</secondary></indexterm>
+<para><computeroutput>char Cell::getDisp ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00043">43</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00021">display</link>.</para>
+    </section><anchor xml:id="_class_cell_1a8692c2ff9061eeefd7355c2003ca376e"/>    <section>
+    <title>getFlgd()</title>
+<indexterm><primary>getFlgd</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>getFlgd</secondary></indexterm>
+<para><computeroutput>bool Cell::getFlgd ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00046">46</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00024">flagged</link>.</para>
+<para>
+Referenced by <link linkend="__out_brd_8h_source_1l00077">OutBrd::ckFlg()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d11/class_cell_a8692c2ff9061eeefd7355c2003ca376e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_cell_1a572cd785292d1513d52209b5c5c70afa"/>    <section>
+    <title>getHddn()</title>
+<indexterm><primary>getHddn</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>getHddn</secondary></indexterm>
+<para><computeroutput>bool Cell::getHddn ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00045">45</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00023">hidden</link>.</para>
+    </section><anchor xml:id="_class_cell_1aa9d4022cfcda877b37e2f232f3d7ec55"/>    <section>
+    <title>getMine()</title>
+<indexterm><primary>getMine</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>getMine</secondary></indexterm>
+<para><computeroutput>bool Cell::getMine ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00047">47</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00027">mine</link>.</para>
+    </section><anchor xml:id="_class_cell_1a024cf59b90e7e7ec057ac1093c80d59c"/>    <section>
+    <title>getnCol()</title>
+<indexterm><primary>getnCol</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>getnCol</secondary></indexterm>
+<para><computeroutput>int Cell::getnCol ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00050">50</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00026">ncol</link>.</para>
+    </section><anchor xml:id="_class_cell_1ac08f5c4f88c15093a71684f12cc2a67c"/>    <section>
+    <title>getnRow()</title>
+<indexterm><primary>getnRow</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>getnRow</secondary></indexterm>
+<para><computeroutput>int Cell::getnRow ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00049">49</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00025">nrow</link>.</para>
+    </section><anchor xml:id="_class_cell_1a7bb9afc27b36ce59a73dd3ba5b84785f"/>    <section>
+    <title>getSym()</title>
+<indexterm><primary>getSym</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>getSym</secondary></indexterm>
+<para><computeroutput>char Cell::getSym ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00044">44</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00022">symbol</link>.</para>
+    </section><anchor xml:id="_class_cell_1aa076f9d0d9d00cb6cf91fa6a920055fe"/>    <section>
+    <title>getVal()</title>
+<indexterm><primary>getVal</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>getVal</secondary></indexterm>
+<para><computeroutput>int Cell::getVal ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00048">48</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00028">value</link>.</para>
+    </section><anchor xml:id="_class_cell_1a150942ac9b1258ba308586131abc4ec8"/>    <section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_class_cell">Cell</link> &amp; Cell::operator= (const <link linkend="_class_cell">Cell</link> &amp; right)</computeroutput></para><para>
+Definition at line <link linkend="__cell_8cpp_source_1l00031">31</link> of file <link linkend="__cell_8cpp_source">Cell.cpp</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00021">display</link>, <link linkend="__cell_8h_source_1l00024">flagged</link>, <link linkend="__cell_8h_source_1l00023">hidden</link>, <link linkend="__cell_8h_source_1l00027">mine</link>, <link linkend="__cell_8h_source_1l00026">ncol</link>, <link linkend="__cell_8h_source_1l00025">nrow</link>, <link linkend="__cell_8h_source_1l00022">symbol</link>, and <link linkend="__cell_8h_source_1l00028">value</link>.</para>
+    </section><anchor xml:id="_class_cell_1a22e5aab236b2f42a4cec18652cce88fe"/>    <section>
+    <title>setDisp()</title>
+<indexterm><primary>setDisp</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>setDisp</secondary></indexterm>
+<para><computeroutput>void Cell::setDisp (char a)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00034">34</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00021">display</link>.</para>
+    </section><anchor xml:id="_class_cell_1aa190ef553aef63dda30047619b39fe7a"/>    <section>
+    <title>setFlgd()</title>
+<indexterm><primary>setFlgd</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>setFlgd</secondary></indexterm>
+<para><computeroutput>void Cell::setFlgd (bool a)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00037">37</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00024">flagged</link>.</para>
+<para>
+Referenced by <link linkend="__out_brd_8h_source_1l00037">OutBrd::flag()</link>, and <link linkend="__out_brd_8h_source_1l00040">OutBrd::unflag()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d11/class_cell_aa190ef553aef63dda30047619b39fe7a_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_cell_1a89a43f48ffb2aacaf5961e46fd78e197"/>    <section>
+    <title>setHddn()</title>
+<indexterm><primary>setHddn</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>setHddn</secondary></indexterm>
+<para><computeroutput>void Cell::setHddn (bool a)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00036">36</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00023">hidden</link>.</para>
+<para>
+Referenced by <link linkend="__out_brd_8h_source_1l00034">OutBrd::reveal()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d11/class_cell_a89a43f48ffb2aacaf5961e46fd78e197_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_cell_1a3e26b9878fa13187a7834e21ad1affa8"/>    <section>
+    <title>setMine()</title>
+<indexterm><primary>setMine</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>setMine</secondary></indexterm>
+<para><computeroutput>void Cell::setMine (bool a)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00038">38</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00027">mine</link>.</para>
+    </section><anchor xml:id="_class_cell_1ab0e328f5d053f7df313063bb3239fa09"/>    <section>
+    <title>setncol()</title>
+<indexterm><primary>setncol</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>setncol</secondary></indexterm>
+<para><computeroutput>void Cell::setncol (int a)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00041">41</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00026">ncol</link>.</para>
+    </section><anchor xml:id="_class_cell_1ae8de6c402ee3ca437b73a2839f0a34ba"/>    <section>
+    <title>setnrow()</title>
+<indexterm><primary>setnrow</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>setnrow</secondary></indexterm>
+<para><computeroutput>void Cell::setnrow (int a)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00040">40</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00025">nrow</link>.</para>
+<para>
+Referenced by <link linkend="__in_brd_8cpp_source_1l00044">InBrd::celdata()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d11/class_cell_ae8de6c402ee3ca437b73a2839f0a34ba_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_cell_1a0b22981cded7faf11c9313c165e90988"/>    <section>
+    <title>setSym()</title>
+<indexterm><primary>setSym</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>setSym</secondary></indexterm>
+<para><computeroutput>void Cell::setSym (char a)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00035">35</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00022">symbol</link>.</para>
+    </section><anchor xml:id="_class_cell_1ae90b9eb1f9236ccf9054c25a1e1f915d"/>    <section>
+    <title>setVal()</title>
+<indexterm><primary>setVal</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>setVal</secondary></indexterm>
+<para><computeroutput>void Cell::setVal (int a)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__cell_8h_source_1l00039">39</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+References <link linkend="__cell_8h_source_1l00028">value</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_cell_1aa0fe1bf41408c40ccf95a0434c8cd753"/>    <section>
+    <title>display</title>
+<indexterm><primary>display</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>display</secondary></indexterm>
+<para><computeroutput>char Cell::display<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>what is seen by player </para>
+</para>
+<para>
+Definition at line <link linkend="__cell_8h_source_1l00021">21</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+Referenced by <link linkend="__cell_8cpp_source_1l00009">Cell()</link>, <link linkend="__cell_8h_source_1l00043">getDisp()</link>, <link linkend="__cell_8cpp_source_1l00031">operator=()</link>, and <link linkend="__cell_8h_source_1l00034">setDisp()</link>.</para>
+    </section><anchor xml:id="_class_cell_1a593898dc074bfdc46883f2976292e4d2"/>    <section>
+    <title>flagged</title>
+<indexterm><primary>flagged</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>flagged</secondary></indexterm>
+<para><computeroutput>bool Cell::flagged<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>if the player holds the cell </para>
+</para>
+<para>
+Definition at line <link linkend="__cell_8h_source_1l00024">24</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+Referenced by <link linkend="__cell_8cpp_source_1l00009">Cell()</link>, <link linkend="__cell_8h_source_1l00046">getFlgd()</link>, <link linkend="__cell_8cpp_source_1l00031">operator=()</link>, and <link linkend="__cell_8h_source_1l00037">setFlgd()</link>.</para>
+    </section><anchor xml:id="_class_cell_1ad8c292051c80a49db6b505465ffc7771"/>    <section>
+    <title>hidden</title>
+<indexterm><primary>hidden</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>hidden</secondary></indexterm>
+<para><computeroutput>bool Cell::hidden<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>if the player can see cell </para>
+</para>
+<para>
+Definition at line <link linkend="__cell_8h_source_1l00023">23</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+Referenced by <link linkend="__cell_8cpp_source_1l00009">Cell()</link>, <link linkend="__cell_8h_source_1l00045">getHddn()</link>, <link linkend="__cell_8cpp_source_1l00031">operator=()</link>, and <link linkend="__cell_8h_source_1l00036">setHddn()</link>.</para>
+    </section><anchor xml:id="_class_cell_1aeabf99afa55aaeb5d8e53cabd2886e44"/>    <section>
+    <title>mine</title>
+<indexterm><primary>mine</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>mine</secondary></indexterm>
+<para><computeroutput>bool Cell::mine<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>if the cell has a mine </para>
+</para>
+<para>
+Definition at line <link linkend="__cell_8h_source_1l00027">27</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+Referenced by <link linkend="__cell_8cpp_source_1l00009">Cell()</link>, <link linkend="__cell_8h_source_1l00047">getMine()</link>, <link linkend="__cell_8cpp_source_1l00031">operator=()</link>, and <link linkend="__cell_8h_source_1l00038">setMine()</link>.</para>
+    </section><anchor xml:id="_class_cell_1a02831844b99ef62b8cccda162977872b"/>    <section>
+    <title>ncol</title>
+<indexterm><primary>ncol</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>ncol</secondary></indexterm>
+<para><computeroutput>int Cell::ncol<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>which col cell is located </para>
+</para>
+<para>
+Definition at line <link linkend="__cell_8h_source_1l00026">26</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+Referenced by <link linkend="__cell_8cpp_source_1l00009">Cell()</link>, <link linkend="__cell_8h_source_1l00050">getnCol()</link>, <link linkend="__cell_8cpp_source_1l00031">operator=()</link>, and <link linkend="__cell_8h_source_1l00041">setncol()</link>.</para>
+    </section><anchor xml:id="_class_cell_1a9918b04ec15f46b116493b77e07aa618"/>    <section>
+    <title>nrow</title>
+<indexterm><primary>nrow</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>nrow</secondary></indexterm>
+<para><computeroutput>int Cell::nrow<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>which row cell is located </para>
+</para>
+<para>
+Definition at line <link linkend="__cell_8h_source_1l00025">25</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+Referenced by <link linkend="__cell_8cpp_source_1l00009">Cell()</link>, <link linkend="__cell_8h_source_1l00049">getnRow()</link>, <link linkend="__cell_8cpp_source_1l00031">operator=()</link>, and <link linkend="__cell_8h_source_1l00040">setnrow()</link>.</para>
+    </section><anchor xml:id="_class_cell_1a322c32087e3d7a061ab9168a1364cc7f"/>    <section>
+    <title>symbol</title>
+<indexterm><primary>symbol</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>symbol</secondary></indexterm>
+<para><computeroutput>char Cell::symbol<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>to be outputted, either mine(%),empty (-) or value </para>
+</para>
+<para>
+Definition at line <link linkend="__cell_8h_source_1l00022">22</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+Referenced by <link linkend="__cell_8cpp_source_1l00009">Cell()</link>, <link linkend="__cell_8h_source_1l00044">getSym()</link>, <link linkend="__cell_8cpp_source_1l00031">operator=()</link>, and <link linkend="__cell_8h_source_1l00035">setSym()</link>.</para>
+    </section><anchor xml:id="_class_cell_1a2a5e46b6fdcc414fa3736bbc193f62e8"/>    <section>
+    <title>value</title>
+<indexterm><primary>value</primary><secondary>Cell</secondary></indexterm>
+<indexterm><primary>Cell</primary><secondary>value</secondary></indexterm>
+<para><computeroutput>int Cell::value<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>what the cell value is; hint for adjacent cell </para>
+</para>
+<para>
+Definition at line <link linkend="__cell_8h_source_1l00028">28</link> of file <link linkend="__cell_8h_source">Cell.h</link>.</para>
+<para>
+Referenced by <link linkend="__cell_8cpp_source_1l00009">Cell()</link>, <link linkend="__cell_8h_source_1l00048">getVal()</link>, <link linkend="__cell_8cpp_source_1l00031">operator=()</link>, and <link linkend="__cell_8h_source_1l00039">setVal()</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+<link linkend="__cell_8h">Cell.h</link><link linkend="__cell_8cpp">Cell.cpp</link></section>
+</section>

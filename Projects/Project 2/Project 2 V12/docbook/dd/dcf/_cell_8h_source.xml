@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__cell_8h_source">
+<title>Cell.h</title>
+<programlisting>00001 <emphasis role="comment">/*</emphasis>
+00002 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+00003 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+00004 <emphasis role="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+00005 <emphasis role="comment">&#32;*/</emphasis>
+00006 
+00007 <emphasis role="comment">/*&#32;</emphasis>
+00008 <emphasis role="comment">&#32;*&#32;File:&#32;&#32;&#32;Cell.h</emphasis>
+00009 <emphasis role="comment">&#32;*&#32;Author:&#32;Gabrielle</emphasis>
+00010 <emphasis role="comment">&#32;*</emphasis>
+00011 <emphasis role="comment">&#32;*&#32;Created&#32;on&#32;July&#32;25,&#32;2020,&#32;12:54&#32;AM</emphasis>
+00012 <emphasis role="comment">&#32;*/</emphasis>
+00013 
+00014 <emphasis role="preprocessor">#ifndef&#32;_DIAGRAMS_CELL_H</emphasis>
+00015 <emphasis role="preprocessor">#define&#32;_DIAGRAMS_CELL_H</emphasis>
+00016 <emphasis role="preprocessor">#ifndef&#32;CELL_H</emphasis>
+00017 <emphasis role="preprocessor">#define&#32;CELL_H</emphasis>
+<anchor xml:id="__cell_8h_source_1l00018"/><link linkend="__cell_8h_1a36e1292dd9af86d5b74a92b4a1bad9ba">00018</link> 
+<anchor xml:id="__cell_8h_source_1l00019"/><link linkend="_class_cell">00019</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_cell">Cell</link>{
+00020 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__cell_8h_source_1l00021"/><link linkend="_class_cell_1aa0fe1bf41408c40ccf95a0434c8cd753">00021</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_cell_1aa0fe1bf41408c40ccf95a0434c8cd753">display</link>;&#32;
+<anchor xml:id="__cell_8h_source_1l00022"/><link linkend="_class_cell_1a322c32087e3d7a061ab9168a1364cc7f">00022</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_cell_1a322c32087e3d7a061ab9168a1364cc7f">symbol</link>;&#32;
+<anchor xml:id="__cell_8h_source_1l00023"/><link linkend="_class_cell_1ad8c292051c80a49db6b505465ffc7771">00023</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_cell_1ad8c292051c80a49db6b505465ffc7771">hidden</link>;&#32;
+<anchor xml:id="__cell_8h_source_1l00024"/><link linkend="_class_cell_1a593898dc074bfdc46883f2976292e4d2">00024</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_cell_1a593898dc074bfdc46883f2976292e4d2">flagged</link>;&#32;
+<anchor xml:id="__cell_8h_source_1l00025"/><link linkend="_class_cell_1a9918b04ec15f46b116493b77e07aa618">00025</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_cell_1a9918b04ec15f46b116493b77e07aa618">nrow</link>;&#32;
+<anchor xml:id="__cell_8h_source_1l00026"/><link linkend="_class_cell_1a02831844b99ef62b8cccda162977872b">00026</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_cell_1a02831844b99ef62b8cccda162977872b">ncol</link>;&#32;
+<anchor xml:id="__cell_8h_source_1l00027"/><link linkend="_class_cell_1aeabf99afa55aaeb5d8e53cabd2886e44">00027</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_cell_1aeabf99afa55aaeb5d8e53cabd2886e44">mine</link>;&#32;
+<anchor xml:id="__cell_8h_source_1l00028"/><link linkend="_class_cell_1a2a5e46b6fdcc414fa3736bbc193f62e8">00028</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_cell_1a2a5e46b6fdcc414fa3736bbc193f62e8">value</link>;&#32;
+00029 <emphasis role="keyword">public</emphasis>:
+00030 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a394510643e8664cf12b5efaf5cb99f71">Cell</link>&#32;();
+00031 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a394510643e8664cf12b5efaf5cb99f71">Cell</link>&#32;(<emphasis role="keywordtype">bool</emphasis>&#32;m);
+00032 &#32;&#32;&#32;&#32;<link linkend="_class_cell">Cell</link>&amp;&#32;<link linkend="_class_cell_1a150942ac9b1258ba308586131abc4ec8">operator =</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_cell">Cell</link>&#32;&amp;right);
+00033 
+<anchor xml:id="__cell_8h_source_1l00034"/><link linkend="_class_cell_1a22e5aab236b2f42a4cec18652cce88fe">00034</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_cell_1a22e5aab236b2f42a4cec18652cce88fe">setDisp</link>(<emphasis role="keywordtype">char</emphasis>&#32;a){<link linkend="_class_cell_1aa0fe1bf41408c40ccf95a0434c8cd753">display</link>=a;}&#32;
+<anchor xml:id="__cell_8h_source_1l00035"/><link linkend="_class_cell_1a0b22981cded7faf11c9313c165e90988">00035</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_cell_1a0b22981cded7faf11c9313c165e90988">setSym</link>(<emphasis role="keywordtype">char</emphasis>&#32;a){<link linkend="_class_cell_1a322c32087e3d7a061ab9168a1364cc7f">symbol</link>=a;}
+<anchor xml:id="__cell_8h_source_1l00036"/><link linkend="_class_cell_1a89a43f48ffb2aacaf5961e46fd78e197">00036</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_cell_1a89a43f48ffb2aacaf5961e46fd78e197">setHddn</link>(<emphasis role="keywordtype">bool</emphasis>&#32;a){<link linkend="_class_cell_1ad8c292051c80a49db6b505465ffc7771">hidden</link>=a;}
+<anchor xml:id="__cell_8h_source_1l00037"/><link linkend="_class_cell_1aa190ef553aef63dda30047619b39fe7a">00037</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_cell_1aa190ef553aef63dda30047619b39fe7a">setFlgd</link>(<emphasis role="keywordtype">bool</emphasis>&#32;a){<link linkend="_class_cell_1a593898dc074bfdc46883f2976292e4d2">flagged</link>=a;}
+<anchor xml:id="__cell_8h_source_1l00038"/><link linkend="_class_cell_1a3e26b9878fa13187a7834e21ad1affa8">00038</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_cell_1a3e26b9878fa13187a7834e21ad1affa8">setMine</link>(<emphasis role="keywordtype">bool</emphasis>&#32;a){<link linkend="_class_cell_1aeabf99afa55aaeb5d8e53cabd2886e44">mine</link>=a;}
+<anchor xml:id="__cell_8h_source_1l00039"/><link linkend="_class_cell_1ae90b9eb1f9236ccf9054c25a1e1f915d">00039</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_cell_1ae90b9eb1f9236ccf9054c25a1e1f915d">setVal</link>(<emphasis role="keywordtype">int</emphasis>&#32;a){<link linkend="_class_cell_1a2a5e46b6fdcc414fa3736bbc193f62e8">value</link>=a;}
+<anchor xml:id="__cell_8h_source_1l00040"/><link linkend="_class_cell_1ae8de6c402ee3ca437b73a2839f0a34ba">00040</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_cell_1ae8de6c402ee3ca437b73a2839f0a34ba">setnrow</link>(<emphasis role="keywordtype">int</emphasis>&#32;a){<link linkend="_class_cell_1a9918b04ec15f46b116493b77e07aa618">nrow</link>=a;}
+<anchor xml:id="__cell_8h_source_1l00041"/><link linkend="_class_cell_1ab0e328f5d053f7df313063bb3239fa09">00041</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_cell_1ab0e328f5d053f7df313063bb3239fa09">setncol</link>(<emphasis role="keywordtype">int</emphasis>&#32;a){<link linkend="_class_cell_1a02831844b99ef62b8cccda162977872b">ncol</link>=a;}
+00042 &#32;&#32;&#32;&#32;
+<anchor xml:id="__cell_8h_source_1l00043"/><link linkend="_class_cell_1aaafbb0a9d3aa2abc56cb3290c9e4c09e">00043</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_cell_1aaafbb0a9d3aa2abc56cb3290c9e4c09e">getDisp</link>()<emphasis role="keyword">const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_cell_1aa0fe1bf41408c40ccf95a0434c8cd753">display</link>;}&#32;
+<anchor xml:id="__cell_8h_source_1l00044"/><link linkend="_class_cell_1a7bb9afc27b36ce59a73dd3ba5b84785f">00044</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_cell_1a7bb9afc27b36ce59a73dd3ba5b84785f">getSym</link>()<emphasis role="keyword">&#32;const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_cell_1a322c32087e3d7a061ab9168a1364cc7f">symbol</link>;}
+<anchor xml:id="__cell_8h_source_1l00045"/><link linkend="_class_cell_1a572cd785292d1513d52209b5c5c70afa">00045</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_cell_1a572cd785292d1513d52209b5c5c70afa">getHddn</link>()<emphasis role="keyword">const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_cell_1ad8c292051c80a49db6b505465ffc7771">hidden</link>;}
+<anchor xml:id="__cell_8h_source_1l00046"/><link linkend="_class_cell_1a8692c2ff9061eeefd7355c2003ca376e">00046</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_cell_1a8692c2ff9061eeefd7355c2003ca376e">getFlgd</link>()<emphasis role="keyword">const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_cell_1a593898dc074bfdc46883f2976292e4d2">flagged</link>;}
+<anchor xml:id="__cell_8h_source_1l00047"/><link linkend="_class_cell_1aa9d4022cfcda877b37e2f232f3d7ec55">00047</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_cell_1aa9d4022cfcda877b37e2f232f3d7ec55">getMine</link>()<emphasis role="keyword">const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_cell_1aeabf99afa55aaeb5d8e53cabd2886e44">mine</link>;}
+<anchor xml:id="__cell_8h_source_1l00048"/><link linkend="_class_cell_1aa076f9d0d9d00cb6cf91fa6a920055fe">00048</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_cell_1aa076f9d0d9d00cb6cf91fa6a920055fe">getVal</link>()<emphasis role="keyword">&#32;const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_cell_1a2a5e46b6fdcc414fa3736bbc193f62e8">value</link>;}
+<anchor xml:id="__cell_8h_source_1l00049"/><link linkend="_class_cell_1ac08f5c4f88c15093a71684f12cc2a67c">00049</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_cell_1ac08f5c4f88c15093a71684f12cc2a67c">getnRow</link>()<emphasis role="keyword">&#32;const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_cell_1a9918b04ec15f46b116493b77e07aa618">nrow</link>;}
+<anchor xml:id="__cell_8h_source_1l00050"/><link linkend="_class_cell_1a024cf59b90e7e7ec057ac1093c80d59c">00050</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_cell_1a024cf59b90e7e7ec057ac1093c80d59c">getnCol</link>()<emphasis role="keyword">&#32;const&#32;</emphasis>{<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_cell_1a02831844b99ef62b8cccda162977872b">ncol</link>;}
+00051 };
+00052 
+00053 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;CELL_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+00054 
+</programlisting></section>

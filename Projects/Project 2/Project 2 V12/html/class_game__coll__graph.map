@@ -1,0 +1,9 @@
+<map id="Game" name="Game">
+<area shape="rect" id="node1" title=" " alt="" coords="131,1057,225,1369"/>
+<area shape="rect" id="node2" href="$class_gme_brd.html" title=" " alt="" coords="94,395,193,633"/>
+<area shape="rect" id="node4" href="$class_out_brd.html" title=" " alt="" coords="5,712,95,965"/>
+<area shape="rect" id="node7" href="$class_in_brd.html" title=" " alt="" coords="191,741,288,936"/>
+<area shape="rect" id="node3" href="$class_cell.html" title=" " alt="" coords="94,5,193,332"/>
+<area shape="rect" id="node5" href="$class_player.html" title=" " alt="" coords="313,683,411,995"/>
+<area shape="rect" id="node6" href="$class_stats.html" title=" " alt="" coords="317,431,407,597"/>
+</map>

@@ -1,0 +1,526 @@
+\hypertarget{class_cell}{}\doxysection{Cell Class Reference}
+\label{class_cell}\index{Cell@{Cell}}
+
+
+{\ttfamily \#include $<$Cell.\+h$>$}
+
+
+
+Collaboration diagram for Cell\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cell_a394510643e8664cf12b5efaf5cb99f71}{Cell}} ()
+\item 
+\mbox{\hyperlink{class_cell_a4d36ca39f2f51e0a41c0f1990e2107ca}{Cell}} (bool m)
+\item 
+\mbox{\hyperlink{class_cell}{Cell}} \& \mbox{\hyperlink{class_cell_a150942ac9b1258ba308586131abc4ec8}{operator=}} (const \mbox{\hyperlink{class_cell}{Cell}} \&right)
+\item 
+void \mbox{\hyperlink{class_cell_a22e5aab236b2f42a4cec18652cce88fe}{set\+Disp}} (char a)
+\item 
+void \mbox{\hyperlink{class_cell_a0b22981cded7faf11c9313c165e90988}{set\+Sym}} (char a)
+\item 
+void \mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{set\+Hddn}} (bool a)
+\item 
+void \mbox{\hyperlink{class_cell_aa190ef553aef63dda30047619b39fe7a}{set\+Flgd}} (bool a)
+\item 
+void \mbox{\hyperlink{class_cell_a3e26b9878fa13187a7834e21ad1affa8}{set\+Mine}} (bool a)
+\item 
+void \mbox{\hyperlink{class_cell_ae90b9eb1f9236ccf9054c25a1e1f915d}{set\+Val}} (int a)
+\item 
+void \mbox{\hyperlink{class_cell_ae8de6c402ee3ca437b73a2839f0a34ba}{setnrow}} (int a)
+\item 
+void \mbox{\hyperlink{class_cell_ab0e328f5d053f7df313063bb3239fa09}{setncol}} (int a)
+\item 
+char \mbox{\hyperlink{class_cell_aaafbb0a9d3aa2abc56cb3290c9e4c09e}{get\+Disp}} () const
+\item 
+char \mbox{\hyperlink{class_cell_a7bb9afc27b36ce59a73dd3ba5b84785f}{get\+Sym}} () const
+\item 
+bool \mbox{\hyperlink{class_cell_a572cd785292d1513d52209b5c5c70afa}{get\+Hddn}} () const
+\item 
+bool \mbox{\hyperlink{class_cell_a8692c2ff9061eeefd7355c2003ca376e}{get\+Flgd}} () const
+\item 
+bool \mbox{\hyperlink{class_cell_aa9d4022cfcda877b37e2f232f3d7ec55}{get\+Mine}} () const
+\item 
+int \mbox{\hyperlink{class_cell_aa076f9d0d9d00cb6cf91fa6a920055fe}{get\+Val}} () const
+\item 
+int \mbox{\hyperlink{class_cell_ac08f5c4f88c15093a71684f12cc2a67c}{getn\+Row}} () const
+\item 
+int \mbox{\hyperlink{class_cell_a024cf59b90e7e7ec057ac1093c80d59c}{getn\+Col}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_cell_aa0fe1bf41408c40ccf95a0434c8cd753}{display}}
+\begin{DoxyCompactList}\small\item\em what is seen by player \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_cell_a322c32087e3d7a061ab9168a1364cc7f}{symbol}}
+\begin{DoxyCompactList}\small\item\em to be outputted, either mine(\%),empty (-\/) or value \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_ad8c292051c80a49db6b505465ffc7771}{hidden}}
+\begin{DoxyCompactList}\small\item\em if the player can see cell \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_a593898dc074bfdc46883f2976292e4d2}{flagged}}
+\begin{DoxyCompactList}\small\item\em if the player holds the cell \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_a9918b04ec15f46b116493b77e07aa618}{nrow}}
+\begin{DoxyCompactList}\small\item\em which row cell is located \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_a02831844b99ef62b8cccda162977872b}{ncol}}
+\begin{DoxyCompactList}\small\item\em which col cell is located \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cell_aeabf99afa55aaeb5d8e53cabd2886e44}{mine}}
+\begin{DoxyCompactList}\small\item\em if the cell has a mine \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cell_a2a5e46b6fdcc414fa3736bbc193f62e8}{value}}
+\begin{DoxyCompactList}\small\item\em what the cell value is; hint for adjacent cell \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 19 of file Cell.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cell_a394510643e8664cf12b5efaf5cb99f71}\label{class_cell_a394510643e8664cf12b5efaf5cb99f71}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file Cell.\+cpp.
+
+
+
+References display, flagged, hidden, mine, ncol, nrow, symbol, and value.
+
+\mbox{\Hypertarget{class_cell_a4d36ca39f2f51e0a41c0f1990e2107ca}\label{class_cell_a4d36ca39f2f51e0a41c0f1990e2107ca}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}\item[{bool}]{m }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file Cell.\+cpp.
+
+
+
+References display, flagged, hidden, mine, ncol, nrow, symbol, and value.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_aaafbb0a9d3aa2abc56cb3290c9e4c09e}\label{class_cell_aaafbb0a9d3aa2abc56cb3290c9e4c09e}} 
+\index{Cell@{Cell}!getDisp@{getDisp}}
+\index{getDisp@{getDisp}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getDisp()}{getDisp()}}
+{\footnotesize\ttfamily char Cell\+::get\+Disp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file Cell.\+h.
+
+
+
+References display.
+
+\mbox{\Hypertarget{class_cell_a8692c2ff9061eeefd7355c2003ca376e}\label{class_cell_a8692c2ff9061eeefd7355c2003ca376e}} 
+\index{Cell@{Cell}!getFlgd@{getFlgd}}
+\index{getFlgd@{getFlgd}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getFlgd()}{getFlgd()}}
+{\footnotesize\ttfamily bool Cell\+::get\+Flgd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 46 of file Cell.\+h.
+
+
+
+References flagged.
+
+
+
+Referenced by Out\+Brd\+::ck\+Flg().
+
+Here is the caller graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{class_cell_a572cd785292d1513d52209b5c5c70afa}\label{class_cell_a572cd785292d1513d52209b5c5c70afa}} 
+\index{Cell@{Cell}!getHddn@{getHddn}}
+\index{getHddn@{getHddn}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getHddn()}{getHddn()}}
+{\footnotesize\ttfamily bool Cell\+::get\+Hddn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 45 of file Cell.\+h.
+
+
+
+References hidden.
+
+\mbox{\Hypertarget{class_cell_aa9d4022cfcda877b37e2f232f3d7ec55}\label{class_cell_aa9d4022cfcda877b37e2f232f3d7ec55}} 
+\index{Cell@{Cell}!getMine@{getMine}}
+\index{getMine@{getMine}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getMine()}{getMine()}}
+{\footnotesize\ttfamily bool Cell\+::get\+Mine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 47 of file Cell.\+h.
+
+
+
+References mine.
+
+\mbox{\Hypertarget{class_cell_a024cf59b90e7e7ec057ac1093c80d59c}\label{class_cell_a024cf59b90e7e7ec057ac1093c80d59c}} 
+\index{Cell@{Cell}!getnCol@{getnCol}}
+\index{getnCol@{getnCol}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getnCol()}{getnCol()}}
+{\footnotesize\ttfamily int Cell\+::getn\+Col (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 50 of file Cell.\+h.
+
+
+
+References ncol.
+
+\mbox{\Hypertarget{class_cell_ac08f5c4f88c15093a71684f12cc2a67c}\label{class_cell_ac08f5c4f88c15093a71684f12cc2a67c}} 
+\index{Cell@{Cell}!getnRow@{getnRow}}
+\index{getnRow@{getnRow}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getnRow()}{getnRow()}}
+{\footnotesize\ttfamily int Cell\+::getn\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 49 of file Cell.\+h.
+
+
+
+References nrow.
+
+\mbox{\Hypertarget{class_cell_a7bb9afc27b36ce59a73dd3ba5b84785f}\label{class_cell_a7bb9afc27b36ce59a73dd3ba5b84785f}} 
+\index{Cell@{Cell}!getSym@{getSym}}
+\index{getSym@{getSym}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getSym()}{getSym()}}
+{\footnotesize\ttfamily char Cell\+::get\+Sym (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 44 of file Cell.\+h.
+
+
+
+References symbol.
+
+\mbox{\Hypertarget{class_cell_aa076f9d0d9d00cb6cf91fa6a920055fe}\label{class_cell_aa076f9d0d9d00cb6cf91fa6a920055fe}} 
+\index{Cell@{Cell}!getVal@{getVal}}
+\index{getVal@{getVal}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getVal()}{getVal()}}
+{\footnotesize\ttfamily int Cell\+::get\+Val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 48 of file Cell.\+h.
+
+
+
+References value.
+
+\mbox{\Hypertarget{class_cell_a150942ac9b1258ba308586131abc4ec8}\label{class_cell_a150942ac9b1258ba308586131abc4ec8}} 
+\index{Cell@{Cell}!operator=@{operator=}}
+\index{operator=@{operator=}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}} \& Cell\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cell}{Cell}} \&}]{right }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file Cell.\+cpp.
+
+
+
+References display, flagged, hidden, mine, ncol, nrow, symbol, and value.
+
+\mbox{\Hypertarget{class_cell_a22e5aab236b2f42a4cec18652cce88fe}\label{class_cell_a22e5aab236b2f42a4cec18652cce88fe}} 
+\index{Cell@{Cell}!setDisp@{setDisp}}
+\index{setDisp@{setDisp}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setDisp()}{setDisp()}}
+{\footnotesize\ttfamily void Cell\+::set\+Disp (\begin{DoxyParamCaption}\item[{char}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file Cell.\+h.
+
+
+
+References display.
+
+\mbox{\Hypertarget{class_cell_aa190ef553aef63dda30047619b39fe7a}\label{class_cell_aa190ef553aef63dda30047619b39fe7a}} 
+\index{Cell@{Cell}!setFlgd@{setFlgd}}
+\index{setFlgd@{setFlgd}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setFlgd()}{setFlgd()}}
+{\footnotesize\ttfamily void Cell\+::set\+Flgd (\begin{DoxyParamCaption}\item[{bool}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file Cell.\+h.
+
+
+
+References flagged.
+
+
+
+Referenced by Out\+Brd\+::flag(), and Out\+Brd\+::unflag().
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}\label{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}} 
+\index{Cell@{Cell}!setHddn@{setHddn}}
+\index{setHddn@{setHddn}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setHddn()}{setHddn()}}
+{\footnotesize\ttfamily void Cell\+::set\+Hddn (\begin{DoxyParamCaption}\item[{bool}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 36 of file Cell.\+h.
+
+
+
+References hidden.
+
+
+
+Referenced by Out\+Brd\+::reveal().
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{class_cell_a3e26b9878fa13187a7834e21ad1affa8}\label{class_cell_a3e26b9878fa13187a7834e21ad1affa8}} 
+\index{Cell@{Cell}!setMine@{setMine}}
+\index{setMine@{setMine}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setMine()}{setMine()}}
+{\footnotesize\ttfamily void Cell\+::set\+Mine (\begin{DoxyParamCaption}\item[{bool}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 38 of file Cell.\+h.
+
+
+
+References mine.
+
+\mbox{\Hypertarget{class_cell_ab0e328f5d053f7df313063bb3239fa09}\label{class_cell_ab0e328f5d053f7df313063bb3239fa09}} 
+\index{Cell@{Cell}!setncol@{setncol}}
+\index{setncol@{setncol}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setncol()}{setncol()}}
+{\footnotesize\ttfamily void Cell\+::setncol (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 41 of file Cell.\+h.
+
+
+
+References ncol.
+
+\mbox{\Hypertarget{class_cell_ae8de6c402ee3ca437b73a2839f0a34ba}\label{class_cell_ae8de6c402ee3ca437b73a2839f0a34ba}} 
+\index{Cell@{Cell}!setnrow@{setnrow}}
+\index{setnrow@{setnrow}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setnrow()}{setnrow()}}
+{\footnotesize\ttfamily void Cell\+::setnrow (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file Cell.\+h.
+
+
+
+References nrow.
+
+
+
+Referenced by In\+Brd\+::celdata().
+
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_cell_a0b22981cded7faf11c9313c165e90988}\label{class_cell_a0b22981cded7faf11c9313c165e90988}} 
+\index{Cell@{Cell}!setSym@{setSym}}
+\index{setSym@{setSym}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setSym()}{setSym()}}
+{\footnotesize\ttfamily void Cell\+::set\+Sym (\begin{DoxyParamCaption}\item[{char}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 35 of file Cell.\+h.
+
+
+
+References symbol.
+
+\mbox{\Hypertarget{class_cell_ae90b9eb1f9236ccf9054c25a1e1f915d}\label{class_cell_ae90b9eb1f9236ccf9054c25a1e1f915d}} 
+\index{Cell@{Cell}!setVal@{setVal}}
+\index{setVal@{setVal}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setVal()}{setVal()}}
+{\footnotesize\ttfamily void Cell\+::set\+Val (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 39 of file Cell.\+h.
+
+
+
+References value.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cell_aa0fe1bf41408c40ccf95a0434c8cd753}\label{class_cell_aa0fe1bf41408c40ccf95a0434c8cd753}} 
+\index{Cell@{Cell}!display@{display}}
+\index{display@{display}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily char Cell\+::display\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+what is seen by player 
+
+
+
+Definition at line 21 of file Cell.\+h.
+
+
+
+Referenced by Cell(), get\+Disp(), operator=(), and set\+Disp().
+
+\mbox{\Hypertarget{class_cell_a593898dc074bfdc46883f2976292e4d2}\label{class_cell_a593898dc074bfdc46883f2976292e4d2}} 
+\index{Cell@{Cell}!flagged@{flagged}}
+\index{flagged@{flagged}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{flagged}{flagged}}
+{\footnotesize\ttfamily bool Cell\+::flagged\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+if the player holds the cell 
+
+
+
+Definition at line 24 of file Cell.\+h.
+
+
+
+Referenced by Cell(), get\+Flgd(), operator=(), and set\+Flgd().
+
+\mbox{\Hypertarget{class_cell_ad8c292051c80a49db6b505465ffc7771}\label{class_cell_ad8c292051c80a49db6b505465ffc7771}} 
+\index{Cell@{Cell}!hidden@{hidden}}
+\index{hidden@{hidden}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{hidden}{hidden}}
+{\footnotesize\ttfamily bool Cell\+::hidden\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+if the player can see cell 
+
+
+
+Definition at line 23 of file Cell.\+h.
+
+
+
+Referenced by Cell(), get\+Hddn(), operator=(), and set\+Hddn().
+
+\mbox{\Hypertarget{class_cell_aeabf99afa55aaeb5d8e53cabd2886e44}\label{class_cell_aeabf99afa55aaeb5d8e53cabd2886e44}} 
+\index{Cell@{Cell}!mine@{mine}}
+\index{mine@{mine}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{mine}{mine}}
+{\footnotesize\ttfamily bool Cell\+::mine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+if the cell has a mine 
+
+
+
+Definition at line 27 of file Cell.\+h.
+
+
+
+Referenced by Cell(), get\+Mine(), operator=(), and set\+Mine().
+
+\mbox{\Hypertarget{class_cell_a02831844b99ef62b8cccda162977872b}\label{class_cell_a02831844b99ef62b8cccda162977872b}} 
+\index{Cell@{Cell}!ncol@{ncol}}
+\index{ncol@{ncol}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{ncol}{ncol}}
+{\footnotesize\ttfamily int Cell\+::ncol\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+which col cell is located 
+
+
+
+Definition at line 26 of file Cell.\+h.
+
+
+
+Referenced by Cell(), getn\+Col(), operator=(), and setncol().
+
+\mbox{\Hypertarget{class_cell_a9918b04ec15f46b116493b77e07aa618}\label{class_cell_a9918b04ec15f46b116493b77e07aa618}} 
+\index{Cell@{Cell}!nrow@{nrow}}
+\index{nrow@{nrow}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{nrow}{nrow}}
+{\footnotesize\ttfamily int Cell\+::nrow\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+which row cell is located 
+
+
+
+Definition at line 25 of file Cell.\+h.
+
+
+
+Referenced by Cell(), getn\+Row(), operator=(), and setnrow().
+
+\mbox{\Hypertarget{class_cell_a322c32087e3d7a061ab9168a1364cc7f}\label{class_cell_a322c32087e3d7a061ab9168a1364cc7f}} 
+\index{Cell@{Cell}!symbol@{symbol}}
+\index{symbol@{symbol}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{symbol}{symbol}}
+{\footnotesize\ttfamily char Cell\+::symbol\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+to be outputted, either mine(\%),empty (-\/) or value 
+
+
+
+Definition at line 22 of file Cell.\+h.
+
+
+
+Referenced by Cell(), get\+Sym(), operator=(), and set\+Sym().
+
+\mbox{\Hypertarget{class_cell_a2a5e46b6fdcc414fa3736bbc193f62e8}\label{class_cell_a2a5e46b6fdcc414fa3736bbc193f62e8}} 
+\index{Cell@{Cell}!value@{value}}
+\index{value@{value}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily int Cell\+::value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+what the cell value is; hint for adjacent cell 
+
+
+
+Definition at line 28 of file Cell.\+h.
+
+
+
+Referenced by Cell(), get\+Val(), operator=(), and set\+Val().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cell_8h}{Cell.\+h}}\item 
+\mbox{\hyperlink{_cell_8cpp}{Cell.\+cpp}}\end{DoxyCompactItemize}

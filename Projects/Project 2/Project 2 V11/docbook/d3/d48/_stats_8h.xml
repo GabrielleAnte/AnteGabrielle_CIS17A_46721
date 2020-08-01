@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__stats_8h">
+<title>Stats.h File Reference</title>
+<indexterm><primary>Stats.h</primary></indexterm>
+<programlisting>#include &lt;string&gt;
+#include &lt;vector&gt;
+</programlisting>Include dependency graph for Stats.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d67/_stats_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/d54/_stats_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_stats">Stats&lt; T &gt;</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="__stats_8h_1a61e845bc0532143e8d808a9dd0f81b08">STATS_H</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="__stats_8h_1a61e845bc0532143e8d808a9dd0f81b08"/>    <section>
+    <title>STATS_H</title>
+<indexterm><primary>STATS_H</primary><secondary>Stats.h</secondary></indexterm>
+<indexterm><primary>Stats.h</primary><secondary>STATS_H</secondary></indexterm>
+<para><computeroutput>#define STATS_H</computeroutput></para><para>
+Definition at line <link linkend="__stats_8h_source_1l00019">19</link> of file <link linkend="__stats_8h_source">Stats.h</link>.</para>
+</section>
+</section>
+</section>

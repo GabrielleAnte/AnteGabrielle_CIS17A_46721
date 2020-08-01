@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__out_brd_8cpp">
+<title>OutBrd.cpp File Reference</title>
+<indexterm><primary>OutBrd.cpp</primary></indexterm>
+<programlisting>#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+#include &quot;GmeBrd.h&quot;
+#include &quot;OutBrd.h&quot;
+#include &quot;InBrd.h&quot;
+</programlisting>Include dependency graph for OutBrd.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/d9f/_out_brd_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>

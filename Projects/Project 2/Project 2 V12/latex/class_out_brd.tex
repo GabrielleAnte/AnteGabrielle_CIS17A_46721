@@ -1,0 +1,404 @@
+\hypertarget{class_out_brd}{}\doxysection{Out\+Brd Class Reference}
+\label{class_out_brd}\index{OutBrd@{OutBrd}}
+
+
+{\ttfamily \#include $<$Out\+Brd.\+h$>$}
+
+
+
+Inheritance diagram for Out\+Brd\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_out_brd__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Out\+Brd\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_out_brd__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_out_brd_ad5af3e2f29a5e6a8f558ff2834aec12d}{Out\+Brd}} ()
+\item 
+void \mbox{\hyperlink{class_out_brd_a0af7ee8eef4871714011bc8f4e9971a6}{rd\+Brd}} (\mbox{\hyperlink{class_in_brd}{In\+Brd}} \&a)
+\item 
+void \mbox{\hyperlink{class_out_brd_a4c07c984330c7d56eacb3154f41b731a}{reveal}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+void \mbox{\hyperlink{class_out_brd_aae382b8a171780c274e67a49328ef4d5}{flag}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+void \mbox{\hyperlink{class_out_brd_ab33baa2658c6ccd009b3043fe389d0c4}{unflag}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+bool \mbox{\hyperlink{class_out_brd_af35a0c9f121c0b2dddf81e88304343b7}{spc\+Opn}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\begin{DoxyCompactList}\small\item\em function prototype to determine if space is open \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_out_brd_af608ac43b10bea381e951393c1b2c9e9}{loss}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\begin{DoxyCompactList}\small\item\em function prototype to determine whether a mine is uncovered (whether player lost) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_out_brd_a3b1441409df7b1460bdc5b57734b1064}{win}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\begin{DoxyCompactList}\small\item\em function prototype to determine whether player had uncovered all cells not containing a mine (whether player won) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_out_brd_aa92302a7d20fb2e20522e37ed48be906}{ck\+Flg}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+bool \mbox{\hyperlink{class_out_brd_a80ed53ea4a4ae752786cdc729cb4838f}{chk\+Clr}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+void \mbox{\hyperlink{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}{clear}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+int \mbox{\hyperlink{class_out_brd_aa9ac410197c494be9af5aa806fcf6ce1}{f\+Remain}} ()
+\item 
+virtual void \mbox{\hyperlink{class_out_brd_a07ad712503dc56ce0c4a94b625c4780a}{dsp\+Brd}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$ \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_out_brd_ad5af3e2f29a5e6a8f558ff2834aec12d}\label{class_out_brd_ad5af3e2f29a5e6a8f558ff2834aec12d}} 
+\index{OutBrd@{OutBrd}!OutBrd@{OutBrd}}
+\index{OutBrd@{OutBrd}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{OutBrd()}{OutBrd()}}
+{\footnotesize\ttfamily Out\+Brd\+::\+Out\+Brd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22 :\mbox{\hyperlink{class_gme_brd_a2920499850a4d6e438c2c12154bbd055}{GmeBrd}}()\{ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_out_brd_a80ed53ea4a4ae752786cdc729cb4838f}\label{class_out_brd_a80ed53ea4a4ae752786cdc729cb4838f}} 
+\index{OutBrd@{OutBrd}!chkClr@{chkClr}}
+\index{chkClr@{chkClr}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{chkClr()}{chkClr()}}
+{\footnotesize\ttfamily bool Out\+Brd\+::chk\+Clr (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+Checks if the cell chosen is an empty cell 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91 \{}
+\DoxyCodeLine{92     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getSym() == \textcolor{charliteral}{'-\/'} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getVal() == 0)\{}
+\DoxyCodeLine{93         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{94     \}}
+\DoxyCodeLine{95     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{96     \{}
+\DoxyCodeLine{97         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{98     \}}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_out_brd_aa92302a7d20fb2e20522e37ed48be906}\label{class_out_brd_aa92302a7d20fb2e20522e37ed48be906}} 
+\index{OutBrd@{OutBrd}!ckFlg@{ckFlg}}
+\index{ckFlg@{ckFlg}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{ckFlg()}{ckFlg()}}
+{\footnotesize\ttfamily bool Out\+Brd\+::ck\+Flg (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r-\/1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}-\/1].\mbox{\hyperlink{class_cell_a8692c2ff9061eeefd7355c2003ca376e}{getFlgd}}();\}  }
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_out_brd_aa92302a7d20fb2e20522e37ed48be906_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}\label{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}} 
+\index{OutBrd@{OutBrd}!clear@{clear}}
+\index{clear@{clear}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Out\+Brd\+::clear (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+recursive function that clears a section of the board if an empty cell was uncovered 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103     \{}
+\DoxyCodeLine{104         \textcolor{keywordflow}{if} (r -\/ 1 >= 0 \&\& \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1 >= 0 \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getHddn() == \textcolor{keyword}{true}) \textcolor{comment}{// top left}}
+\DoxyCodeLine{105         \{}
+\DoxyCodeLine{106             \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].\mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{setHddn}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{107             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getSym() == \textcolor{charliteral}{'-\/'} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getVal() == 0) \{}
+\DoxyCodeLine{108                 \mbox{\hyperlink{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}{clear}}(r -\/ 1, \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1);}
+\DoxyCodeLine{109             \}}
+\DoxyCodeLine{110         \}}
+\DoxyCodeLine{111         \textcolor{keywordflow}{if} (r -\/ 1 >= 0 \&\& \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} >= 0 \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}].getHddn() == \textcolor{keyword}{true}) \textcolor{comment}{// top}}
+\DoxyCodeLine{112         \{}
+\DoxyCodeLine{113             \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}].\mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{setHddn}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{114             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}].getSym() == \textcolor{charliteral}{'-\/'} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}].getVal() == 0) \{}
+\DoxyCodeLine{115                 \mbox{\hyperlink{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}{clear}}(r -\/ 1, \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}});}
+\DoxyCodeLine{116             \}}
+\DoxyCodeLine{117         \}}
+\DoxyCodeLine{118         \textcolor{keywordflow}{if} (r -\/ 1 >= 0 \&\& \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1 < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].getHddn() == \textcolor{keyword}{true}) \textcolor{comment}{// top right}}
+\DoxyCodeLine{119         \{}
+\DoxyCodeLine{120             \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].\mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{setHddn}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{121             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].getSym() == \textcolor{charliteral}{'-\/'} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r -\/ 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].getVal() == 0) \{}
+\DoxyCodeLine{122                 \mbox{\hyperlink{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}{clear}}(r -\/ 1, \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1);}
+\DoxyCodeLine{123             \}}
+\DoxyCodeLine{124         \}}
+\DoxyCodeLine{125         \textcolor{keywordflow}{if} (r >= 0 \&\& \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1 < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].getHddn() == \textcolor{keyword}{true}) \textcolor{comment}{// right}}
+\DoxyCodeLine{126         \{}
+\DoxyCodeLine{127             \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].\mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{setHddn}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{128             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].getSym() == \textcolor{charliteral}{'-\/'} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].getVal() == 0) \{}
+\DoxyCodeLine{129                 \mbox{\hyperlink{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}{clear}}(r, \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1);}
+\DoxyCodeLine{130             \}}
+\DoxyCodeLine{131         \}}
+\DoxyCodeLine{132         \textcolor{keywordflow}{if} (r + 1 < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}} \&\& \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1 < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].getHddn() == \textcolor{keyword}{true}) \textcolor{comment}{// bottom right}}
+\DoxyCodeLine{133         \{}
+\DoxyCodeLine{134             \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].\mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{setHddn}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{135             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].getSym() == \textcolor{charliteral}{'-\/'} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1].getVal() == 0) \{}
+\DoxyCodeLine{136                 \mbox{\hyperlink{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}{clear}}(r + 1, \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} + 1);}
+\DoxyCodeLine{137             \}}
+\DoxyCodeLine{138         \}   }
+\DoxyCodeLine{139         \textcolor{keywordflow}{if} (r + 1 < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}} \&\& \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} >= 0 \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}].getHddn()== \textcolor{keyword}{true}) \textcolor{comment}{// bottom}}
+\DoxyCodeLine{140         \{}
+\DoxyCodeLine{141             \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}].\mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{setHddn}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{142             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}].getSym() == \textcolor{charliteral}{'-\/'} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}].getVal() == 0) \{}
+\DoxyCodeLine{143                 \mbox{\hyperlink{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}{clear}}(r + 1, \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}});}
+\DoxyCodeLine{144             \}}
+\DoxyCodeLine{145         \}}
+\DoxyCodeLine{146         \textcolor{keywordflow}{if} (r + 1 < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}} \&\& \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1 >= 0 \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getHddn() == \textcolor{keyword}{true}) \textcolor{comment}{// bottom left}}
+\DoxyCodeLine{147         \{}
+\DoxyCodeLine{148             \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].\mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{setHddn}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{149             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getSym() == \textcolor{charliteral}{'-\/'} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r + 1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getVal() == 0) \{}
+\DoxyCodeLine{150                 \mbox{\hyperlink{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}{clear}}(r + 1, \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1);}
+\DoxyCodeLine{151             \}}
+\DoxyCodeLine{152         \}}
+\DoxyCodeLine{153         \textcolor{keywordflow}{if} (r >= 0 \&\& \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1 >= 0 \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getHddn() == \textcolor{keyword}{true}) \textcolor{comment}{// left}}
+\DoxyCodeLine{154         \{}
+\DoxyCodeLine{155             \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].\mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{setHddn}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{156             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getSym() == \textcolor{charliteral}{'-\/'} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1].getVal() == 0) \{}
+\DoxyCodeLine{157                 \mbox{\hyperlink{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}{clear}}(r, \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}} -\/ 1);}
+\DoxyCodeLine{158             \}}
+\DoxyCodeLine{159         \}}
+\DoxyCodeLine{160     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_out_brd_a07ad712503dc56ce0c4a94b625c4780a}\label{class_out_brd_a07ad712503dc56ce0c4a94b625c4780a}} 
+\index{OutBrd@{OutBrd}!dspBrd@{dspBrd}}
+\index{dspBrd@{dspBrd}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{dspBrd()}{dspBrd()}}
+{\footnotesize\ttfamily void Out\+Brd\+::dsp\+Brd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+displays the game board that is allowable for the player to see 
+
+Implements \mbox{\hyperlink{class_gme_brd_a5b068f96bc311c6d2e7b1f7e2d5fe4e0}{Gme\+Brd}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17     cout << endl;}
+\DoxyCodeLine{18     cout << setw(4) << \textcolor{stringliteral}{" "};}
+\DoxyCodeLine{19     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}; i++) \{}
+\DoxyCodeLine{20         cout << i + 1 << \textcolor{stringliteral}{" "};}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22     cout << endl;}
+\DoxyCodeLine{23     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++)\{}
+\DoxyCodeLine{24         cout << setw(2) << i + 1 << \textcolor{stringliteral}{"| "};}
+\DoxyCodeLine{25         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}; j++) \{}
+\DoxyCodeLine{26             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].getFlgd() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{27                 \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].\mbox{\hyperlink{class_cell_a22e5aab236b2f42a4cec18652cce88fe}{setDisp}}(\textcolor{charliteral}{'P'});}
+\DoxyCodeLine{28             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].getHddn() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{29                 \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].\mbox{\hyperlink{class_cell_a22e5aab236b2f42a4cec18652cce88fe}{setDisp}}(\textcolor{charliteral}{'*'}) ;}
+\DoxyCodeLine{30             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].getVal() == 0) \{}
+\DoxyCodeLine{31                 \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].\mbox{\hyperlink{class_cell_a22e5aab236b2f42a4cec18652cce88fe}{setDisp}}(\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].getSym());}
+\DoxyCodeLine{32             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{33                 \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].\mbox{\hyperlink{class_cell_a22e5aab236b2f42a4cec18652cce88fe}{setDisp}}(\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].getVal()+48);}
+\DoxyCodeLine{34             \}}
+\DoxyCodeLine{35             cout << \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].\mbox{\hyperlink{class_cell_aaafbb0a9d3aa2abc56cb3290c9e4c09e}{getDisp}}() << \textcolor{stringliteral}{" "};}
+\DoxyCodeLine{36         \}}
+\DoxyCodeLine{37         cout << endl;}
+\DoxyCodeLine{38     \}}
+\DoxyCodeLine{39     cout << endl;}
+\DoxyCodeLine{40 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_out_brd_aae382b8a171780c274e67a49328ef4d5}\label{class_out_brd_aae382b8a171780c274e67a49328ef4d5}} 
+\index{OutBrd@{OutBrd}!flag@{flag}}
+\index{flag@{flag}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{flag()}{flag()}}
+{\footnotesize\ttfamily void Out\+Brd\+::flag (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30     \{ \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r-\/1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}-\/1].\mbox{\hyperlink{class_cell_aa190ef553aef63dda30047619b39fe7a}{setFlgd}}(\textcolor{keyword}{true});\}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{class_out_brd_aae382b8a171780c274e67a49328ef4d5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_out_brd_aa9ac410197c494be9af5aa806fcf6ce1}\label{class_out_brd_aa9ac410197c494be9af5aa806fcf6ce1}} 
+\index{OutBrd@{OutBrd}!fRemain@{fRemain}}
+\index{fRemain@{fRemain}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{fRemain()}{fRemain()}}
+{\footnotesize\ttfamily int Out\+Brd\+::f\+Remain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+counts the difference between the flags placed and the mines set in the board 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{164 \{}
+\DoxyCodeLine{165     \textcolor{keywordtype}{int} flags = 0, diff = 0;}
+\DoxyCodeLine{166     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++) \{}
+\DoxyCodeLine{167         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}; j++) \{}
+\DoxyCodeLine{168             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].getFlgd() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{169                 flags++;}
+\DoxyCodeLine{170             \}}
+\DoxyCodeLine{171         \}}
+\DoxyCodeLine{172     \}}
+\DoxyCodeLine{173     diff = \mbox{\hyperlink{class_gme_brd_a380ced78a97eb23602ed3868eacff11c}{mine}} -\/ flags;}
+\DoxyCodeLine{174     \textcolor{keywordflow}{return} diff;}
+\DoxyCodeLine{175 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_out_brd_af608ac43b10bea381e951393c1b2c9e9}\label{class_out_brd_af608ac43b10bea381e951393c1b2c9e9}} 
+\index{OutBrd@{OutBrd}!loss@{loss}}
+\index{loss@{loss}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{loss()}{loss()}}
+{\footnotesize\ttfamily bool Out\+Brd\+::loss (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+function prototype to determine whether a mine is uncovered (whether player lost) 
+
+return true if the game is lost 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{}
+\DoxyCodeLine{59     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r-\/1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}-\/1].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true} \&\& \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r-\/1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}-\/1].getHddn() == \textcolor{keyword}{false})}
+\DoxyCodeLine{60     \{}
+\DoxyCodeLine{61         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{62     \}}
+\DoxyCodeLine{63     \textcolor{keywordflow}{else} }
+\DoxyCodeLine{64     \{}
+\DoxyCodeLine{65         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{66     \}}
+\DoxyCodeLine{67 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_out_brd_a0af7ee8eef4871714011bc8f4e9971a6}\label{class_out_brd_a0af7ee8eef4871714011bc8f4e9971a6}} 
+\index{OutBrd@{OutBrd}!rdBrd@{rdBrd}}
+\index{rdBrd@{rdBrd}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{rdBrd()}{rdBrd()}}
+{\footnotesize\ttfamily void Out\+Brd\+::rd\+Brd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_in_brd}{In\+Brd}} \&}]{a }\end{DoxyParamCaption})}
+
+reads the board from the inner board class 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10 \{   }
+\DoxyCodeLine{11     \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}} =a.\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}};}
+\DoxyCodeLine{12 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_out_brd_a4c07c984330c7d56eacb3154f41b731a}\label{class_out_brd_a4c07c984330c7d56eacb3154f41b731a}} 
+\index{OutBrd@{OutBrd}!reveal@{reveal}}
+\index{reveal@{reveal}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{reveal()}{reveal()}}
+{\footnotesize\ttfamily void Out\+Brd\+::reveal (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27     \{ \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r-\/1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}-\/1].\mbox{\hyperlink{class_cell_a89a43f48ffb2aacaf5961e46fd78e197}{setHddn}}(\textcolor{keyword}{false});\}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{class_out_brd_a4c07c984330c7d56eacb3154f41b731a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_out_brd_af35a0c9f121c0b2dddf81e88304343b7}\label{class_out_brd_af35a0c9f121c0b2dddf81e88304343b7}} 
+\index{OutBrd@{OutBrd}!spcOpn@{spcOpn}}
+\index{spcOpn@{spcOpn}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{spcOpn()}{spcOpn()}}
+{\footnotesize\ttfamily bool Out\+Brd\+::spc\+Opn (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+function prototype to determine if space is open 
+
+checks if the cell chosen has already been uncovered. If not, returns true 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{}
+\DoxyCodeLine{45     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r-\/1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}-\/1].getHddn()==\textcolor{keyword}{false})}
+\DoxyCodeLine{46     \{}
+\DoxyCodeLine{47         cout << \textcolor{stringliteral}{"That cell is already open."} << endl;}
+\DoxyCodeLine{48         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{51     \{}
+\DoxyCodeLine{52         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{53     \}}
+\DoxyCodeLine{54 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_out_brd_ab33baa2658c6ccd009b3043fe389d0c4}\label{class_out_brd_ab33baa2658c6ccd009b3043fe389d0c4}} 
+\index{OutBrd@{OutBrd}!unflag@{unflag}}
+\index{unflag@{unflag}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{unflag()}{unflag()}}
+{\footnotesize\ttfamily void Out\+Brd\+::unflag (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33     \{ \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[r-\/1][\mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}}-\/1].\mbox{\hyperlink{class_cell_aa190ef553aef63dda30047619b39fe7a}{setFlgd}}(\textcolor{keyword}{false});\}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_out_brd_ab33baa2658c6ccd009b3043fe389d0c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_out_brd_a3b1441409df7b1460bdc5b57734b1064}\label{class_out_brd_a3b1441409df7b1460bdc5b57734b1064}} 
+\index{OutBrd@{OutBrd}!win@{win}}
+\index{win@{win}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{win()}{win()}}
+{\footnotesize\ttfamily bool Out\+Brd\+::win (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+function prototype to determine whether player had uncovered all cells not containing a mine (whether player won) 
+
+returns true if the game is won 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71 \{}
+\DoxyCodeLine{72     \textcolor{keywordtype}{int} count = 0;}
+\DoxyCodeLine{73     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++) \{}
+\DoxyCodeLine{74         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}; j++) \{}
+\DoxyCodeLine{75             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{76                 count++;}
+\DoxyCodeLine{77             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}[i][j].getHddn() == \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{78                 count++;}
+\DoxyCodeLine{79             \}}
+\DoxyCodeLine{80         \}}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82     \textcolor{keywordflow}{if} (count == \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}} * \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}) \{}
+\DoxyCodeLine{83         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{84     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{85         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{86     \}}
+\DoxyCodeLine{87 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}\label{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}} 
+\index{OutBrd@{OutBrd}!cell@{cell}}
+\index{cell@{cell}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{cell}{cell}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}}$\ast$$\ast$ Out\+Brd\+::cell\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_out_brd_8h}{Out\+Brd.\+h}}\item 
+\mbox{\hyperlink{_out_brd_8cpp}{Out\+Brd.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,379 @@
+\hypertarget{class_in_brd}{}\doxysection{In\+Brd Class Reference}
+\label{class_in_brd}\index{InBrd@{InBrd}}
+
+
+{\ttfamily \#include $<$In\+Brd.\+h$>$}
+
+
+
+Inheritance diagram for In\+Brd\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_in_brd__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for In\+Brd\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_in_brd__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_in_brd_abad5d8c51327ec335917c2193b30086c}{In\+Brd}} ()
+\item 
+\mbox{\hyperlink{class_in_brd_a2b1b8305dee1ac861037a91e89fc99cd}{In\+Brd}} (int r, int cl, int m)
+\item 
+\mbox{\hyperlink{class_in_brd_a98d1079c6c4f44b2def006ade6b2b996}{$\sim$\+In\+Brd}} ()
+\begin{DoxyCompactList}\small\item\em function prototype for the destructor for the inner board class$\ast$/ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_in_brd_a92a51ca05ea3fc01b976628951c2086c}{celdata}} ()
+\begin{DoxyCompactList}\small\item\em function prototype for the celdata function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_in_brd_acb13a93095bb62ca7e10bdc62ef9cdad}{add\+Mine}} ()
+\begin{DoxyCompactList}\small\item\em function prototype for the add\+Mine function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_in_brd_ad8a4edd62f029ff83cf1f962928b6e68}{add\+Val}} ()
+\begin{DoxyCompactList}\small\item\em function prototype for the add\+Val function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_in_brd_aa6d18ae85e12c4315b32f79830ab7719}{dsp\+Brd}} ()
+\begin{DoxyCompactList}\small\item\em function prototype for the dsp\+Brd function, esentially overrides the \mbox{\hyperlink{class_gme_brd}{Gme\+Brd}} display board function \end{DoxyCompactList}\item 
+int $\ast$$\ast$ \mbox{\hyperlink{class_in_brd_a1bbc35528c6f4473187f214cf8c6d99f}{sweep}} ()
+\begin{DoxyCompactList}\small\item\em function prototype for the sweep function \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_in_brd}{In\+Brd}} \& \mbox{\hyperlink{class_in_brd_ab15a26f98623e2bbd5878605ab90cf9b}{operator=}} (const \mbox{\hyperlink{class_in_brd}{In\+Brd}} \&right)
+\begin{DoxyCompactList}\small\item\em function prototype for the overloaded assignment operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$ \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}
+\begin{DoxyCompactList}\small\item\em dynamically allocated array of objects to store the board and each cells properties \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_in_brd_af23b58faaa163dc90ee5877394fb81f9}{Out\+Brd\+::rd\+Brd}} (\mbox{\hyperlink{class_in_brd}{In\+Brd}} \&a)
+\begin{DoxyCompactList}\small\item\em function prototype for the friend function that allows this outer board function to access the inner board member variables \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_in_brd_abad5d8c51327ec335917c2193b30086c}\label{class_in_brd_abad5d8c51327ec335917c2193b30086c}} 
+\index{InBrd@{InBrd}!InBrd@{InBrd}}
+\index{InBrd@{InBrd}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{InBrd()}{InBrd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily In\+Brd\+::\+In\+Brd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor for the inner board class 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23            :\mbox{\hyperlink{class_gme_brd_a2920499850a4d6e438c2c12154bbd055}{GmeBrd}}()}
+\DoxyCodeLine{24     \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_in_brd_a2b1b8305dee1ac861037a91e89fc99cd}\label{class_in_brd_a2b1b8305dee1ac861037a91e89fc99cd}} 
+\index{InBrd@{InBrd}!InBrd@{InBrd}}
+\index{InBrd@{InBrd}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{InBrd()}{InBrd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily In\+Brd\+::\+In\+Brd (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{cl,  }\item[{int}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construction \# 2 for the inner board class 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                                : \mbox{\hyperlink{class_gme_brd_a2920499850a4d6e438c2c12154bbd055}{GmeBrd}}(r,cl,m)}
+\DoxyCodeLine{28     \{ \mbox{\hyperlink{class_in_brd_a92a51ca05ea3fc01b976628951c2086c}{celdata}}();\}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_in_brd_a2b1b8305dee1ac861037a91e89fc99cd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_in_brd_a98d1079c6c4f44b2def006ade6b2b996}\label{class_in_brd_a98d1079c6c4f44b2def006ade6b2b996}} 
+\index{InBrd@{InBrd}!````~InBrd@{$\sim$InBrd}}
+\index{````~InBrd@{$\sim$InBrd}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{$\sim$InBrd()}{~InBrd()}}
+{\footnotesize\ttfamily In\+Brd\+::$\sim$\+In\+Brd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function prototype for the destructor for the inner board class$\ast$/ 
+
+destructor for the inner board class 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165 \{}
+\DoxyCodeLine{166     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++) \{}
+\DoxyCodeLine{167         \textcolor{keyword}{delete}[] *(\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}} + i);\}}
+\DoxyCodeLine{168     \textcolor{keyword}{delete}[] \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}};}
+\DoxyCodeLine{169 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_in_brd_acb13a93095bb62ca7e10bdc62ef9cdad}\label{class_in_brd_acb13a93095bb62ca7e10bdc62ef9cdad}} 
+\index{InBrd@{InBrd}!addMine@{addMine}}
+\index{addMine@{addMine}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{addMine()}{addMine()}}
+{\footnotesize\ttfamily void In\+Brd\+::add\+Mine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function prototype for the add\+Mine function 
+
+scatter the mines throughout the board according to number of mines using a random number generator 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35     srand(time(0));}
+\DoxyCodeLine{36     \textcolor{keywordtype}{int} rnum=0, cnum=0;}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_a380ced78a97eb23602ed3868eacff11c}{mine}}; i++) \{}
+\DoxyCodeLine{39         \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{40             rnum = rand() \% \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}};}
+\DoxyCodeLine{41             cnum = rand() \% \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}};}
+\DoxyCodeLine{42         \} \textcolor{keywordflow}{while} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[rnum][cnum].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true});}
+\DoxyCodeLine{43         \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[rnum][cnum].\mbox{\hyperlink{class_cell_a3e26b9878fa13187a7834e21ad1affa8}{setMine}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{44         \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[rnum][cnum].\mbox{\hyperlink{class_cell_a0b22981cded7faf11c9313c165e90988}{setSym}}(\textcolor{charliteral}{'\%'});}
+\DoxyCodeLine{45     \}}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_in_brd_ad8a4edd62f029ff83cf1f962928b6e68}\label{class_in_brd_ad8a4edd62f029ff83cf1f962928b6e68}} 
+\index{InBrd@{InBrd}!addVal@{addVal}}
+\index{addVal@{addVal}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{addVal()}{addVal()}}
+{\footnotesize\ttfamily void In\+Brd\+::add\+Val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function prototype for the add\+Val function 
+
+assigns the value of the cell, the value is based on neighboring mine around the cell 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{}
+\DoxyCodeLine{51     \textcolor{keywordtype}{int} **val = \mbox{\hyperlink{class_in_brd_a1bbc35528c6f4473187f214cf8c6d99f}{sweep}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++) \{}
+\DoxyCodeLine{54         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}; j++) \{}
+\DoxyCodeLine{55             \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j].\mbox{\hyperlink{class_cell_ae90b9eb1f9236ccf9054c25a1e1f915d}{setVal}}(val[i][j]);}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57     \}}
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_in_brd_a92a51ca05ea3fc01b976628951c2086c}\label{class_in_brd_a92a51ca05ea3fc01b976628951c2086c}} 
+\index{InBrd@{InBrd}!celdata@{celdata}}
+\index{celdata@{celdata}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{celdata()}{celdata()}}
+{\footnotesize\ttfamily void In\+Brd\+::celdata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function prototype for the celdata function 
+
+dynamically allocates memory for the board 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_cell}{Cell}}*[\mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}];}
+\DoxyCodeLine{19     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++) \{}
+\DoxyCodeLine{20         *(\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}} + i) = \textcolor{keyword}{new} \mbox{\hyperlink{class_cell}{Cell}} [\mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}];}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++) }
+\DoxyCodeLine{24     \{}
+\DoxyCodeLine{25         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}; j++) \{}
+\DoxyCodeLine{26             \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j].\mbox{\hyperlink{class_cell_ae8de6c402ee3ca437b73a2839f0a34ba}{setnrow}}(i + 1);}
+\DoxyCodeLine{27             \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j].\mbox{\hyperlink{class_cell_ab0e328f5d053f7df313063bb3239fa09}{setncol}}(j + 1);}
+\DoxyCodeLine{28         \}}
+\DoxyCodeLine{29     \}}
+\DoxyCodeLine{30 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_in_brd_a92a51ca05ea3fc01b976628951c2086c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{class_in_brd_a92a51ca05ea3fc01b976628951c2086c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_in_brd_aa6d18ae85e12c4315b32f79830ab7719}\label{class_in_brd_aa6d18ae85e12c4315b32f79830ab7719}} 
+\index{InBrd@{InBrd}!dspBrd@{dspBrd}}
+\index{dspBrd@{dspBrd}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{dspBrd()}{dspBrd()}}
+{\footnotesize\ttfamily void In\+Brd\+::dsp\+Brd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+function prototype for the dsp\+Brd function, esentially overrides the \mbox{\hyperlink{class_gme_brd}{Gme\+Brd}} display board function 
+
+stores the board that the player may see when the game is over, else it\textquotesingle{}s hidden underneath 
+
+Implements \mbox{\hyperlink{class_gme_brd_a5b068f96bc311c6d2e7b1f7e2d5fe4e0}{Gme\+Brd}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62 \{}
+\DoxyCodeLine{63     cout << endl;}
+\DoxyCodeLine{64     cout << setw(4) << \textcolor{stringliteral}{" "};}
+\DoxyCodeLine{65     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}; i++) \{}
+\DoxyCodeLine{66         cout << i + 1 << \textcolor{stringliteral}{" "};}
+\DoxyCodeLine{67     \}}
+\DoxyCodeLine{68     cout << endl;}
+\DoxyCodeLine{69     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++) }
+\DoxyCodeLine{70     \{}
+\DoxyCodeLine{71         cout << setw(2) << i + 1 << \textcolor{stringliteral}{"| "};}
+\DoxyCodeLine{72         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}; j++) \{}
+\DoxyCodeLine{73             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j].getVal() == 0) \{}
+\DoxyCodeLine{74                 \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j].\mbox{\hyperlink{class_cell_a22e5aab236b2f42a4cec18652cce88fe}{setDisp}}(\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j].getSym());}
+\DoxyCodeLine{75             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{76                 \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j].\mbox{\hyperlink{class_cell_a22e5aab236b2f42a4cec18652cce88fe}{setDisp}}(\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j].getVal()+48);}
+\DoxyCodeLine{77             \}}
+\DoxyCodeLine{78             cout << \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j].\mbox{\hyperlink{class_cell_aaafbb0a9d3aa2abc56cb3290c9e4c09e}{getDisp}}() << \textcolor{stringliteral}{" "};}
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80         cout << endl;}
+\DoxyCodeLine{81     \}}
+\DoxyCodeLine{82     cout << endl;}
+\DoxyCodeLine{83 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_in_brd_ab15a26f98623e2bbd5878605ab90cf9b}\label{class_in_brd_ab15a26f98623e2bbd5878605ab90cf9b}} 
+\index{InBrd@{InBrd}!operator=@{operator=}}
+\index{operator=@{operator=}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_in_brd}{In\+Brd}} \& In\+Brd\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_in_brd}{In\+Brd}} \&}]{right }\end{DoxyParamCaption})}
+
+
+
+function prototype for the overloaded assignment operator 
+
+overloaded assignment operator to set one Inner Board as equal to another 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{153 \{   }
+\DoxyCodeLine{154     \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_cell}{Cell}}*[\mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}];}
+\DoxyCodeLine{155     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++) \{}
+\DoxyCodeLine{156         *(\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}} + i) = \textcolor{keyword}{new} \mbox{\hyperlink{class_cell}{Cell}} [\mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}];}
+\DoxyCodeLine{157     \} }
+\DoxyCodeLine{158     }
+\DoxyCodeLine{159     \mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}=right.\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}};}
+\DoxyCodeLine{160     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{161 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_in_brd_a1bbc35528c6f4473187f214cf8c6d99f}\label{class_in_brd_a1bbc35528c6f4473187f214cf8c6d99f}} 
+\index{InBrd@{InBrd}!sweep@{sweep}}
+\index{sweep@{sweep}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{sweep()}{sweep()}}
+{\footnotesize\ttfamily int $\ast$$\ast$ In\+Brd\+::sweep (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function prototype for the sweep function 
+
+goes through the board and determines the value of each cell depending on the number of mines surrounding it 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87 \{}
+\DoxyCodeLine{88     \textcolor{keywordtype}{int} **mines = \textcolor{keyword}{new} \textcolor{keywordtype}{int}*[\mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}];}
+\DoxyCodeLine{89     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++) \{}
+\DoxyCodeLine{90         *(mines + i) = \textcolor{keyword}{new} \textcolor{keywordtype}{int} [\mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}];}
+\DoxyCodeLine{91     \};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}}; i++) \{}
+\DoxyCodeLine{94         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}; j++) \{}
+\DoxyCodeLine{95             mines[i][j] = 0;}
+\DoxyCodeLine{96             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{97                 \textcolor{keywordflow}{if} (i -\/ 1 >= 0 \&\& j -\/ 1 >= 0) \textcolor{comment}{// top left}}
+\DoxyCodeLine{98                 \{}
+\DoxyCodeLine{99                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i -\/ 1][j -\/ 1].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{100                         mines[i][j]++;}
+\DoxyCodeLine{101                     \}}
+\DoxyCodeLine{102                 \}}
+\DoxyCodeLine{103                 \textcolor{keywordflow}{if} (i -\/ 1 >= 0 \&\& j >= 0) \textcolor{comment}{// top}}
+\DoxyCodeLine{104                 \{}
+\DoxyCodeLine{105                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i -\/ 1][j].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{106                         mines[i][j]++;}
+\DoxyCodeLine{107                     \}}
+\DoxyCodeLine{108                 \}}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{if} (i -\/ 1 >= 0 \&\& j + 1 < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}) \textcolor{comment}{// top right}}
+\DoxyCodeLine{110                 \{}
+\DoxyCodeLine{111                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i -\/ 1][j + 1].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{112                         mines[i][j]++;}
+\DoxyCodeLine{113                     \}}
+\DoxyCodeLine{114                 \}}
+\DoxyCodeLine{115                 \textcolor{keywordflow}{if} (i >= 0 \&\& j + 1 < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}) \textcolor{comment}{// right}}
+\DoxyCodeLine{116                 \{}
+\DoxyCodeLine{117                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j + 1].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{118                         mines[i][j]++;}
+\DoxyCodeLine{119                     \}}
+\DoxyCodeLine{120                 \}}
+\DoxyCodeLine{121                 \textcolor{keywordflow}{if} (i + 1 < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}} \&\& j + 1 < \mbox{\hyperlink{class_gme_brd_add7a2f883bd9dbb4d70609536c1c3655}{col}}) \textcolor{comment}{// bottom right}}
+\DoxyCodeLine{122                 \{}
+\DoxyCodeLine{123                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i + 1][j + 1].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{124                         mines[i][j]++;}
+\DoxyCodeLine{125                     \}}
+\DoxyCodeLine{126                 \}}
+\DoxyCodeLine{127                 \textcolor{keywordflow}{if} (i + 1 < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}} \&\& j >= 0) \textcolor{comment}{// bottom}}
+\DoxyCodeLine{128                 \{}
+\DoxyCodeLine{129                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i + 1][j].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{130                         mines[i][j]++;}
+\DoxyCodeLine{131                     \}}
+\DoxyCodeLine{132                 \}}
+\DoxyCodeLine{133                 \textcolor{keywordflow}{if} (i + 1 < \mbox{\hyperlink{class_gme_brd_ad5835d62cf112b2687a577c8c3915307}{row}} \&\& j -\/ 1 >= 0) \textcolor{comment}{// bottom left}}
+\DoxyCodeLine{134                 \{}
+\DoxyCodeLine{135                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i + 1][j -\/ 1].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{136                         mines[i][j]++;}
+\DoxyCodeLine{137                     \}}
+\DoxyCodeLine{138                 \}}
+\DoxyCodeLine{139                 \textcolor{keywordflow}{if} (i >= 0 \&\& j -\/ 1 >= 0) \textcolor{comment}{// left}}
+\DoxyCodeLine{140                 \{}
+\DoxyCodeLine{141                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_in_brd_a462e1ba31741109b6a86cb369eb21377}{c}}[i][j -\/ 1].\mbox{\hyperlink{class_gme_brd_accbce40e77b3a158eb8f6ed0378cc744}{getMine}}() == \textcolor{keyword}{true}) \{}
+\DoxyCodeLine{142                         mines[i][j]++;}
+\DoxyCodeLine{143                     \}}
+\DoxyCodeLine{144                 \}}
+\DoxyCodeLine{145             \}}
+\DoxyCodeLine{146         \}}
+\DoxyCodeLine{147     \}}
+\DoxyCodeLine{148     \textcolor{keywordflow}{return} mines;       }
+\DoxyCodeLine{149 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_in_brd_af23b58faaa163dc90ee5877394fb81f9}\label{class_in_brd_af23b58faaa163dc90ee5877394fb81f9}} 
+\index{InBrd@{InBrd}!OutBrd::rdBrd@{OutBrd::rdBrd}}
+\index{OutBrd::rdBrd@{OutBrd::rdBrd}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{OutBrd::rdBrd}{OutBrd::rdBrd}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_out_brd_a0af7ee8eef4871714011bc8f4e9971a6}{Out\+Brd\+::rd\+Brd}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_in_brd}{In\+Brd}} \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+function prototype for the friend function that allows this outer board function to access the inner board member variables 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_in_brd_a462e1ba31741109b6a86cb369eb21377}\label{class_in_brd_a462e1ba31741109b6a86cb369eb21377}} 
+\index{InBrd@{InBrd}!c@{c}}
+\index{c@{c}!InBrd@{InBrd}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}}$\ast$$\ast$ In\+Brd\+::c\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+dynamically allocated array of objects to store the board and each cells properties 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_in_brd_8h}{In\+Brd.\+h}}\item 
+\mbox{\hyperlink{_in_brd_8cpp}{In\+Brd.\+cpp}}\end{DoxyCompactItemize}

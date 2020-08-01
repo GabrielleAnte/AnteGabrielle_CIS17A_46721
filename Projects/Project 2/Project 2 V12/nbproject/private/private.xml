@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>1</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="2">
+        <file>
+            <url>Cell.h</url>
+            <bookmark id="2">
+                <name/>
+                <line>48</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>OutBrd.h</url>
+            <bookmark id="1">
+                <name/>
+                <line>43</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Gabrielle/Documents/NetBeansProjects/Project%202%20V12/InBrd.cpp</file>
+            <file>file:/C:/Users/Gabrielle/Documents/NetBeansProjects/Project%202%20V12/Game.cpp</file>
+            <file>file:/C:/Users/Gabrielle/Documents/NetBeansProjects/Project%202%20V12/GmeBrd.cpp</file>
+            <file>file:/C:/Users/Gabrielle/Documents/NetBeansProjects/Project%202%20V12/OutBrd.cpp</file>
+            <file>file:/C:/Users/Gabrielle/Documents/NetBeansProjects/Project%202%20V12/Ante_Gabrielle_Project_2.cpp</file>
+            <file>file:/C:/Users/Gabrielle/Documents/NetBeansProjects/Project%202%20V12/Player.h</file>
+            <file>file:/C:/Users/Gabrielle/Documents/NetBeansProjects/Project%202%20V12/Player.cpp</file>
+            <file>file:/C:/Users/Gabrielle/Documents/NetBeansProjects/Project%202%20V12/OutBrd.h</file>
+            <file>file:/C:/Users/Gabrielle/Documents/NetBeansProjects/Project%202%20V12/Stats.h</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,91 @@
+\hypertarget{_ante___gabrielle___project__2_8cpp}{}\doxysection{Ante\+\_\+\+Gabrielle\+\_\+\+Project\+\_\+2.\+cpp File Reference}
+\label{_ante___gabrielle___project__2_8cpp}\index{Ante\_Gabrielle\_Project\_2.cpp@{Ante\_Gabrielle\_Project\_2.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
+Include dependency graph for Ante\+\_\+\+Gabrielle\+\_\+\+Project\+\_\+2.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_ante___gabrielle___project__2_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_ante___gabrielle___project__2_8cpp_a6474a3e8ed6ba43cc3617394c045f7a8}{re\+Run}} ()
+\begin{DoxyCompactList}\small\item\em function prototype for the re\+Run function \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_ante___gabrielle___project__2_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ante___gabrielle___project__2_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{_ante___gabrielle___project__2_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{Ante\_Gabrielle\_Project\_2.cpp@{Ante\_Gabrielle\_Project\_2.cpp}!main@{main}}
+\index{main@{main}!Ante\_Gabrielle\_Project\_2.cpp@{Ante\_Gabrielle\_Project\_2.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                                 \{}
+\DoxyCodeLine{42     }
+\DoxyCodeLine{43     \mbox{\hyperlink{class_game}{Game}} ai(\textcolor{stringliteral}{"Minesweeper"}, \textcolor{stringliteral}{"Otto"},7,8,5);}
+\DoxyCodeLine{44     ai.aPlay();}
+\DoxyCodeLine{45    }
+\DoxyCodeLine{46     cout << \textcolor{stringliteral}{"Your Turn:"} << endl << endl;}
+\DoxyCodeLine{47         \mbox{\hyperlink{class_game}{Game}} a;}
+\DoxyCodeLine{48     \textcolor{keywordflow}{do}\{ }
+\DoxyCodeLine{49         a.\mbox{\hyperlink{class_game_a5a84f7af5c736f92c1bb0ab672a7d08f}{setUp}}();}
+\DoxyCodeLine{50         \mbox{\hyperlink{class_game}{Game}} g = a;}
+\DoxyCodeLine{51         g.\mbox{\hyperlink{class_game_aa333825d0bca80e91e53c7e23f053405}{play}}();}
+\DoxyCodeLine{52     \}\textcolor{keywordflow}{while}(\mbox{\hyperlink{_ante___gabrielle___project__2_8cpp_a6474a3e8ed6ba43cc3617394c045f7a8}{reRun}}());}
+\DoxyCodeLine{53     }
+\DoxyCodeLine{54     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_ante___gabrielle___project__2_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_ante___gabrielle___project__2_8cpp_a6474a3e8ed6ba43cc3617394c045f7a8}\label{_ante___gabrielle___project__2_8cpp_a6474a3e8ed6ba43cc3617394c045f7a8}} 
+\index{Ante\_Gabrielle\_Project\_2.cpp@{Ante\_Gabrielle\_Project\_2.cpp}!reRun@{reRun}}
+\index{reRun@{reRun}!Ante\_Gabrielle\_Project\_2.cpp@{Ante\_Gabrielle\_Project\_2.cpp}}
+\doxysubsubsection{\texorpdfstring{reRun()}{reRun()}}
+{\footnotesize\ttfamily bool re\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function prototype for the re\+Run function 
+
+prompts the player if they would like to play again 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58              \{}
+\DoxyCodeLine{59     \textcolor{keywordtype}{char} choice = \textcolor{charliteral}{' '};}
+\DoxyCodeLine{60     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{61         cout << \textcolor{stringliteral}{"Would you like to play again? [Y/N]"} << endl;}
+\DoxyCodeLine{62         cin >> choice;}
+\DoxyCodeLine{63     \} \textcolor{keywordflow}{while} (toupper(choice) !=\textcolor{charliteral}{'Y'} \&\& toupper(choice) !=\textcolor{charliteral}{'N'});}
+\DoxyCodeLine{64     }
+\DoxyCodeLine{65     \textcolor{keywordflow}{if} (toupper(choice) ==\textcolor{charliteral}{'Y'})}
+\DoxyCodeLine{66     \{}
+\DoxyCodeLine{67         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{68     \}}
+\DoxyCodeLine{69     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{70         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{71     \}}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{_ante___gabrielle___project__2_8cpp_a6474a3e8ed6ba43cc3617394c045f7a8_icgraph}
+\end{center}
+\end{figure}

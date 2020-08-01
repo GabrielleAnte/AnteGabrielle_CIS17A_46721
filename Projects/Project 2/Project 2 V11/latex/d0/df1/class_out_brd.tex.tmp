@@ -1,0 +1,333 @@
+\hypertarget{class_out_brd}{}\doxysection{Out\+Brd Class Reference}
+\label{class_out_brd}\index{OutBrd@{OutBrd}}
+
+
+{\ttfamily \#include $<$Out\+Brd.\+h$>$}
+
+
+
+Inheritance diagram for Out\+Brd\+:
+% FIG 0
+
+
+Collaboration diagram for Out\+Brd\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_out_brd_ad5af3e2f29a5e6a8f558ff2834aec12d}{Out\+Brd}} ()
+\item 
+void \mbox{\hyperlink{class_out_brd_a0af7ee8eef4871714011bc8f4e9971a6}{rd\+Brd}} (\mbox{\hyperlink{class_in_brd}{In\+Brd}} \&a)
+\item 
+void \mbox{\hyperlink{class_out_brd_a4c07c984330c7d56eacb3154f41b731a}{reveal}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+void \mbox{\hyperlink{class_out_brd_aae382b8a171780c274e67a49328ef4d5}{flag}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+void \mbox{\hyperlink{class_out_brd_ab33baa2658c6ccd009b3043fe389d0c4}{unflag}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+bool \mbox{\hyperlink{class_out_brd_af35a0c9f121c0b2dddf81e88304343b7}{spc\+Opn}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+bool \mbox{\hyperlink{class_out_brd_af608ac43b10bea381e951393c1b2c9e9}{loss}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+bool \mbox{\hyperlink{class_out_brd_a3b1441409df7b1460bdc5b57734b1064}{win}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+bool \mbox{\hyperlink{class_out_brd_aa92302a7d20fb2e20522e37ed48be906}{ck\+Flg}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+bool \mbox{\hyperlink{class_out_brd_a80ed53ea4a4ae752786cdc729cb4838f}{chk\+Clr}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+void \mbox{\hyperlink{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}{clear}} (int r, int \mbox{\hyperlink{class_gme_brd_aaecbdf613b29d5de293b100b52083e62}{c}})
+\item 
+int \mbox{\hyperlink{class_out_brd_aa9ac410197c494be9af5aa806fcf6ce1}{f\+Remain}} ()
+\item 
+virtual void \mbox{\hyperlink{class_out_brd_a07ad712503dc56ce0c4a94b625c4780a}{dsp\+Brd}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$$\ast$ \mbox{\hyperlink{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}{cell}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 22 of file Out\+Brd.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_out_brd_ad5af3e2f29a5e6a8f558ff2834aec12d}\label{class_out_brd_ad5af3e2f29a5e6a8f558ff2834aec12d}} 
+\index{OutBrd@{OutBrd}!OutBrd@{OutBrd}}
+\index{OutBrd@{OutBrd}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{OutBrd()}{OutBrd()}}
+{\footnotesize\ttfamily Out\+Brd\+::\+Out\+Brd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file Out\+Brd.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_out_brd_a80ed53ea4a4ae752786cdc729cb4838f}\label{class_out_brd_a80ed53ea4a4ae752786cdc729cb4838f}} 
+\index{OutBrd@{OutBrd}!chkClr@{chkClr}}
+\index{chkClr@{chkClr}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{chkClr()}{chkClr()}}
+{\footnotesize\ttfamily bool Out\+Brd\+::chk\+Clr (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file Out\+Brd.\+cpp.
+
+
+
+Referenced by Game\+::a\+Play(), and Game\+::play().
+
+Here is the caller graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{class_out_brd_aa92302a7d20fb2e20522e37ed48be906}\label{class_out_brd_aa92302a7d20fb2e20522e37ed48be906}} 
+\index{OutBrd@{OutBrd}!ckFlg@{ckFlg}}
+\index{ckFlg@{ckFlg}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{ckFlg()}{ckFlg()}}
+{\footnotesize\ttfamily bool Out\+Brd\+::ck\+Flg (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 77 of file Out\+Brd.\+h.
+
+
+
+References Gme\+Brd\+::c, cell, and Cell\+::get\+Flgd().
+
+
+
+Referenced by Game\+::a\+Play(), and Game\+::play().
+
+Here is the call graph for this function\+:
+% FIG 3
+Here is the caller graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}\label{class_out_brd_a82fca8e5252ad0300a663f07d2c8783d}} 
+\index{OutBrd@{OutBrd}!clear@{clear}}
+\index{clear@{clear}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Out\+Brd\+::clear (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 70 of file Out\+Brd.\+cpp.
+
+
+
+Referenced by Game\+::a\+Play(), and Game\+::play().
+
+Here is the caller graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{class_out_brd_a07ad712503dc56ce0c4a94b625c4780a}\label{class_out_brd_a07ad712503dc56ce0c4a94b625c4780a}} 
+\index{OutBrd@{OutBrd}!dspBrd@{dspBrd}}
+\index{dspBrd@{dspBrd}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{dspBrd()}{dspBrd()}}
+{\footnotesize\ttfamily void Out\+Brd\+::dsp\+Brd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_gme_brd_a5b068f96bc311c6d2e7b1f7e2d5fe4e0}{Gme\+Brd}}.
+
+
+
+Definition at line 20 of file Out\+Brd.\+cpp.
+
+
+
+Referenced by Game\+::a\+Play(), and Game\+::play().
+
+Here is the caller graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{class_out_brd_aae382b8a171780c274e67a49328ef4d5}\label{class_out_brd_aae382b8a171780c274e67a49328ef4d5}} 
+\index{OutBrd@{OutBrd}!flag@{flag}}
+\index{flag@{flag}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{flag()}{flag()}}
+{\footnotesize\ttfamily void Out\+Brd\+::flag (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 37 of file Out\+Brd.\+h.
+
+
+
+References Gme\+Brd\+::c, cell, and Cell\+::set\+Flgd().
+
+
+
+Referenced by Game\+::a\+Play(), and Game\+::play().
+
+Here is the call graph for this function\+:
+% FIG 7
+Here is the caller graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{class_out_brd_aa9ac410197c494be9af5aa806fcf6ce1}\label{class_out_brd_aa9ac410197c494be9af5aa806fcf6ce1}} 
+\index{OutBrd@{OutBrd}!fRemain@{fRemain}}
+\index{fRemain@{fRemain}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{fRemain()}{fRemain()}}
+{\footnotesize\ttfamily int Out\+Brd\+::f\+Remain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 82 of file Out\+Brd.\+h.
+
+
+
+References cell, Gme\+Brd\+::col, Gme\+Brd\+::mine, and Gme\+Brd\+::row.
+
+
+
+Referenced by Game\+::gme\+Over().
+
+Here is the caller graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{class_out_brd_af608ac43b10bea381e951393c1b2c9e9}\label{class_out_brd_af608ac43b10bea381e951393c1b2c9e9}} 
+\index{OutBrd@{OutBrd}!loss@{loss}}
+\index{loss@{loss}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{loss()}{loss()}}
+{\footnotesize\ttfamily bool Out\+Brd\+::loss (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file Out\+Brd.\+cpp.
+
+
+
+Referenced by Game\+::gme\+Over().
+
+Here is the caller graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{class_out_brd_a0af7ee8eef4871714011bc8f4e9971a6}\label{class_out_brd_a0af7ee8eef4871714011bc8f4e9971a6}} 
+\index{OutBrd@{OutBrd}!rdBrd@{rdBrd}}
+\index{rdBrd@{rdBrd}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{rdBrd()}{rdBrd()}}
+{\footnotesize\ttfamily void Out\+Brd\+::rd\+Brd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_in_brd}{In\+Brd}} \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file Out\+Brd.\+cpp.
+
+
+
+References In\+Brd\+::c.
+
+
+
+Referenced by Game\+::a\+Play(), and Game\+::play().
+
+Here is the caller graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{class_out_brd_a4c07c984330c7d56eacb3154f41b731a}\label{class_out_brd_a4c07c984330c7d56eacb3154f41b731a}} 
+\index{OutBrd@{OutBrd}!reveal@{reveal}}
+\index{reveal@{reveal}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{reveal()}{reveal()}}
+{\footnotesize\ttfamily void Out\+Brd\+::reveal (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 34 of file Out\+Brd.\+h.
+
+
+
+References Gme\+Brd\+::c, cell, and Cell\+::set\+Hddn().
+
+
+
+Referenced by Game\+::a\+Play(), and Game\+::play().
+
+Here is the call graph for this function\+:
+% FIG 12
+Here is the caller graph for this function\+:
+% FIG 13
+\mbox{\Hypertarget{class_out_brd_af35a0c9f121c0b2dddf81e88304343b7}\label{class_out_brd_af35a0c9f121c0b2dddf81e88304343b7}} 
+\index{OutBrd@{OutBrd}!spcOpn@{spcOpn}}
+\index{spcOpn@{spcOpn}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{spcOpn()}{spcOpn()}}
+{\footnotesize\ttfamily bool Out\+Brd\+::spc\+Opn (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 43 of file Out\+Brd.\+h.
+
+
+
+References Gme\+Brd\+::c, and cell.
+
+
+
+Referenced by Game\+::a\+Play(), and Game\+::play().
+
+Here is the caller graph for this function\+:
+% FIG 14
+\mbox{\Hypertarget{class_out_brd_ab33baa2658c6ccd009b3043fe389d0c4}\label{class_out_brd_ab33baa2658c6ccd009b3043fe389d0c4}} 
+\index{OutBrd@{OutBrd}!unflag@{unflag}}
+\index{unflag@{unflag}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{unflag()}{unflag()}}
+{\footnotesize\ttfamily void Out\+Brd\+::unflag (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 40 of file Out\+Brd.\+h.
+
+
+
+References Gme\+Brd\+::c, cell, and Cell\+::set\+Flgd().
+
+
+
+Referenced by Game\+::a\+Play(), and Game\+::play().
+
+Here is the call graph for this function\+:
+% FIG 15
+Here is the caller graph for this function\+:
+% FIG 16
+\mbox{\Hypertarget{class_out_brd_a3b1441409df7b1460bdc5b57734b1064}\label{class_out_brd_a3b1441409df7b1460bdc5b57734b1064}} 
+\index{OutBrd@{OutBrd}!win@{win}}
+\index{win@{win}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{win()}{win()}}
+{\footnotesize\ttfamily bool Out\+Brd\+::win (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 58 of file Out\+Brd.\+h.
+
+
+
+References cell, Gme\+Brd\+::col, Gme\+Brd\+::get\+Mine(), and Gme\+Brd\+::row.
+
+
+
+Referenced by Game\+::gme\+Over().
+
+Here is the call graph for this function\+:
+% FIG 17
+Here is the caller graph for this function\+:
+% FIG 18
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}\label{class_out_brd_a433ae12184330fe2b4ee5b89b4322eb7}} 
+\index{OutBrd@{OutBrd}!cell@{cell}}
+\index{cell@{cell}!OutBrd@{OutBrd}}
+\doxysubsubsection{\texorpdfstring{cell}{cell}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}}$\ast$$\ast$ Out\+Brd\+::cell\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 25 of file Out\+Brd.\+h.
+
+
+
+Referenced by ck\+Flg(), flag(), f\+Remain(), reveal(), spc\+Opn(), unflag(), and win().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_out_brd_8h}{Out\+Brd.\+h}}\item 
+\mbox{\hyperlink{_out_brd_8cpp}{Out\+Brd.\+cpp}}\end{DoxyCompactItemize}

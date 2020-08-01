@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_stats">
+<title>Stats&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Stats&lt; T &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Stats.h&gt;</computeroutput>
+</para>
+Inheritance diagram for Stats&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/d73/class_stats__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Stats&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/dac/class_stats__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_stats_1ae1419ec347a13f0407adbb6452af3291">Stats</link> ()</para>
+</listitem>
+            <listitem><para>T <link linkend="_class_stats_1a12f9b68f68c8ab4ad29273da3b404cd7">points</link> (bool win)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_stats_1a10e4f1d2ac81f33296dca7e24b0e3cbf">update</link> (string name, bool win)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>T <link linkend="_class_stats_1a0325b8816fe08b31eff6f6d82fd1d2e9">point</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static vector&lt; string &gt; <link linkend="_class_stats_1ad97a8291ffa012c4bc0bdd8e059e5537">names</link></para>
+</listitem>
+            <listitem><para>static vector&lt; T &gt; <link linkend="_class_stats_1adac1de891638fb0645b5c63cf2582451">wins</link></para>
+</listitem>
+            <listitem><para>static vector&lt; T &gt; <link linkend="_class_stats_1a5f1e6d7fe80b8fe9ceff95e54af484ab">losses</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>template&lt;class T&gt;
+class Stats&lt; T &gt;</title></simplesect>
+
+<para>
+Definition at line <link linkend="__stats_8h_source_1l00025">25</link> of file <link linkend="__stats_8h_source">Stats.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_stats_1ae1419ec347a13f0407adbb6452af3291"/>    <section>
+    <title>Stats()</title>
+<indexterm><primary>Stats</primary><secondary>Stats&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Stats&lt; T &gt;</primary><secondary>Stats</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_stats">Stats</link>&lt; T &gt;::<link linkend="_class_stats">Stats</link></computeroutput></para><para>
+Definition at line <link linkend="__stats_8h_source_1l00039">39</link> of file <link linkend="__stats_8h_source">Stats.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_stats_1a12f9b68f68c8ab4ad29273da3b404cd7"/>    <section>
+    <title>points()</title>
+<indexterm><primary>points</primary><secondary>Stats&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Stats&lt; T &gt;</primary><secondary>points</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>T <link linkend="_class_stats">Stats</link>&lt; T &gt;::points (bool win)</computeroutput></para><para>
+Definition at line <link linkend="__stats_8h_source_1l00081">81</link> of file <link linkend="__stats_8h_source">Stats.h</link>.</para>
+    </section><anchor xml:id="_class_stats_1a10e4f1d2ac81f33296dca7e24b0e3cbf"/>    <section>
+    <title>update()</title>
+<indexterm><primary>update</primary><secondary>Stats&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Stats&lt; T &gt;</primary><secondary>update</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>int <link linkend="_class_stats">Stats</link>&lt; T &gt;::update (string name, bool win)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__stats_8h_source_1l00045">45</link> of file <link linkend="__stats_8h_source">Stats.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_stats_1a5f1e6d7fe80b8fe9ceff95e54af484ab"/>    <section>
+    <title>losses</title>
+<indexterm><primary>losses</primary><secondary>Stats&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Stats&lt; T &gt;</primary><secondary>losses</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>vector&lt; T &gt; <link linkend="_class_stats">Stats</link>&lt; T &gt;::losses<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__stats_8h_source_1l00030">30</link> of file <link linkend="__stats_8h_source">Stats.h</link>.</para>
+    </section><anchor xml:id="_class_stats_1ad97a8291ffa012c4bc0bdd8e059e5537"/>    <section>
+    <title>names</title>
+<indexterm><primary>names</primary><secondary>Stats&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Stats&lt; T &gt;</primary><secondary>names</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>vector&lt; string &gt; <link linkend="_class_stats">Stats</link>&lt; T &gt;::names<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__stats_8h_source_1l00028">28</link> of file <link linkend="__stats_8h_source">Stats.h</link>.</para>
+    </section><anchor xml:id="_class_stats_1a0325b8816fe08b31eff6f6d82fd1d2e9"/>    <section>
+    <title>point</title>
+<indexterm><primary>point</primary><secondary>Stats&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Stats&lt; T &gt;</primary><secondary>point</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>T <link linkend="_class_stats">Stats</link>&lt; T &gt;::point<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__stats_8h_source_1l00031">31</link> of file <link linkend="__stats_8h_source">Stats.h</link>.</para>
+    </section><anchor xml:id="_class_stats_1adac1de891638fb0645b5c63cf2582451"/>    <section>
+    <title>wins</title>
+<indexterm><primary>wins</primary><secondary>Stats&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Stats&lt; T &gt;</primary><secondary>wins</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>vector&lt; T &gt; <link linkend="_class_stats">Stats</link>&lt; T &gt;::wins<computeroutput>[static]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__stats_8h_source_1l00029">29</link> of file <link linkend="__stats_8h_source">Stats.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__stats_8h">Stats.h</link></section>
+</section>

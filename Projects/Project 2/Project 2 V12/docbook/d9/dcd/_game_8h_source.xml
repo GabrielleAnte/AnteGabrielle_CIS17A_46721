@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__game_8h_source">
+<title>Game.h</title>
+<programlisting>00001 <emphasis role="comment">/*</emphasis>
+00002 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+00003 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+00004 <emphasis role="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+00005 <emphasis role="comment">&#32;*/</emphasis>
+00006 
+00007 <emphasis role="comment">/*&#32;</emphasis>
+00008 <emphasis role="comment">&#32;*&#32;File:&#32;&#32;&#32;Game.h</emphasis>
+00009 <emphasis role="comment">&#32;*&#32;Author:&#32;Gabrielle</emphasis>
+00010 <emphasis role="comment">&#32;*</emphasis>
+00011 <emphasis role="comment">&#32;*&#32;Created&#32;on&#32;July&#32;26,&#32;2020,&#32;2:44&#32;AM</emphasis>
+00012 <emphasis role="comment">&#32;*/</emphasis>
+00013 
+00014 <emphasis role="preprocessor">#ifndef&#32;_DIAGRAM_GAME_H</emphasis>
+00015 <emphasis role="preprocessor">#define&#32;_DIAGRAM_GAME_H</emphasis>
+00016 <emphasis role="preprocessor">#ifndef&#32;GAME_H</emphasis>
+00017 <emphasis role="preprocessor">#define&#32;GAME_H</emphasis>
+<anchor xml:id="__game_8h_source_1l00018"/><link linkend="__game_8h_1a57ea2f3b1bafe4de806492ca9ce85116">00018</link> 
+00019 <emphasis role="preprocessor">#include&lt;iostream&gt;</emphasis>
+00020 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+00021 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__in_brd_8h">InBrd.h</link>&quot;</emphasis>
+00022 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__out_brd_8h">OutBrd.h</link>&quot;</emphasis>
+00023 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__player_8h">Player.h</link>&quot;</emphasis>
+00024 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+00025 
+<anchor xml:id="__game_8h_source_1l00026"/><link linkend="_class_game">00026</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_game">Game</link>{
+00027 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__game_8h_source_1l00028"/><link linkend="_class_game_1a3704a89ccc3882ccbef9c258b65a4a76">00028</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_game_1a3704a89ccc3882ccbef9c258b65a4a76">name</link>;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;name&#32;of&#32;the&#32;game</emphasis>
+<anchor xml:id="__game_8h_source_1l00029"/><link linkend="_class_game_1a6e48721b0532833b99fd5615a3628792">00029</link> &#32;&#32;&#32;&#32;<link linkend="_class_player">Player</link>&#32;<link linkend="_class_game_1a6e48721b0532833b99fd5615a3628792">player</link>;
+<anchor xml:id="__game_8h_source_1l00030"/><link linkend="_class_game_1a9b8b64c5cc0780a8e93545d6e49217e9">00030</link> &#32;&#32;&#32;&#32;<link linkend="_class_in_brd">InBrd</link>&#32;<link linkend="_class_game_1a9b8b64c5cc0780a8e93545d6e49217e9">inbrd</link>;
+<anchor xml:id="__game_8h_source_1l00031"/><link linkend="_class_game_1a9f86479a63dd82113b4b7f29f2ea4048">00031</link> &#32;&#32;&#32;&#32;<link linkend="_class_out_brd">OutBrd</link>&#32;<link linkend="_class_game_1a9f86479a63dd82113b4b7f29f2ea4048">outbrd</link>;
+<anchor xml:id="__game_8h_source_1l00032"/><link linkend="_class_game_1a18205f981b4ecee4fcdd36aa690afc18">00032</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_game_1a18205f981b4ecee4fcdd36aa690afc18">rC</link>,&#32;cC;
+<anchor xml:id="__game_8h_source_1l00033"/><link linkend="_class_game_1a4c0c7d64cc8a5dc769a64ce5bf86fae5">00033</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_game_1a4c0c7d64cc8a5dc769a64ce5bf86fae5">diff</link>;
+<anchor xml:id="__game_8h_source_1l00034"/><link linkend="_class_game_1a46f8e4d93a538f64ac9fff26c3c5456d">00034</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_game_1a46f8e4d93a538f64ac9fff26c3c5456d">gmeCnt</link>;
+<anchor xml:id="__game_8h_source_1l00035"/><link linkend="_class_game_1a2151159b147076312bafa0e2da74ffec">00035</link> &#32;&#32;&#32;&#32;<link linkend="_class_gme_brd">GmeBrd</link>&#32;*<link linkend="_class_game_1a2151159b147076312bafa0e2da74ffec">gb</link>;
+<anchor xml:id="__game_8h_source_1l00036"/><link linkend="_class_game_1a5a84f7af5c736f92c1bb0ab672a7d08f">00036</link> &#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_1a5a84f7af5c736f92c1bb0ab672a7d08f">setUp</link>(<emphasis role="keywordtype">string</emphasis>&#32;p,&#32;<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;c,&#32;<emphasis role="keywordtype">int</emphasis>&#32;m)
+00037 &#32;&#32;&#32;&#32;{
+00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;player.<link linkend="_class_player_1a37fc1f766b05e107305976aa9e8d0fc4">setName</link>(p);
+00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;player.<link linkend="_class_player_1a740b82f6723c1b4e985444caa4ab95e1">setBrd</link>(r,c,m);
+00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;shoStrt();
+00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nrow=player.<link linkend="_class_player_1a76135d6989330f1d71485f7569f4f520">getRow</link>();
+00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ncol=player.<link linkend="_class_player_1a21dd4f636a667fe882abc76600dc0d9c">getCol</link>();
+00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nmines=player.<link linkend="_class_player_1a42ea717cab17fa83a43d647685eb81a6">getMine</link>();
+00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_gme_brd_1a279ed4807b7864824f79a6e7dce87d6f">setRow</link>(nrow);
+00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_gme_brd_1ac9b58f005fbf43fef04596ebace1082e">setCol</link>(ncol);
+00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_gme_brd_1a08d5eda4c06a310c868668994c5d47b2">setMine</link>(nmines);
+00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_in_brd_1a92a51ca05ea3fc01b976628951c2086c">celdata</link>();
+00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_in_brd_1acb13a93095bb62ca7e10bdc62ef9cdad">addMine</link>();
+00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_in_brd_1ad8a4edd62f029ff83cf1f962928b6e68">addVal</link>();
+00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;diff=0;
+00051 &#32;&#32;&#32;&#32;}
+00052 &#32;&#32;&#32;&#32;
+00053 <emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="__game_8h_source_1l00054"/><link linkend="_class_game_1a628db27089dea207435a6c8620daca3f">00054</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_game_1a628db27089dea207435a6c8620daca3f">nrow</link>,&#32;ncol,&#32;nmines;
+00055 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__game_8h_source_1l00056"/><link linkend="_class_game_1ad59df6562a58a614fda24622d3715b65">00056</link> &#32;&#32;&#32;&#32;<link linkend="_class_game_1ad59df6562a58a614fda24622d3715b65">Game</link>&#32;()
+00057 &#32;&#32;&#32;&#32;{
+00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;gmeCnt++;
+00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nrow=0;
+00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ncol=0;&#32;
+00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nmines=0;
+00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;diff=0;
+00064 &#32;&#32;&#32;&#32;}
+00065 &#32;&#32;&#32;&#32;
+<anchor xml:id="__game_8h_source_1l00066"/><link linkend="_class_game_1a8ae67862941a2818478be99ee8382f93">00066</link> &#32;&#32;&#32;&#32;<link linkend="_class_game_1a8ae67862941a2818478be99ee8382f93">Game</link>(<emphasis role="keywordtype">string</emphasis>&#32;n)
+00067 &#32;&#32;&#32;&#32;{
+00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;gmeCnt++;
+00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name&#32;=&#32;n;
+00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;setUp();
+00071 &#32;&#32;&#32;&#32;}
+00072 &#32;&#32;&#32;&#32;
+00073 &#32;&#32;&#32;&#32;<emphasis role="comment">//Auto/AI&#32;Mode</emphasis>
+<anchor xml:id="__game_8h_source_1l00074"/><link linkend="_class_game_1ae76f801286118a01afc4764276a0ee20">00074</link> &#32;&#32;&#32;&#32;<link linkend="_class_game_1ae76f801286118a01afc4764276a0ee20">Game</link>&#32;(<emphasis role="keywordtype">string</emphasis>&#32;n,&#32;<emphasis role="keywordtype">string</emphasis>&#32;p,&#32;<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;c,&#32;<emphasis role="keywordtype">int</emphasis>&#32;m)
+00075 &#32;&#32;&#32;&#32;{
+00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;gmeCnt++;
+00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name&#32;=&#32;n;
+00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;setUp(p,r,c,m);
+00079 &#32;&#32;&#32;&#32;}
+00080 &#32;&#32;&#32;&#32;
+<anchor xml:id="__game_8h_source_1l00081"/><link linkend="_class_game_1af909b709de6b4c0c2a1b3f4e7721cd4c">00081</link> &#32;&#32;&#32;&#32;<link linkend="_class_game_1af909b709de6b4c0c2a1b3f4e7721cd4c">Game</link>&#32;(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_game">Game</link>&#32;&amp;right)
+00082 &#32;&#32;&#32;&#32;{
+00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;name=right.<link linkend="_class_game_1a3704a89ccc3882ccbef9c258b65a4a76">name</link>;
+00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nrow=right.<link linkend="_class_game_1a628db27089dea207435a6c8620daca3f">nrow</link>;
+00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ncol=right.<link linkend="_class_game_1a444f05e25120130ed2730d7756329ecf">ncol</link>;
+00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nmines=right.<link linkend="_class_game_1a532b1f133947e5ec0b1290cb2ccce644">nmines</link>;
+00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_gme_brd_1a279ed4807b7864824f79a6e7dce87d6f">setRow</link>(nrow);
+00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_gme_brd_1ac9b58f005fbf43fef04596ebace1082e">setCol</link>(ncol);
+00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_gme_brd_1a08d5eda4c06a310c868668994c5d47b2">setMine</link>(nmines);
+00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_in_brd_1a92a51ca05ea3fc01b976628951c2086c">celdata</link>();
+00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd=right.<link linkend="_class_game_1a9b8b64c5cc0780a8e93545d6e49217e9">inbrd</link>;
+00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;diff=0;
+00093 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_8h_source_1l00094"/><link linkend="_class_game_1afdd9eefc48c8e437253bd0723fe2aef6">00094</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_1afdd9eefc48c8e437253bd0723fe2aef6">shoStrt</link>()&#32;&#32;<emphasis role="comment">//Display&#32;Intro</emphasis>
+00095 &#32;&#32;&#32;&#32;{
+00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Name&#32;of&#32;the&#32;Game:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;name&#32;&lt;&lt;&#32;endl;
+00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Player&#32;Name:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;player.<link linkend="_class_player_1af9a6045fa96f736664c4eab4caa5e8e5">getName</link>()&#32;&lt;&lt;&#32;endl;
+00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Game&#32;#&quot;</emphasis>&#32;&lt;&lt;&#32;gmeCnt&#32;&lt;&lt;&#32;endl&#32;&lt;&lt;&#32;endl;
+00099 &#32;&#32;&#32;&#32;}
+00100 &#32;&#32;&#32;&#32;
+<anchor xml:id="__game_8h_source_1l00101"/><link linkend="_class_game_1ade11a025de0143ce182e2b9a83755144">00101</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_1ade11a025de0143ce182e2b9a83755144">setUp</link>()
+00102 &#32;&#32;&#32;&#32;{
+00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;player.<link linkend="_class_player_1a37fc1f766b05e107305976aa9e8d0fc4">setName</link>();
+00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;shoStrt();
+00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;player.<link linkend="_class_player_1a740b82f6723c1b4e985444caa4ab95e1">setBrd</link>();
+00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nrow=player.<link linkend="_class_player_1a76135d6989330f1d71485f7569f4f520">getRow</link>();
+00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ncol=player.<link linkend="_class_player_1a21dd4f636a667fe882abc76600dc0d9c">getCol</link>();
+00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nmines=player.<link linkend="_class_player_1a42ea717cab17fa83a43d647685eb81a6">getMine</link>();
+00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_gme_brd_1a279ed4807b7864824f79a6e7dce87d6f">setRow</link>(nrow);
+00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_gme_brd_1ac9b58f005fbf43fef04596ebace1082e">setCol</link>(ncol);
+00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_gme_brd_1a08d5eda4c06a310c868668994c5d47b2">setMine</link>(nmines);
+00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_in_brd_1a92a51ca05ea3fc01b976628951c2086c">celdata</link>();
+00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_in_brd_1acb13a93095bb62ca7e10bdc62ef9cdad">addMine</link>();
+00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_in_brd_1ad8a4edd62f029ff83cf1f962928b6e68">addVal</link>();
+00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;diff=0;
+00116 &#32;&#32;&#32;&#32;}
+00117 &#32;&#32;&#32;&#32;
+<anchor xml:id="__game_8h_source_1l00118"/><link linkend="_class_game_1aa333825d0bca80e91e53c7e23f053405">00118</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_1aa333825d0bca80e91e53c7e23f053405">play</link>()
+00119 &#32;&#32;&#32;&#32;{
+00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;choice&#32;=<emphasis role="charliteral">&apos;&#32;&apos;</emphasis>;
+00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_in_brd_1aa6d18ae85e12c4315b32f79830ab7719">dspBrd</link>();<emphasis role="comment">//delete</emphasis>
+00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;gb=&amp;outbrd;
+00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1a0af7ee8eef4871714011bc8f4e9971a6">rdBrd</link>(inbrd);
+00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;gb-&gt;<link linkend="_class_gme_brd_1a5b068f96bc311c6d2e7b1f7e2d5fe4e0">dspBrd</link>();
+00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">do</emphasis>{
+00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">do</emphasis>{
+00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;player.<link linkend="_class_player_1ac0410e4338e9abaa3173836a10547343">getChc</link>(rC,cC);
+00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;rC&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;cC;
+00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}<emphasis role="keywordflow">while</emphasis>(!outbrd.<link linkend="_class_out_brd_1af35a0c9f121c0b2dddf81e88304343b7">spcOpn</link>(rC,cC));
+00131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(outbrd.<link linkend="_class_out_brd_1aa92302a7d20fb2e20522e37ed48be906">ckFlg</link>(rC,cC)==<emphasis role="keyword">true</emphasis>)
+00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1ab33baa2658c6ccd009b3043fe389d0c4">unflag</link>(rC,cC);
+00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;choice&#32;=&#32;player.<link linkend="_class_player_1a2d07cc5039ccd5fe1af4dec145b7d717">askFlg</link>();
+00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(choice&#32;==<emphasis role="charliteral">&apos;Y&apos;</emphasis>)
+00139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1aae382b8a171780c274e67a49328ef4d5">flag</link>(rC,cC);
+00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>{
+00143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1a4c07c984330c7d56eacb3154f41b731a">reveal</link>(rC,cC);
+00144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(outbrd.<link linkend="_class_out_brd_1a80ed53ea4a4ae752786cdc729cb4838f">chkClr</link>(rC,cC))
+00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1a82fca8e5252ad0300a663f07d2c8783d">clear</link>(rC-1,cC-1);
+00147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1a07ad712503dc56ce0c4a94b625c4780a">dspBrd</link>();
+00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}<emphasis role="keywordflow">while</emphasis>(!gmeOver());
+00152 &#32;&#32;&#32;&#32;}
+00153 &#32;&#32;&#32;&#32;
+<anchor xml:id="__game_8h_source_1l00154"/><link linkend="_class_game_1adc9795bcae2278f21f2510106a68aa4a">00154</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_game_1adc9795bcae2278f21f2510106a68aa4a">aPlay</link>()
+00155 &#32;&#32;&#32;&#32;{
+00156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;choice&#32;=&#32;<emphasis role="charliteral">&apos;&#32;&apos;</emphasis>;
+00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1a0af7ee8eef4871714011bc8f4e9971a6">rdBrd</link>(inbrd);
+00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1a07ad712503dc56ce0c4a94b625c4780a">dspBrd</link>();
+00159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">do</emphasis>{
+00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">do</emphasis>{
+00162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;player.<link linkend="_class_player_1a9a5a3685995386ec8838dc5afaeb4369">autoChc</link>(rC,cC);
+00163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;rC&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;cC&#32;&lt;&lt;&#32;endl;
+00164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}<emphasis role="keywordflow">while</emphasis>(!outbrd.<link linkend="_class_out_brd_1af35a0c9f121c0b2dddf81e88304343b7">spcOpn</link>(rC,cC));
+00165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(outbrd.<link linkend="_class_out_brd_1aa92302a7d20fb2e20522e37ed48be906">ckFlg</link>(rC,cC)==<emphasis role="keyword">true</emphasis>)
+00166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1ab33baa2658c6ccd009b3043fe389d0c4">unflag</link>(rC,cC);
+00168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+00170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;choice&#32;=&#32;player.<link linkend="_class_player_1a4247a12755b827d0c0002f2aac93db03">autoFlg</link>();
+00172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&lt;&lt;&#32;choice&#32;&lt;&lt;&#32;endl;
+00173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(choice&#32;==<emphasis role="charliteral">&apos;Y&apos;</emphasis>)
+00174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1aae382b8a171780c274e67a49328ef4d5">flag</link>(rC,cC);
+00176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>{
+00178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1a4c07c984330c7d56eacb3154f41b731a">reveal</link>(rC,cC);
+00179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(outbrd.<link linkend="_class_out_brd_1a80ed53ea4a4ae752786cdc729cb4838f">chkClr</link>(rC,cC))
+00180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1a82fca8e5252ad0300a663f07d2c8783d">clear</link>(rC-1,cC-1);
+00182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;outbrd.<link linkend="_class_out_brd_1a07ad712503dc56ce0c4a94b625c4780a">dspBrd</link>();
+00186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}<emphasis role="keywordflow">while</emphasis>(!gmeOver());
+00187 &#32;&#32;&#32;&#32;}
+00188 &#32;&#32;&#32;&#32;
+<anchor xml:id="__game_8h_source_1l00189"/><link linkend="_class_game_1a42016555166b4ab075e1db5224a65d7d">00189</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_game_1a42016555166b4ab075e1db5224a65d7d">gmeOver</link>()
+00190 &#32;&#32;&#32;&#32;{
+00191 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_stats">Stats&lt;int&gt;</link>&#32;*a;
+00192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;a=&amp;player;
+00193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(outbrd.<link linkend="_class_out_brd_1af608ac43b10bea381e951393c1b2c9e9">loss</link>(rC,cC))
+00195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_in_brd_1aa6d18ae85e12c4315b32f79830ab7719">dspBrd</link>();
+00197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Game&#32;Over!&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;player.<link linkend="_class_player_1a5b525e04839b6cd3252b288b9db6bca6">stats</link>(<emphasis role="keyword">false</emphasis>);
+00199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+00200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(outbrd.<link linkend="_class_out_brd_1a3b1441409df7b1460bdc5b57734b1064">win</link>(rC,cC))
+00202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;inbrd.<link linkend="_class_in_brd_1aa6d18ae85e12c4315b32f79830ab7719">dspBrd</link>();
+00204 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;You&#32;won!&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;player.<link linkend="_class_player_1a5b525e04839b6cd3252b288b9db6bca6">stats</link>(<emphasis role="keyword">true</emphasis>);
+00206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+00207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+00209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;diff&#32;=&#32;outbrd.<link linkend="_class_out_brd_1aa9ac410197c494be9af5aa806fcf6ce1">fRemain</link>();
+00211 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;diff&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;&#32;mines&#32;remaining.&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00214 &#32;&#32;&#32;&#32;}
+00215 };
+00216 
+00217 <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_game_1a46f8e4d93a538f64ac9fff26c3c5456d">Game::gmeCnt</link>&#32;=&#32;0;
+00218 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;GAME_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+00219 
+</programlisting></section>

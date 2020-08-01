@@ -1,0 +1,19 @@
+digraph "Game::Game"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Game::Game",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="InBrd::celdata",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/db8/class_in_brd.html#a92a51ca05ea3fc01b976628951c2086c",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Cell::setnrow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d11/class_cell.html#ae8de6c402ee3ca437b73a2839f0a34ba",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="GmeBrd::setCol",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d12/class_gme_brd.html#ac9b58f005fbf43fef04596ebace1082e",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="GmeBrd::setMine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d12/class_gme_brd.html#a08d5eda4c06a310c868668994c5d47b2",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="GmeBrd::setRow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d12/class_gme_brd.html#a279ed4807b7864824f79a6e7dce87d6f",tooltip=" "];
+}

@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_player">
+<title>Player Class Reference</title>
+<indexterm><primary>Player</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Player.h&gt;</computeroutput>
+</para>
+Inheritance diagram for Player:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d6c/class_player__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Player:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d6/db3/class_player__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_player_1_1_bad_chc">BadChc</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_bad_flag">BadFlag</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_bad_mns">BadMns</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_badrc">Badrc</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_bad_r_c">BadRC</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_player_1_1_less_tn1">LessTn1</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_player_1a0fb947f3bd20596cbff1f576711ce90e">Player</link> (string n)</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_player_1af9a6045fa96f736664c4eab4caa5e8e5">getName</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a37fc1f766b05e107305976aa9e8d0fc4">setName</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a740b82f6723c1b4e985444caa4ab95e1">setBrd</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1ac0410e4338e9abaa3173836a10547343">getChc</link> (int &amp;rChoice, int &amp;cChoice)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a76135d6989330f1d71485f7569f4f520">getRow</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a21dd4f636a667fe882abc76600dc0d9c">getCol</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a42ea717cab17fa83a43d647685eb81a6">getMine</link> ()</para>
+</listitem>
+            <listitem><para>char <link linkend="_class_player_1a2d07cc5039ccd5fe1af4dec145b7d717">askFlg</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a5b525e04839b6cd3252b288b9db6bca6">stats</link> (bool win)</para>
+</listitem>
+            <listitem><para>float <link linkend="_class_player_1a1bba8328130b421db32a59fdc3d0292f">points</link> (bool win)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a21f5d3d0f858ecff23b604e907f36247">setName</link> (string n)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a31e5f0df2e737d1163fe45c94d5b3190">setBrd</link> (int r, int c, int m)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_1a9a5a3685995386ec8838dc5afaeb4369">autoChc</link> (int &amp;rChoice, int &amp;cChoice)</para>
+</listitem>
+            <listitem><para>char <link linkend="_class_player_1a4247a12755b827d0c0002f2aac93db03">autoFlg</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_class_player_1acf0355128a99ee20ad9931b760fb2de1">name</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1ab4e6ed0131da3921bc80b39f9b455dc9">row</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1adaf24ef11afa33a073a952c464f5c762">col</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1a39c7463a711ac38c50d56e701b61f48a">mine</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_class_player_1af14f0d6ce7546bc1ded859df40cd8819">number</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_class_player_1a258026b604c89c0c46afca64d50fd82b">pts</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_player_1ae0614b9668feae646a3942e077f6254a">invalid</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__player_8h_source_1l00029">29</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_player_1affe0cc3cb714f6deb4e62f0c0d3f1fd8"/>    <section>
+    <title>Player()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Player</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput>Player::Player ( )<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>Default constructor for <link linkend="_class_player">Player</link> class </para>
+<para>
+Definition at line <link linkend="__player_8h_source_1l00039">39</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+    </section><anchor xml:id="_class_player_1a0fb947f3bd20596cbff1f576711ce90e"/>    <section>
+    <title>Player()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Player</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>Player</secondary></indexterm>
+<para><computeroutput>Player::Player (string n)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>string n is passed as a parameter to initialize n </para>
+<para>
+Definition at line <link linkend="__player_8h_source_1l00049">49</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_player_1a2d07cc5039ccd5fe1af4dec145b7d717"/>    <section>
+    <title>askFlg()</title>
+<indexterm><primary>askFlg</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>askFlg</secondary></indexterm>
+<para><computeroutput>char Player::askFlg ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00185">185</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00118">Game::play()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_a2d07cc5039ccd5fe1af4dec145b7d717_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_player_1a9a5a3685995386ec8838dc5afaeb4369"/>    <section>
+    <title>autoChc()</title>
+<indexterm><primary>autoChc</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>autoChc</secondary></indexterm>
+<para><computeroutput>void Player::autoChc (int &amp; rChoice, int &amp; cChoice)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00240">240</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00154">Game::aPlay()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_a9a5a3685995386ec8838dc5afaeb4369_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_player_1a4247a12755b827d0c0002f2aac93db03"/>    <section>
+    <title>autoFlg()</title>
+<indexterm><primary>autoFlg</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>autoFlg</secondary></indexterm>
+<para><computeroutput>char Player::autoFlg ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00246">246</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00154">Game::aPlay()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_a4247a12755b827d0c0002f2aac93db03_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_player_1ac0410e4338e9abaa3173836a10547343"/>    <section>
+    <title>getChc()</title>
+<indexterm><primary>getChc</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>getChc</secondary></indexterm>
+<para><computeroutput>void Player::getChc (int &amp; rChoice, int &amp; cChoice)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00142">142</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00118">Game::play()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_ac0410e4338e9abaa3173836a10547343_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_player_1a21dd4f636a667fe882abc76600dc0d9c"/>    <section>
+    <title>getCol()</title>
+<indexterm><primary>getCol</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>getCol</secondary></indexterm>
+<para><computeroutput>int Player::getCol ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00182">182</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00036">Game::setUp()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_a21dd4f636a667fe882abc76600dc0d9c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_player_1a42ea717cab17fa83a43d647685eb81a6"/>    <section>
+    <title>getMine()</title>
+<indexterm><primary>getMine</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>getMine</secondary></indexterm>
+<para><computeroutput>int Player::getMine ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00183">183</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00036">Game::setUp()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_a42ea717cab17fa83a43d647685eb81a6_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_player_1af9a6045fa96f736664c4eab4caa5e8e5"/>    <section>
+    <title>getName()</title>
+<indexterm><primary>getName</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>getName</secondary></indexterm>
+<para><computeroutput>string Player::getName ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00067">67</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00094">Game::shoStrt()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_af9a6045fa96f736664c4eab4caa5e8e5_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_player_1a76135d6989330f1d71485f7569f4f520"/>    <section>
+    <title>getRow()</title>
+<indexterm><primary>getRow</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>getRow</secondary></indexterm>
+<para><computeroutput>int Player::getRow ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00181">181</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00036">Game::setUp()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_a76135d6989330f1d71485f7569f4f520_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_player_1a1bba8328130b421db32a59fdc3d0292f"/>    <section>
+    <title>points()</title>
+<indexterm><primary>points</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>points</secondary></indexterm>
+<para><computeroutput>float Player::points (bool win)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00219">219</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+    </section><anchor xml:id="_class_player_1a740b82f6723c1b4e985444caa4ab95e1"/>    <section>
+    <title>setBrd()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>setBrd</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>setBrd</secondary></indexterm>
+<para><computeroutput>void Player::setBrd ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00074">74</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00036">Game::setUp()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_a740b82f6723c1b4e985444caa4ab95e1_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_player_1a31e5f0df2e737d1163fe45c94d5b3190"/>    <section>
+    <title>setBrd()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>setBrd</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>setBrd</secondary></indexterm>
+<para><computeroutput>void Player::setBrd (int r, int c, int m)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00233">233</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+    </section><anchor xml:id="_class_player_1a37fc1f766b05e107305976aa9e8d0fc4"/>    <section>
+    <title>setName()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>setName</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>setName</secondary></indexterm>
+<para><computeroutput>void Player::setName ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00068">68</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00036">Game::setUp()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_a37fc1f766b05e107305976aa9e8d0fc4_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_class_player_1a21f5d3d0f858ecff23b604e907f36247"/>    <section>
+    <title>setName()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>setName</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>setName</secondary></indexterm>
+<para><computeroutput>void Player::setName (string n)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00229">229</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+    </section><anchor xml:id="_class_player_1a5b525e04839b6cd3252b288b9db6bca6"/>    <section>
+    <title>stats()</title>
+<indexterm><primary>stats</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>stats</secondary></indexterm>
+<para><computeroutput>void Player::stats (bool win)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00208">208</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+<para>
+Referenced by <link linkend="__game_8h_source_1l00189">Game::gmeOver()</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d53/class_player_a5b525e04839b6cd3252b288b9db6bca6_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_player_1adaf24ef11afa33a073a952c464f5c762"/>    <section>
+    <title>col</title>
+<indexterm><primary>col</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>col</secondary></indexterm>
+<para><computeroutput>int Player::col<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00033">33</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+    </section><anchor xml:id="_class_player_1ae0614b9668feae646a3942e077f6254a"/>    <section>
+    <title>invalid</title>
+<indexterm><primary>invalid</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>invalid</secondary></indexterm>
+<para><computeroutput>bool Player::invalid<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00036">36</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+    </section><anchor xml:id="_class_player_1a39c7463a711ac38c50d56e701b61f48a"/>    <section>
+    <title>mine</title>
+<indexterm><primary>mine</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>mine</secondary></indexterm>
+<para><computeroutput>int Player::mine<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00033">33</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+    </section><anchor xml:id="_class_player_1acf0355128a99ee20ad9931b760fb2de1"/>    <section>
+    <title>name</title>
+<indexterm><primary>name</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>name</secondary></indexterm>
+<para><computeroutput>string Player::name<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00032">32</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+    </section><anchor xml:id="_class_player_1af14f0d6ce7546bc1ded859df40cd8819"/>    <section>
+    <title>number</title>
+<indexterm><primary>number</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>number</secondary></indexterm>
+<para><computeroutput>int Player::number<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00034">34</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+    </section><anchor xml:id="_class_player_1a258026b604c89c0c46afca64d50fd82b"/>    <section>
+    <title>pts</title>
+<indexterm><primary>pts</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>pts</secondary></indexterm>
+<para><computeroutput>float Player::pts<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00035">35</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+    </section><anchor xml:id="_class_player_1ab4e6ed0131da3921bc80b39f9b455dc9"/>    <section>
+    <title>row</title>
+<indexterm><primary>row</primary><secondary>Player</secondary></indexterm>
+<indexterm><primary>Player</primary><secondary>row</secondary></indexterm>
+<para><computeroutput>int Player::row<computeroutput>[private]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="__player_8h_source_1l00033">33</link> of file <link linkend="__player_8h_source">Player.h</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__player_8h">Player.h</link></section>
+</section>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index">
+    <info>
+    <title>Minesweeper</title>
+    </info>
+<chapter>
+    <title>Description:</title>
+    <xi:include href="mainpage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="dc/d0c/class_player_1_1_bad_chc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d8/d93/class_player_1_1_bad_flag.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d5/da9/class_player_1_1_bad_mns.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db/dd0/class_player_1_1_badrc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dd/d55/class_player_1_1_bad_r_c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dd/d11/class_cell.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dd/d1f/class_game.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d7/d12/class_gme_brd.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="de/db8/class_in_brd.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d1/dcc/class_player_1_1_less_tn1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d0/df1/class_out_brd.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d8/d53/class_player.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="df/d1b/class_stats.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="dd/d82/_8dep_8inc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dd/d82/_8dep_8inc_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d6/d4d/_ante___gabrielle___project__2_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d6/d4d/_ante___gabrielle___project__2_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dd/ddd/_cell_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dd/ddd/_cell_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dd/dcf/_cell_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dd/dcf/_cell_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/dcd/_game_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/dcd/_game_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d2/d20/_gme_brd_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d2/d20/_gme_brd_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d5/d35/_in_brd_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d5/d35/_in_brd_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/d4b/_in_brd_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/d4b/_in_brd_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="da/df8/_out_brd_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="da/df8/_out_brd_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dc/dea/_out_brd_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dc/dea/_out_brd_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d1/d39/_player_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d1/d39/_player_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/d48/_stats_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/d48/_stats_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__cell_8cpp_source">
+<title>Cell.cpp</title>
+<programlisting>00001 <emphasis role="comment">/*</emphasis>
+00002 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+00003 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+00004 <emphasis role="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+00005 <emphasis role="comment">&#32;*/</emphasis>
+00006 
+00007 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__cell_8h">Cell.h</link>&quot;</emphasis>
+00008 
+<anchor xml:id="__cell_8cpp_source_1l00009"/><link linkend="_class_cell_1a394510643e8664cf12b5efaf5cb99f71">00009</link> <link linkend="_class_cell_1a394510643e8664cf12b5efaf5cb99f71">Cell::Cell</link>&#32;()&#32;{
+00010 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1aa0fe1bf41408c40ccf95a0434c8cd753">display</link>&#32;=&#32;<emphasis role="charliteral">&apos;*&apos;</emphasis>;
+00011 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a322c32087e3d7a061ab9168a1364cc7f">symbol</link>&#32;=&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>;
+00012 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1ad8c292051c80a49db6b505465ffc7771">hidden</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>;&#32;
+00013 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a593898dc074bfdc46883f2976292e4d2">flagged</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+00014 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a9918b04ec15f46b116493b77e07aa618">nrow</link>=0;
+00015 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a02831844b99ef62b8cccda162977872b">ncol</link>=0;
+00016 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1aeabf99afa55aaeb5d8e53cabd2886e44">mine</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+00017 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a2a5e46b6fdcc414fa3736bbc193f62e8">value</link>&#32;=&#32;0;
+00018 }
+00019 
+<anchor xml:id="__cell_8cpp_source_1l00020"/><link linkend="_class_cell_1a4d36ca39f2f51e0a41c0f1990e2107ca">00020</link> <link linkend="_class_cell_1a394510643e8664cf12b5efaf5cb99f71">Cell::Cell</link>&#32;(<emphasis role="keywordtype">bool</emphasis>&#32;m)&#32;{
+00021 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1aa0fe1bf41408c40ccf95a0434c8cd753">display</link>&#32;=&#32;<emphasis role="charliteral">&apos;*&apos;</emphasis>;
+00022 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a322c32087e3d7a061ab9168a1364cc7f">symbol</link>&#32;=&#32;<emphasis role="charliteral">&apos;-&apos;</emphasis>;
+00023 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1ad8c292051c80a49db6b505465ffc7771">hidden</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+00024 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a593898dc074bfdc46883f2976292e4d2">flagged</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+00025 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a9918b04ec15f46b116493b77e07aa618">nrow</link>=0;
+00026 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a02831844b99ef62b8cccda162977872b">ncol</link>=0;
+00027 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1aeabf99afa55aaeb5d8e53cabd2886e44">mine</link>&#32;=&#32;m;
+00028 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a2a5e46b6fdcc414fa3736bbc193f62e8">value</link>&#32;=&#32;0;
+00029 }&#32;
+00030 
+<anchor xml:id="__cell_8cpp_source_1l00031"/><link linkend="_class_cell_1a150942ac9b1258ba308586131abc4ec8">00031</link> <link linkend="_class_cell">Cell</link>&amp;&#32;<link linkend="_class_cell_1a150942ac9b1258ba308586131abc4ec8">Cell::operator =</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_cell">Cell</link>&#32;&amp;right)
+00032 {
+00033 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1aa0fe1bf41408c40ccf95a0434c8cd753">display</link>&#32;=&#32;right.<link linkend="_class_cell_1aa0fe1bf41408c40ccf95a0434c8cd753">display</link>;
+00034 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a322c32087e3d7a061ab9168a1364cc7f">symbol</link>&#32;=&#32;right.<link linkend="_class_cell_1a322c32087e3d7a061ab9168a1364cc7f">symbol</link>;
+00035 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1ad8c292051c80a49db6b505465ffc7771">hidden</link>&#32;=&#32;right.<link linkend="_class_cell_1ad8c292051c80a49db6b505465ffc7771">hidden</link>;&#32;
+00036 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a593898dc074bfdc46883f2976292e4d2">flagged</link>&#32;=&#32;right.<link linkend="_class_cell_1a593898dc074bfdc46883f2976292e4d2">flagged</link>;
+00037 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a9918b04ec15f46b116493b77e07aa618">nrow</link>=right.<link linkend="_class_cell_1a9918b04ec15f46b116493b77e07aa618">nrow</link>;
+00038 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a02831844b99ef62b8cccda162977872b">ncol</link>=right.<link linkend="_class_cell_1a02831844b99ef62b8cccda162977872b">ncol</link>;
+00039 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1aeabf99afa55aaeb5d8e53cabd2886e44">mine</link>&#32;=&#32;right.<link linkend="_class_cell_1aeabf99afa55aaeb5d8e53cabd2886e44">mine</link>;
+00040 &#32;&#32;&#32;&#32;<link linkend="_class_cell_1a2a5e46b6fdcc414fa3736bbc193f62e8">value</link>&#32;=&#32;right.<link linkend="_class_cell_1a2a5e46b6fdcc414fa3736bbc193f62e8">value</link>;
+00041 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*<emphasis role="keyword">this</emphasis>;
+00042 }
+</programlisting></section>

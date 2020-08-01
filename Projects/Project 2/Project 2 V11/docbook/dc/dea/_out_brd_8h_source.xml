@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__out_brd_8h_source">
+<title>OutBrd.h</title>
+<programlisting>00001 <emphasis role="comment">/*</emphasis>
+00002 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+00003 <emphasis role="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+00004 <emphasis role="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+00005 <emphasis role="comment">&#32;*/</emphasis>
+00006 
+00007 <emphasis role="comment">/*&#32;</emphasis>
+00008 <emphasis role="comment">&#32;*&#32;File:&#32;&#32;&#32;OutBrd.h</emphasis>
+00009 <emphasis role="comment">&#32;*&#32;Author:&#32;Gabrielle</emphasis>
+00010 <emphasis role="comment">&#32;*</emphasis>
+00011 <emphasis role="comment">&#32;*&#32;Created&#32;on&#32;July&#32;26,&#32;2020,&#32;3:19&#32;AM</emphasis>
+00012 <emphasis role="comment">&#32;*/</emphasis>
+00013 
+00014 <emphasis role="preprocessor">#ifndef&#32;OUTBRD_H</emphasis>
+00015 <emphasis role="preprocessor">#define&#32;OUTBRD_H</emphasis>
+00016 
+00017 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__cell_8h">Cell.h</link>&quot;</emphasis>
+00018 
+00019 
+00020 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_in_brd">InBrd</link>;
+00021 
+<anchor xml:id="__out_brd_8h_source_1l00022"/><link linkend="_class_out_brd">00022</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_out_brd">OutBrd</link>:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_gme_brd">GmeBrd</link>
+00023 {
+00024 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__out_brd_8h_source_1l00025"/><link linkend="_class_out_brd_1a433ae12184330fe2b4ee5b89b4322eb7">00025</link> &#32;&#32;&#32;&#32;<link linkend="_class_cell">Cell</link>&#32;**<link linkend="_class_out_brd_1a433ae12184330fe2b4ee5b89b4322eb7">cell</link>;
+00026 &#32;&#32;&#32;&#32;
+00027 <emphasis role="keyword">protected</emphasis>:
+00028 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__out_brd_8h_source_1l00029"/><link linkend="_class_out_brd_1ad5af3e2f29a5e6a8f558ff2834aec12d">00029</link> &#32;&#32;&#32;&#32;<link linkend="_class_out_brd_1ad5af3e2f29a5e6a8f558ff2834aec12d">OutBrd</link>():<link linkend="_class_gme_brd">GmeBrd</link>(){
+00030 &#32;&#32;&#32;}
+00031 &#32;&#32;&#32;&#32;
+00032 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_out_brd_1a0af7ee8eef4871714011bc8f4e9971a6">rdBrd</link>(<link linkend="_class_in_brd">InBrd</link>&#32;&amp;a);
+00033 &#32;&#32;&#32;&#32;
+<anchor xml:id="__out_brd_8h_source_1l00034"/><link linkend="_class_out_brd_1a4c07c984330c7d56eacb3154f41b731a">00034</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_out_brd_1a4c07c984330c7d56eacb3154f41b731a">reveal</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>)
+00035 &#32;&#32;&#32;&#32;{&#32;<link linkend="_class_out_brd_1a433ae12184330fe2b4ee5b89b4322eb7">cell</link>[r-1][<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>-1].<link linkend="_class_cell_1a89a43f48ffb2aacaf5961e46fd78e197">setHddn</link>(<emphasis role="keyword">false</emphasis>);}
+00036 &#32;&#32;&#32;&#32;
+<anchor xml:id="__out_brd_8h_source_1l00037"/><link linkend="_class_out_brd_1aae382b8a171780c274e67a49328ef4d5">00037</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_out_brd_1aae382b8a171780c274e67a49328ef4d5">flag</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>)
+00038 &#32;&#32;&#32;&#32;{&#32;<link linkend="_class_out_brd_1a433ae12184330fe2b4ee5b89b4322eb7">cell</link>[r-1][<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>-1].<link linkend="_class_cell_1aa190ef553aef63dda30047619b39fe7a">setFlgd</link>(<emphasis role="keyword">true</emphasis>);}
+00039 &#32;&#32;&#32;&#32;
+<anchor xml:id="__out_brd_8h_source_1l00040"/><link linkend="_class_out_brd_1ab33baa2658c6ccd009b3043fe389d0c4">00040</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_out_brd_1ab33baa2658c6ccd009b3043fe389d0c4">unflag</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>)
+00041 &#32;&#32;&#32;&#32;{&#32;<link linkend="_class_out_brd_1a433ae12184330fe2b4ee5b89b4322eb7">cell</link>[r-1][<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>-1].<link linkend="_class_cell_1aa190ef553aef63dda30047619b39fe7a">setFlgd</link>(<emphasis role="keyword">false</emphasis>);}
+00042 &#32;&#32;&#32;&#32;
+<anchor xml:id="__out_brd_8h_source_1l00043"/><link linkend="_class_out_brd_1af35a0c9f121c0b2dddf81e88304343b7">00043</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_out_brd_1af35a0c9f121c0b2dddf81e88304343b7">spcOpn</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>)
+00044 &#32;&#32;&#32;&#32;{
+00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_out_brd_1a433ae12184330fe2b4ee5b89b4322eb7">cell</link>[r-1][<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>-1].getHddn()==<emphasis role="keyword">false</emphasis>)
+00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;That&#32;cell&#32;is&#32;already&#32;open.&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00054 &#32;&#32;&#32;&#32;}
+00055 &#32;&#32;&#32;&#32;
+00056 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_out_brd_1af608ac43b10bea381e951393c1b2c9e9">loss</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>);
+00057 &#32;&#32;&#32;&#32;
+<anchor xml:id="__out_brd_8h_source_1l00058"/><link linkend="_class_out_brd_1a3b1441409df7b1460bdc5b57734b1064">00058</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_out_brd_1a3b1441409df7b1460bdc5b57734b1064">win</link>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>)
+00059 &#32;&#32;&#32;&#32;{
+00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;count&#32;=&#32;0;
+00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="_class_gme_brd_1ad5835d62cf112b2687a577c8c3915307">row</link>;&#32;i++)&#32;{
+00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;<link linkend="_class_gme_brd_1add7a2f883bd9dbb4d70609536c1c3655">col</link>;&#32;j++)&#32;{
+00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_out_brd_1a433ae12184330fe2b4ee5b89b4322eb7">cell</link>[i][j].<link linkend="_class_gme_brd_1accbce40e77b3a158eb8f6ed0378cc744">getMine</link>()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;count++;
+00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_out_brd_1a433ae12184330fe2b4ee5b89b4322eb7">cell</link>[i][j].getHddn()&#32;==&#32;<emphasis role="keyword">false</emphasis>)&#32;{
+00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;count++;
+00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(count&#32;==&#32;<link linkend="_class_gme_brd_1ad5835d62cf112b2687a577c8c3915307">row</link>&#32;*&#32;<link linkend="_class_gme_brd_1add7a2f883bd9dbb4d70609536c1c3655">col</link>)&#32;{
+00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00075 &#32;&#32;&#32;&#32;}
+00076 &#32;&#32;&#32;&#32;
+<anchor xml:id="__out_brd_8h_source_1l00077"/><link linkend="_class_out_brd_1aa92302a7d20fb2e20522e37ed48be906">00077</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_out_brd_1aa92302a7d20fb2e20522e37ed48be906">ckFlg</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>){<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_out_brd_1a433ae12184330fe2b4ee5b89b4322eb7">cell</link>[r-1][<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>-1].<link linkend="_class_cell_1a8692c2ff9061eeefd7355c2003ca376e">getFlgd</link>();}
+00078 &#32;&#32;&#32;&#32;
+00079 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_out_brd_1a80ed53ea4a4ae752786cdc729cb4838f">chkClr</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>);
+00080 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_out_brd_1a82fca8e5252ad0300a663f07d2c8783d">clear</link>(<emphasis role="keywordtype">int</emphasis>&#32;r,&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_gme_brd_1aaecbdf613b29d5de293b100b52083e62">c</link>);
+00081 &#32;&#32;&#32;&#32;
+<anchor xml:id="__out_brd_8h_source_1l00082"/><link linkend="_class_out_brd_1aa9ac410197c494be9af5aa806fcf6ce1">00082</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_out_brd_1aa9ac410197c494be9af5aa806fcf6ce1">fRemain</link>()&#32;
+00083 &#32;&#32;&#32;&#32;{
+00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;flags&#32;=&#32;0,&#32;diff&#32;=&#32;0;
+00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="_class_gme_brd_1ad5835d62cf112b2687a577c8c3915307">row</link>;&#32;i++)&#32;{
+00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;j&#32;=&#32;0;&#32;j&#32;&lt;&#32;<link linkend="_class_gme_brd_1add7a2f883bd9dbb4d70609536c1c3655">col</link>;&#32;j++)&#32;{
+00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_out_brd_1a433ae12184330fe2b4ee5b89b4322eb7">cell</link>[i][j].getFlgd()&#32;==&#32;<emphasis role="keyword">true</emphasis>)&#32;{
+00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;flags++;
+00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;diff&#32;=&#32;<link linkend="_class_gme_brd_1a380ced78a97eb23602ed3868eacff11c">mine</link>&#32;-&#32;flags;
+00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;diff;
+00094 &#32;&#32;&#32;&#32;}
+00095 &#32;&#32;&#32;&#32;
+00096 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_out_brd_1a07ad712503dc56ce0c4a94b625c4780a">dspBrd</link>();
+00097 };
+00098 
+00099 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;OUTBRD_H&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+00100 
+</programlisting></section>
