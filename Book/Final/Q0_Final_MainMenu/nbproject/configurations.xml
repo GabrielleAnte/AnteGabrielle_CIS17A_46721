@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Employee.h</itemPath>
+      <itemPath>Prob1Random.h</itemPath>
+      <itemPath>Prob2Sort.h</itemPath>
+      <itemPath>C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Prob3Table.h</itemPath>
+      <itemPath>C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Prob3TableInherited.h</itemPath>
+      <itemPath>SavingsAccount.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Array1.txt</itemPath>
+      <itemPath>C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Array2.txt</itemPath>
+      <itemPath>Employ.bin</itemPath>
+      <itemPath>Problem2.txt</itemPath>
+      <itemPath>C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Problem3.txt</itemPath>
+      <itemPath>Savings.bin</itemPath>
+      <itemPath>C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Table.bin</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Ante_Gabrielle_Q0_Final_MainMenu.cpp</itemPath>
+      <itemPath>Employee.cpp</itemPath>
+      <itemPath>SavingsAccount.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+      </compileType>
+      <item path="Ante_Gabrielle_Q0_Final_MainMenu.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Array1.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Array2.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Prob3Table.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Prob3TableInherited.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Problem3.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Table.bin"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Employ.bin" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Employee.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Employee.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob1Random.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob2Sort.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Problem2.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Savings.bin" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SavingsAccount.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SavingsAccount.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Ante_Gabrielle_Q0_Final_MainMenu.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Array1.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Array2.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Prob3Table.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Prob3TableInherited.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Problem3.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="C:/Users/Gabrielle/Documents/NetBeansProjects/Q3_Spreadsheet_Stuff/Table.bin"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Employ.bin" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Employee.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Employee.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob1Random.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob2Sort.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Problem2.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Savings.bin" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SavingsAccount.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SavingsAccount.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
